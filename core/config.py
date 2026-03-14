@@ -46,6 +46,8 @@ CACHE_SCHEMA: str = os.getenv("CACHE_SCHEMA", RAG_SCHEMA)
 CACHE_TABLE: str = os.getenv("CACHE_TABLE", "jabot_rag_perguntas")
 # Distância máxima (pgvector <->) para considerar "mesma" pergunta. Quanto menor, mais exigente (ex.: 0.2 a 0.4).
 CACHE_THRESHOLD: float = float(os.getenv("CACHE_THRESHOLD", "0.35"))
+# Reutilizar cache apenas quando a resposta tiver avaliação média >= este valor (1-5). Ex.: 4 = só 4 ou 5 estrelas.
+CACHE_MIN_STARS: float = float(os.getenv("CACHE_MIN_STARS", "4"))
 # Dimensão do embedding (mxbai-embed-large = 1024). Deve bater com o modelo.
 CACHE_EMBEDDING_DIM: int = int(os.getenv("CACHE_EMBEDDING_DIM", "1024"))
 

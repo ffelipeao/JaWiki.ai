@@ -10,6 +10,7 @@ from pgvector.psycopg2 import register_vector
 
 from core.config import (
     CACHE_EMBEDDING_DIM,
+    CACHE_MIN_STARS,
     CACHE_SCHEMA,
     CACHE_TABLE,
     CACHE_THRESHOLD,
@@ -129,10 +130,11 @@ class Database:
         self,
         query_embedding: Union[list[float], np.ndarray],
         max_distance: float = CACHE_THRESHOLD,
+        min_stars: float = CACHE_MIN_STARS,
     ) -> Optional[Tuple[int, str, list]]:
         """
-        Busca uma pergunta muito similar no cache. Prioriza respostas com melhor avaliação.
-        Retorna (cache_id, resposta, fontes_list) ou None.
+        Busca uma pergunta muito similar no cache. Só retorna respostas com avaliação média >= min_stars (ex.: 4 = só 4 ou 5 estrelas).
+        Prioriza respostas com melhor avaliação. Retorna (cache_id, resposta, fontes_list) ou None.
         """
         vec = _as_vector(query_embedding)
         with self.conn, self.conn.cursor() as cur:
@@ -141,10 +143,11 @@ class Database:
                 SELECT id, resposta, fontes, (embedding <-> %s) AS dist
                 FROM "{CACHE_SCHEMA}"."{CACHE_TABLE}"
                 WHERE (embedding <-> %s) <= %s
-                ORDER BY rating_avg DESC NULLS LAST, (embedding <-> %s) ASC
+                  AND rating_avg IS NOT NULL AND rating_avg >= %s
+                ORDER BY rating_avg DESC, (embedding <-> %s) ASC
                 LIMIT 1
                 """,
-                (vec, vec, max_distance, vec),
+                (vec, vec, max_distance, min_stars, vec),
             )
             row = cur.fetchone()
             if not row:
