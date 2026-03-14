@@ -1,14 +1,15 @@
-====== Gerenciar usuário da Base de Dados ======
+# Gerenciar usuário da base de dados (Jabot)
 
-Após criar uma nova base de dados é possível associar os usuários que poderão ter acesso a ela. Basta trocar a Base de dados [[trocar_base_atual|atual para a base desejada]]. Com a nova base selecionada, clique em **Gerenciar usuário da Base de Dados**, já nessa primeira tela, é possível ver quais são os usuários que tem acesso a base de dados e quem é responsável por ela, somente os responsáveis podem associar/excluir novos usuários. Para associar clique em **Associar novos usuários** selecione o usuário na lista, marque se ele também será um dos responsáveis e clique em **Salvar**.
+## Objetivo
+Após criar uma base de dados, associar os usuários que poderão acessá-la e definir quem é responsável pela base. Apenas responsáveis podem associar ou excluir usuários da base.
 
-  * Clique em **Gerenciar usuário da Base de Dados**.
-{{::gerenciar_usuario.jpg?direct|}} 
+## Como acessar no Jabot
+Troque a base atual para a base desejada (**Espécime > Trocar base atual**). Em seguida clique em **Gerenciar usuário da Base de Dados** (no menu ou na tela da base).
 
-  * Veja quais são os usuários que tem acesso a base de dados e clique em **Associar novos usuários**.
-{{::gerenciar_usuario2.jpg?direct|}}
+## Passos
+1. Selecione a base de dados desejada como base atual (**Espécime > Trocar base atual**).
+2. Clique em **Gerenciar usuário da Base de Dados**.
+3. Na tela é possível ver quais usuários têm acesso à base e quem é responsável.
+4. Para associar: clique em **Associar novos usuários**, selecione o usuário na lista, marque se ele também será responsável pela base e clique em **Salvar**.
 
-  * Selecione o usuário na lista, marque se ele também será um dos responsáveis e clique em **Salvar**.
-{{::gerenciar_usuario3.jpg?direct|}}
-
-
+Somente os responsáveis pela base podem associar ou excluir usuários nela.

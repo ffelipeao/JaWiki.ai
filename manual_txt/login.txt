@@ -1,12 +1,14 @@
-====== Login ======
+# Login (Jabot)
 
-{{::login.png?200|}}
+## Objetivo
+Entrar no sistema Jabot para usar funções que exigem autenticação. O uso do sistema requer uma conta criada pelo curador do herbário.
 
-Para o uso do sistema, deve-se ter uma conta criada pelo curador do herbário.
+## Como acessar
+A tela de login é a porta de entrada do Jabot. Informe seu usuário e senha para acessar.
 
-**Outras opções:**
+## Outras opções na tela de login
+- **Alterar senha** — para trocar a senha quando já estiver logado ou através do fluxo "Esqueci minha senha".
+- **Esqueci minha senha** — para recuperar ou redefinir a senha por e-mail.
 
-[[trocarsenha| Alterar senha]]
-
-[[esqueci_minha_senha|Esqueci minha senha]]
-
+## Observação
+Somente usuários com conta criada pelo curador do herbário podem fazer login.

@@ -1,34 +1,19 @@
-====== Padronizar nome de coletores ======
+# Padronizar nome de coletores (Jabot)
 
-Essa função foi criado para permitir a padronização dos nomes dos coletores no banco de dados.
+## Objetivo
+Padronizar os nomes dos coletores no banco de dados: buscar variações do mesmo nome e unificar ao nome correto. Essa função altera os dados originais; consultas e etiquetas passarão a usar o nome já alterado.
 
-Para acessar, basta clicar no menu "Curadoria-Qualidade de Dados-Padronização de Coletor" que uma nova tela será aberta para permitir filtrar os coletores por parte do nome. Ex: Para buscar todas as variações do nome Rafaela Forzza, basta filtrar por forzza. Assim, uma lista será aberta com todas os coletores com o nome forzza em parte do texto.
+## Como acessar no Jabot
+**Curadoria > Qualidade de Dados > Padronização de Coletor**
 
-Caso realmente seja necessário fazer a correção, basta selecionar os nomes que estão fora do padrão e preencher o campo "Nome correto" com o nome padronizado.
+## Passos
+1. Acesse **Curadoria > Qualidade de Dados > Padronização de Coletor**.
+2. Selecione uma coleção.
+3. Digite parte do nome do coletor (ex.: "forzza" para buscar variações de Rafaela Forzza) e clique em **Buscar**.
+4. Será exibida uma lista de coletores com esse texto no nome.
+5. Marque os nomes que estão fora do padrão.
+6. Preencha o campo **Nome correto** com o nome padronizado.
+7. Clique no botão **Alterar**.
 
-
-__**Obs. Essa função altera os dados originais. Caso seja necessário realizar consultas ou emitir novas etiquetas, o sistema utilizará o nome do coletor já alterado.**__
-
-Veja as imagens e siga os passos para fazer essa alteração.
-
-  - Selecione uma coleção
-  - Digite parte do nome do coletor
-  - Clique em Buscar
-
-{{:padronizar_coletor_p1.jpg|}}
-
-  - Marque um os mais nomes que estejam fora do padrão.
-  - Digite o novo nome no padrão desejado
-  - Clique no botão Alterar.
-
-{{::padronizar_coletor_p2.jpg|}}
-
-
-===== Permissão de Acesso =====
-
-Para que essa funcionalidade fique ativa, o curador/administrador do herbário precisa marcar a opção "Desbloquear a opção de padronização de coletor do menu qualidade de dados" na tela de configuração do sistema.
-
-{{::padronizar_coletor_-_permissao.jpg|}}
-
-É importante destacar que apenas os usuários com os perfis de Administrador, Curador ou Assistente de Curadoria poderão acessar esse recurso, caso ele esteja desbloqueado na tela de configuração.
-
+## Permissão
+O curador/administrador precisa marcar em **Admin > Configuração** a opção "Desbloquear a opção de padronização de coletor do menu qualidade de dados". Apenas usuários com perfil Administrador, Curador ou Assistente de Curadoria podem acessar esse recurso quando estiver desbloqueado.

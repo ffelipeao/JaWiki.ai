@@ -1,10 +1,16 @@
-====== Primeiros Passos ======
+# Primeiros passos (Jabot)
 
-Seja bem vindo ao JABOT.
+## Objetivo
+Orientações iniciais para o usuário decidir o que deseja fazer no Jabot.
 
-===== O que você deseja fazer? =====
+## O que você pode fazer
 
-[[consulta|Procurar espécimes na Consulta Pública]]
+### Procurar espécimes na Consulta Pública
+Acesso: use a opção **Consulta Pública** (ou **Procurar espécimes na Consulta Pública**) para pesquisar espécimes de forma aberta, sem necessidade de login.
 
-[[arboreto|Pesquisar no arboreto]]
+### Pesquisar no arboreto
+Acesso: use a opção **Arboreto** para pesquisar no acervo de plantas vivas (arboreto) cadastrado no Jabot.
 
+## Caminhos no Jabot
+- Consulta Pública: disponível na tela inicial / menu principal.
+- Arboreto: disponível no menu principal, em **Arboreto** ou equivalente.

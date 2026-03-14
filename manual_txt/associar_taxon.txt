@@ -1,30 +1,22 @@
-====== Associar Táxon a Base de Dados======
+# Associar ou desassociar táxon a base de dados (Flora) (Jabot)
 
-**Para Associar** um táxon à  Listagem da Flora do Estado do Rio de Janeiro, basta clicar no menu Flora/Rio de Janeiro - Associar Táxon a Base de Dados (ver imagem), marcar o(s) táxon(s) que deseja associar a base e confirmar.
+## Objetivo
+Associar ou desassociar táxons à listagem da Flora (ex.: Flora do Estado do Rio de Janeiro). Útil para catálogos de flora por região.
 
-Obs. Nessa opção só são listados os táxons que estão cadastrados no Jabot e que ainda NÃO foram associados ao catálogo da flora.
+## Como acessar no Jabot
+- **Flora > [Nome da Flora, ex.: Rio de Janeiro] > Associar Táxon a Base de Dados**
+- **Flora > [Nome da Flora] > Desassociar Táxon da Base de Dados**
 
-**Menu Associar Táxon**
+## Associar táxon
+1. Acesse o menu **Flora** e a opção correspondente à base (ex.: Rio de Janeiro - Associar Táxon a Base de Dados).
+2. Marque o(s) táxon(s) que deseja associar à base.
+3. Confirme a operação.
 
-{{::associar_taxon.jpg|}}
+Somente são listados táxons já cadastrados no Jabot que ainda **não** foram associados ao catálogo da flora.
 
+## Desassociar táxon
+1. Acesse o menu **Flora** e a opção de Desassociar Táxon da Base de Dados (ex.: Rio de Janeiro - Desassociar Táxon da Base de Dados).
+2. Marque o(s) táxon(s) que deseja desassociar da base.
+3. Confirme a operação.
 
-**Passos para associar uma nova espécie**
-
-{{:associar_especie.jpg|}}
-
-
-====== Desassociar Táxon a Base de Dados======
-
-**Para Desassociar** um táxon à  Listagem da Flora do Estado do Rio de Janeiro, basta clicar no menu Flora/Rio de Janeiro - Desassociar Táxon da Base de Dados (Ver Imagem), marcar o(s) táxon(s) que deseja desassociar da base e confirmar. 
-
-Obs. Nessa opção só são listados os táxons que estão associados ao catálogo da flora.
-
-**Menu Desassociar Táxon**
-
-{{::desassociar_taxon.jpg|}}
-
-
-**Passos para desassociar uma nova espécie**
-
-{{::desassociar_especie.jpg|}}
+Somente são listados táxons que já estão associados ao catálogo da flora.

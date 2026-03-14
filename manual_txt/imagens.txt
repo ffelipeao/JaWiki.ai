@@ -1,5 +1,7 @@
-Os detalhes sobre o processo de captura de imagens, do formato do arquivo e de seu nome podem ser encontrados em: 
-"Publicação de imagens" trata sobre o envia das imagens via FTP.
-//
-//
-http://dspace.jbrj.gov.br/jspui/bitstream/doc/103/1/Manual_Digitalizacao_exsicatas_2018.pdf
+# Imagens e publicação (Jabot)
+
+## Objetivo
+Os detalhes sobre captura de imagens, formato do arquivo e nome do arquivo, além do envio de imagens via FTP ("Publicação de imagens"), estão documentados em material externo.
+
+## Referência
+Manual de digitalização de exsicatas (formato e nome do arquivo, processo de captura): disponível em publicações do JBRJ (ex.: Manual_Digitalizacao_exsicatas). Para envio via FTP e publicação no servidor de imagens, consulte a documentação "Publicação de imagens" ou o manual do Jabot na seção de imagens.

@@ -1,44 +1,26 @@
-====== Gerenciar Táxons ======
+# Gerenciar táxons (Jabot)
 
-Para fazer alteração no táxon entre no menu **Taxonomia-Gerenciar Táxons**.
+## Objetivo
+Alterar epíteto/autores de um táxon ou substituir um táxon por outro em todo o sistema. Também é possível usar a função "Trocar Táxon DE: PARA:" para corrigir táxon errado pelo correto.
 
-{{::menu_gerenciar.png|}}
+## Como acessar no Jabot
+**Taxonomia > Gerenciar Táxons**
 
-Na próxima tela selecione o táxon que deseje alterar.
+## Passos para alterar um táxon
+1. Acesse **Taxonomia > Gerenciar Táxons**.
+2. Selecione o táxon que deseja alterar na lista.
+3. Clique no item e escolha uma das opções: **Alterar o epíteto/Autores** ou **Substituir táxon**.
 
-{{::selecionar_taxon.png|}}
+## Opção "Alterar Epíteto/Autores"
+Altere os dados nos campos "Alterar Epiteto para:" ou "Alterar Autor(es) para:". Se quiser aplicar a alteração em todos os táxons (de suas especialidades) com os mesmos autores, marque a opção correspondente e salve.
 
-Clique no item, selecione uma das opções: **Alterar o epiteto/Autores** ou **Substituir táxon** 
+## Opção "Substituir Táxon"
+Preencha as novas informações do táxon e clique em **Salvar**.
 
-{{::selecionar_op_substituir.png|}}
+## Trocar Táxon "DE: PARA:"
+Use quando precisar trocar um táxon errado pelo correto em todos os registros.
+1. Clique no botão **Trocar Táxon 'DE: PARA:'**.
+2. Informe o código do táxon correto e o código do táxon errado.
+3. Confirme. Os registros com o táxon errado serão atualizados para o correto e o táxon errado será removido da lista.
 
-**Para opção "Alterar Epíteto/Autores":**
-
-Altere os dados que achar necessário nos campos "Alterar Epiteto para:" ou "Alterar Autor(es) para:". Se necessário, marque a opção "Repetir alteração nos autores de todos os Táxons(de minhas especialidades) com os mesmos autores.".
-
-{{::alterar_epiteto_e_autores.png|}}
-
-
-**Para opção "Substituir Táxon":**
-
-Cadastre as novas informações que achar necessário e clique em "Salvar".
-
-{{::substituir_de_para_1.png|}}
-
-
-
-====== Trocar Táxon 'DE: PARA:' ======
-
-
-Caso seja necessário é possível usar a função **Trocar Táxon 'DE: PARA:'**.
-
-Ao clicar no botão **Trocar Táxon 'DE: PARA:'**, uma nova tela será carregada, e nela, basta informar o código do táxon certo e o código errado.
-obs. Caso só apareça um item na lista, basta ajustar o filtro e buscar novamente. Se necessário basta anotar o código do táxon que já está na tela e consultar novamente alterando o filtro pelo táxon desejado. O registros cadastrado com o táxon errado será substituído pelo correto e o errado será excluído da lista automaticamente.
-
-{{::substituir_de_para.png|}}
-
-
-
-
- 
-
+Se aparecer apenas um item na lista, ajuste o filtro e busque novamente; se necessário, anote o código exibido e consulte de novo alterando o filtro pelo táxon desejado.

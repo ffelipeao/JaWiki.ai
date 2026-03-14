@@ -1,16 +1,19 @@
-====== Unidade de Conservação ======
+# Unidade de conservação (Jabot)
 
-Para acessar as Unidades de Conservação (UC) cadastradas em sua base, acesso o menu **Curadoria/Unidade de Conservação** e uma lista com todas as UCs será exibida.
+## Objetivo
+Consultar, cadastrar e gerenciar Unidades de Conservação (UC) da base, e associar municípios (unidades geopolíticas) a cada UC.
 
-{{::uc.jpg?600|}}
+## Como acessar no Jabot
+**Curadoria > Unidade de Conservação**
 
-Caso queira cadastrar uma nova unidade de conservação clique no botão **Novo**, uma tela de cadastro será exibida, digite o nome da unidade de conservação, selecione o seu tipo de unidade e clique em **Salvar**.
+## Ver lista de UCs
+Acesse **Curadoria > Unidade de Conservação**; será exibida a lista de todas as UCs cadastradas.
 
-{{::cad_uc.jpg?600|}}
+## Cadastrar nova unidade de conservação
+1. Na tela **Curadoria > Unidade de Conservação**, clique no botão **Novo**.
+2. Digite o nome da unidade de conservação.
+3. Selecione o tipo de unidade.
+4. Clique em **Salvar**.
 
-Caso queria associar os municípios em que uma unidade de conservação pode estar inserida, após o cadastro, acesse o menu **Curadoria/Unidade de Conservação**, utilize o filtro para localizar a UC desejada e clique sobre ela, nessa tela, você pode alterar o cadastro e associar quantas municípios forem necessários. 
-Na parte inferior da tela selecione a Unidade Geopolítica e Envie uma a uma.
-
-{{::uc_ugp.jpg?600|}}
-
-
+## Associar municípios à UC
+Após o cadastro: acesse **Curadoria > Unidade de Conservação**, use o filtro para localizar a UC, clique sobre ela. Nessa tela você pode alterar o cadastro e, na parte inferior, selecionar a Unidade Geopolítica (município) e enviar uma a uma para associar quantos municípios forem necessários.

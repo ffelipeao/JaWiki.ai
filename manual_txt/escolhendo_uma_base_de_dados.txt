@@ -1,14 +1,16 @@
-====== Consultar por Base Dados ======
+# Consultar por base de dados (Jabot)
 
-Para consultar os dados filtrando pela base de dados, é necessário seguir os seguintes passos:
+## Objetivo
+Consultar dados no Jabot filtrando pela base de dados. Útil para ver apenas os registros de uma expedição ou projeto específico.
 
+## Como acessar no Jabot
+**Consulta > Consulta**
 
-  - Efetuar login no sistema;
-  - Acessar a página de consulta interna do sistema pelo menu "Consulta - Consulta";
-  - Selecionar uma das bases de dados na opção "Selecione a base de dados";
-  - Clicar no botão "Consultar".
+## Passos para consultar por base de dados
+1. Efetue login no sistema.
+2. Acesse a consulta interna: **Consulta > Consulta**.
+3. Na opção "Selecione a base de dados", escolha uma das bases de dados.
+4. Clique no botão **Consultar**.
 
-Obs. Se necessário, é possível somar o filtro por base dados a outros filtros como Família, Gênero e/ou Espécie.
-
-Veja uma demonstração na Imagem:
-{{:selector_base.png?|600|}}
+## Observação
+Se necessário, é possível combinar o filtro por base de dados com outros filtros, como Família, Gênero e/ou Espécie.

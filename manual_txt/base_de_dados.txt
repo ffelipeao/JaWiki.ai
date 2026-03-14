@@ -1,10 +1,19 @@
-==== Consulta Por Base de Dados e geração de etiquetas: ====
+# Consulta por base de dados e geração de etiquetas (Jabot)
 
-  * Para visualizar todos os itens de uma base de dados, acesse a consulta interna e no menu Consulta selecione a opção Consulta, no campo Base de Dados da tela de pesquisa, escolha a base desejada e depois clique no botão Consultar.
+## Objetivo
+Visualizar todos os itens de uma base de dados pela consulta interna e gerar etiquetas em PDF para as amostras da base.
 
-  * Para gerar as etiquetas, realize a consulta da base desejada (Passo 1), após exibir os resultados, observe na parte inferior da tela a caixa que indica o total de amostras exibidas para a geração das etiquetas (escolha a opção que contenha todas as amostras de sua base). Feito isso, basta escolher a opção de marcar todos os itens (primeiro quadradinho da barra antes dos resultados), agora basta clicar no botão - Gerar etiquetas para espécimes marcados, Escolha o tamanho da etiqueta desejada e irar abrir um PDF com todas as etiquetas selecionadas.
+## Como acessar no Jabot
+**Consulta > Consulta**
 
+## Passos para visualizar todos os itens de uma base
+1. Acesse a consulta interna: **Consulta > Consulta**.
+2. No campo **Base de Dados** da tela de pesquisa, escolha a base desejada.
+3. Clique no botão **Consultar**.
 
-A imagem abaixo apresenta todos os passos necessário para gerar as etiquetas.
-
-{{ :consulta_por_base.png?nolink |}}
+## Passos para gerar as etiquetas
+1. Realize a consulta da base desejada (passos acima).
+2. Após exibir os resultados, observe na parte inferior da tela a caixa que indica o total de amostras exibidas; escolha a opção que contenha todas as amostras de sua base.
+3. Marque todos os itens (primeiro quadradinho da barra antes dos resultados).
+4. Clique no botão **Gerar etiquetas para espécimes marcados**.
+5. Escolha o tamanho da etiqueta desejada; será aberto um PDF com todas as etiquetas selecionadas.

@@ -1,7 +1,10 @@
-====== Táxons Adicionados ======
-###Táxons adicionados é uma tela onde verifica-se quais táxons foram adicionados e quando foram, a princípio é exibido uma lista com todos os táxons, mas para poder filtrar melhor a busca preencha pelo menos um campo e clique no botão "enviar", você terá um melhor resultado. Veja figura abaixo.
-###
-{{:taxon_adicionado.png?|}}
-###
-<b>Figura 1 - Táxons Adicionados</b>
-###
+# Táxons adicionados (Jabot)
+
+## Objetivo
+Verificar quais táxons foram adicionados ao sistema e quando. Útil para auditoria e acompanhamento de novos cadastros taxonômicos.
+
+## Como acessar no Jabot
+**Taxonomia > Táxons Adicionados** (ou menu equivalente na seção Taxonomia)
+
+## Uso
+Inicialmente é exibida uma lista com todos os táxons. Para refinar: preencha pelo menos um campo de filtro (ex.: família, gênero, data) e clique no botão **Enviar** (ou **Filtrar**) para obter um resultado mais específico.

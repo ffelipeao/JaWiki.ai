@@ -1,13 +1,14 @@
-====== Enviar Logo ======
+# Enviar logo (Jabot)
 
-Para que sua logo marca apareça no sistema, você pode fazer o upload da imagem pela tela de configuração, acesse o menu **Admin/Configuração** e escolha qual logo deseja carregar(logo da instituição principal, logo para o menu, logo da etiqueta ou logo da instituição acima). Ao final do processo basta clicar no botão "Salvar" e para excluir as imagem basta clicar na lixeira.
+## Objetivo
+Fazer upload das logos da instituição para exibição no sistema: logo principal, logo do menu, logo da etiqueta, logo da instituição acima. Formatos e dimensões podem ser configurados.
 
-**Obs:**
-  * As imagens devem ter a extensão **JPG** ou **PNG**.
-  * A logo para etiqueta obrigatoriamente deve ter a extensão **JPG**.
-  * Tendo em vista as diferentes medidas da logo escolhida para etiqueta nas diferentes instituições, tornou-se necessário a configuração da largura e altura de cada logo. Sendo assim, com esse ajuste o sistema adotará essas medidas no momento da gerar as etiquetas.
+## Como acessar no Jabot
+**Admin > Configuração**
 
-**Figura 1 - Escolher e enviar logo**
+Na seção de logos, escolha qual logo carregar (instituição principal, menu, etiqueta ou instituição acima), faça o upload e clique em **Salvar**. Para excluir: use o ícone da lixeira ao lado da imagem.
 
-{{::jabot_-_cadastro_de_configuracao_-_google_chrome.jpg|}}
-
+## Regras
+- Imagens: extensão **JPG** ou **PNG**.
+- Logo para etiqueta: obrigatoriamente **JPG**.
+- É possível configurar **largura e altura** da logo da etiqueta; o sistema usará essas medidas ao gerar as etiquetas.

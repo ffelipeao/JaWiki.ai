@@ -1,9 +1,10 @@
-====== Log de Tentativa de Acesso ======
-###
-Por questões de segurança, o curador tem a sua disposição uma forma de verificar tentativas de acesso ao sistema sem sucesso.
-###
-\\
-Depois de clicar o nome do usuário (login), clique no botão Filtrar. Serão exibidos os acessos do usuário. São apresentadas a data e hora do acesso, assim como o endereço IP da máquina que acesso, o que permite saber se foi um acesso interno ou externo.
-\\
-\\
-{{::logtentativaacesso.png?|}}
+# Log de tentativa de acesso (Jabot)
+
+## Objetivo
+Permitir ao curador verificar tentativas de acesso ao sistema sem sucesso (segurança). Exibe data, hora e endereço IP da máquina, ajudando a identificar acessos internos ou externos.
+
+## Como acessar no Jabot
+**Admin** — na área de usuários ou logs; clique no nome do usuário (login) e depois no botão **Filtrar**.
+
+## Uso
+Após clicar no nome do usuário (login), clique em **Filtrar**. Serão exibidos os acessos daquele usuário: data e hora do acesso e endereço IP da máquina.

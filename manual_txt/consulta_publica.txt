@@ -1,61 +1,25 @@
-====== Conhecendo os campos da tela ======
+# Conhecendo os campos da Consulta Pública (Jabot)
 
-###
-Os campos marcados em azul <b>Grupo, Família, Gênero, Espécie, Localidade, Coletor, Núm. Coleta, Tombo, Código de Barra, Lista de Táxons ou Área do Mapa</b>. São campos de pesquisa onde você poderá escolher qualquer um deles para realizar sua pesquisa:
-###
+## Objetivo
+Os campos marcados em destaque na tela de consulta (Grupo, Família, Gênero, Espécie, Localidade, Coletor, Núm. Coleta, Tombo, Código de Barra, Lista de Táxons, Área do Mapa) são campos de pesquisa. O usuário pode escolher um ou mais deles para realizar a pesquisa.
 
-{{:consulta.png?|900|}}
+## Campos de pesquisa
 
-**Partes da página foram retiradas para focarmos apenas nos trechos da página específicos à consulta. Por esta razão estaremos disponibilizando logo abaixo o mapa da consulta.**
+**Grupo** — Define a pesquisa por um grupo ou subgrupo específico.
 
-**Grupo** – Campo que define a pesquisa por um grupo ou subgrupo específico. Vamos ver um exemplo de consulta utilizando o campo GRUPO.
+**Família, Gênero ou Espécie** — Pesquisa por táxon: pode preencher apenas parte ou os três campos para um táxon completo.
 
-{{:resultado.png?|900|}}
+**Localidade** — Pesquisa por localidade. É possível informar uma ou mais localidades separadas por vírgula (ex.: Nova Iguaçu, Duque de Caxias).
 
-###
-<b>Família, Gênero ou Espécie</b> – Campos que definem a pesquisa por partes, ou um táxon completo, caso os três campos sejam preenchidos. Vamos ver um exemplo de consulta utilizando os três campos.
-###
+**Coletor e Núm. Coleta** — Podem ser usados separadamente (pesquisa mais abrangente) ou em conjunto (refinamento).
 
-{{:familia_gen_esp.png?|200|}}
+**Tombo** — Pesquisa por número de tombo, individual ou em lote separando por vírgula (ex.: 51831,51837,51843).
 
-###
-<b>Localidade</b> – Esse campo define em qual localidade deseja realizar a pesquisa, você poderá pesquisar por uma ou mais localidades separando-as por "vírgula", como no exemplo: Nova Iguaçu, Duque de Caxias.
-###
+**Código de Barras** — Pesquisa por código de barras, individual ou em lote separando por vírgula (ex.: 776850,434129).
 
-{{:consulta_localidade.png?|200|}}
+**Lista de Táxons** — Pesquisa por táxon completo ou parcial; pode ser individual ou em lote separando por vírgula. Exemplo: LEGUMINOSAE Caesalpinia, STERCULIACEAE Waltheria indica L. É possível marcar o filtro "Apenas com imagem, Typus ou Localização geográfica".
 
-###
-<b>Coletor, Núm. Coleta</b> – A pesquisa pode ser feita separada, resultando numa pesquisa mais abrangente ou conjunta para um melhor refinamento.
-###
+**Área do Mapa** — Pesquisa por área no mapa: dê zoom na região desejada, clique para marcar a área e depois clique em Consultar.
 
-{{:consulta_coletor_numcoleta.png?|200|}}
-
-###
-<b>Tombo</b> – A pesquisa por número de tombo pode ser individual ou em lote de tombos, bastando separá-los por vírgula nesse caso, como no exemplo: 51831,51837,51843.
-###
-
-{{:consulta_tombo.png?|200|}}
-
-###
-<b>Código de Barras</b> – A pesquisa por código de barras pode ser individual ou em lote; separando-os por vírgula nesse caso, como no exemplo: 776850,434129.
-###
-
-{{:consulta_codbarras.png?|200|}}
-
-###
-<b>Lista de Taxons</b> – A pesquisa pode ser feita digitando o táxon completo ou não. Ela pode ainda ser individual ou em lote, separando os táxons por vírgula nesse caso, como no exemplo: LEGUMINOSAE Caesalpinia,STERCULIACEAE Waltheria indica L. Pode-se ainda filtrar a pesquisa para exibir as amostras apenas com imagem. Para tal é só marcar no checkbox <b>Apenas com imagem, Typus ou Localização geográfica</b>.
-###
-
-{{:consulta_listaxon.png?|200|}}
-
-###
-<b>Área do Mapa</b> – A pesquisa na área do mapa é bem simples, dê um zoom até a região desejada e vá clicando até marcar a área que deseja pesquisar, depois clique em consultar para obter o resultado, como no exemplo abaixo.
-###
-
-{{:consulta_areamapa.png?|200|}}
-
-###
-<b>Lembrete</b> – Qualquer consulta pode ser ordenada por <b>táxon, coletor, tombo, código de barras ou data da coleta</b>, para isso é só selecionar no select que fica logo acima do mapa, a ordenação pode ser modificada também quando tem o resultado, para mudar a ordem é só clicar nos títulos <b>núm. tombo, espécime(resumo) ou coleta.</b>
-###
-
-{{:ordenacao.png?|200|}}
+## Ordenação
+Qualquer consulta pode ser ordenada por táxon, coletor, tombo, código de barras ou data da coleta. Selecione a opção no campo acima do mapa. A ordenação pode ser alterada também nos resultados, clicando nos títulos: núm. tombo, espécime (resumo) ou coleta.

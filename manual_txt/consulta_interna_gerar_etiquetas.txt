@@ -1,14 +1,22 @@
-====== Consulta Interna/Gerar etiquetas======
+# Consulta interna e gerar etiquetas (Jabot)
 
-  * Para visualizar todos os itens de sua Base de dados, acesse a consulta interna, no menu Consulta -> Consulta, no campo Base de Dados do formulário de pesquisa, escolha a base desejada e depois clique no botão Consultar.
+## Objetivo
+Visualizar todos os itens de uma base de dados pela consulta interna e gerar etiquetas em PDF para os espécimes selecionados.
 
-  * Para gerar as etiquetas, realize a consulta da base desejada(passo 1), após exibir os resultados, observe na paginação se estão sendo mostrados todos os dados que deseja gerar as etiquetas(escolha a opção que satisfaça todos os dados de sua base - 10, 20, 50, 100 ou todas), feito isso, basta escolher a opção de marcar todos os itens(primeiro quadradinho da barra antes dos resultados), agora basta clicar no botão - Gerar etiquetas para espécimes marcados, Escolha o tamanho da etiqueta desejada e irá abrir um PDF com todas as etiquetas selecionadas.
+## Como acessar no Jabot
+**Consulta > Consulta**
 
+## Passos para visualizar todos os itens de uma base
+1. Acesse **Consulta > Consulta**.
+2. No campo **Base de Dados** do formulário de pesquisa, escolha a base desejada.
+3. Clique no botão **Consultar**.
 
-A imagem abaixo demonstra todos os passos necessário para geração de etiquetas.
-{{ :manual_geraretiquetas.jpg?nolink |}}
+## Passos para gerar etiquetas
+1. Realize a consulta da base desejada (passos acima).
+2. Após exibir os resultados, na paginação escolha quantos itens exibir (10, 20, 50, 100 ou todas) para incluir todos os dados que deseja nas etiquetas.
+3. Marque todos os itens usando o primeiro quadradinho da barra antes dos resultados.
+4. Clique no botão **Gerar etiquetas para espécimes marcados**.
+5. Escolha o tamanho da etiqueta desejada; será aberto um PDF com todas as etiquetas selecionadas.
 
-===== OBS. Sempre que for necessário gerar mais de 10 etiquetas, será solicitado que selecione na opção de ordenação **Emissão de etiqueta (Coletor, número de coleta)** assim todas as etiquetas serão geradas seguindo essa ordenação. Veja a próxima Imagem. =====
-
-{{::ordenacao_etiqueta.jpg?nolink|}}
- 
+## Observação importante
+Sempre que for necessário gerar mais de 10 etiquetas, o sistema solicita que na opção de ordenação seja selecionado **Emissão de etiqueta (Coletor, número de coleta)**. Assim todas as etiquetas serão geradas seguindo essa ordenação.

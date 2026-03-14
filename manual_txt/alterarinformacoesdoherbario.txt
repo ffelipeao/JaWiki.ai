@@ -1,6 +1,15 @@
-====== Adicionar Informações do Herbário ======
+# Adicionar ou alterar informações do herbário (Jabot)
 
-Para adicionar as **Informações sobre a Instituição**, basta acessar o menu **Admin → Configuração**. Você poderá modificar os campos conforme necessário e, em seguida, clicar em **Salvar** no final da página.
+## Objetivo
+Modificar as informações sobre a instituição exibidas na página "Informações do Herbário" (Sobre). Inclui dados cadastrais da instituição.
 
+## Como acessar no Jabot
+**Admin > Configuração**
 
-{{::confdadosobreherbario.png?nolink&1300 |}}
+## Passos
+1. Acesse **Admin > Configuração**.
+2. Localize a seção de informações sobre a instituição/herbário.
+3. Modifique os campos conforme necessário (nome, endereço, contato, etc.).
+4. Clique em **Salvar** no final da página.
+
+Apenas usuários com permissão de Administrador ou Curador têm acesso à tela de configuração.

@@ -1,16 +1,21 @@
-====== Adicionar nova determinação ======
+# Adicionar nova determinação (Jabot)
 
-Existem duas maneiras de adicionar uma nova determinação para a coleção botânica desejada: a simples e a em lote.
+## Objetivo
+Incluir uma nova determinação taxonômica para um ou mais espécimes. Pode ser feita de forma simples (um registro) ou em lote (vários registros).
 
-**Simples:** Como o nome mesmo diz, é muito simples essa opção, na tela de consulta selecione a coleção e preencha pelo menos um campo(tombo ou código de barras) de preferência  e clique no botão consultar. Tendo êxito no resultado, se você tiver permissão para alterar essa determinação é só clicar na seta que aparece ao lado do tombo e escolher a opção "alterar".
-{{:adicionar_determinacao1.png?|}}
-{{:adicionar_determinacao2.png?|}}
+## Como acessar no Jabot
+**Consulta > Consulta** — localize o(s) registro(s); em seguida use a opção ao lado do tombo ou a opção em lote.
 
-Em seguida irá abrir uma página para poder fazer a alteração, clique no botão "adicionar" e irá abrir uma tela para poder pesquisar e preencher os campos da nova determinação, ao final do processo clique no botão "salvar nova determinação".
-{{:adicionar_determinacao3.png?|}}
-{{:adicionar_determinacao4.png?|}}
+## Adicionar determinação – forma simples
+1. Na tela de consulta, selecione a coleção e preencha pelo menos um campo (tombo ou código de barras) e clique em **Consultar**.
+2. Nos resultados, se você tiver permissão para alterar determinação, clique na seta ao lado do tombo e escolha **Alterar**.
+3. Na página aberta, clique no botão **Adicionar**.
+4. Preencha os campos da nova determinação (pesquise e selecione o táxon, etc.) e clique em **Salvar nova determinação**.
 
-**Em Lote:**
-No mesmo processo inicial do simples, na tela de consulta selecione a coleção e preencha pelo menos um campo(tombo ou código de barras) de preferência  e clique no botão consultar. Se você tiver permissão para alterar é só selecionar as determinações que deseja adicionar, clique na opção "em lote" e no link "adicionar determinação". Irá abrir uma tela para poder pesquisar e preencher os campos da nova determinação, ao final do processo clique no botão "salvar nova determinação".
-{{:adicionar_determinacao5.png?|}}
-{{:adicionar_determinacao4.png?|}}
+## Adicionar determinação – em lote
+1. Na consulta, selecione a coleção, preencha pelo menos um campo (tombo ou código de barras) e clique em **Consultar**.
+2. Se você tiver permissão, marque os registros aos quais deseja adicionar a mesma determinação.
+3. Clique na opção **Em lote** e no link **Adicionar determinação**.
+4. Preencha os campos da nova determinação e clique em **Salvar nova determinação**.
+
+A mesma determinação será aplicada a todos os registros selecionados.

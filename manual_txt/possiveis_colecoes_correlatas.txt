@@ -1,8 +1,15 @@
-====== Possíveis coleções correlatas ======
+# Possíveis coleções correlatas (Jabot)
 
-Para cadastrar as possíveis coleções correlatas, acesse o menu **Curadoria - Coleções Correlatas - Possíveis coleções correlatas**, duas listas serão exibidas, **selecione as coleções correlata e principal**, o sistema irá verificar nas coleções se existem testemunhos onde o Nome do Coletor e Número da Coleta sejam iguais, se algum resultado for encontrado, uma lista com os dados da coleção correlata e principal será exibida, basta marcar os itens que deseja cadastrar como correlato e clicar no Botão **Salvar**.
+## Objetivo
+Encontrar e cadastrar em lote possíveis correlatos entre duas coleções: o sistema busca testemunhos com mesmo Nome do Coletor e Número da Coleta nas duas coleções; o usuário marca os pares que deseja cadastrar como correlatos.
 
+## Como acessar no Jabot
+**Curadoria > Coleções Correlatas > Possíveis coleções correlatas**
 
-{{::possiveis_correlatas.jpg?800|}}
-
-**Obs.  As duas primeiras colunas a esquerda na imagem acima fazem referência a coleção correlata selecionada e as outras 2 fazem referência a coleção principal.**
+## Passos
+1. Acesse **Curadoria > Coleções Correlatas > Possíveis coleções correlatas**.
+2. Duas listas são exibidas: selecione a **coleção correlata** e a **coleção principal**.
+3. O sistema verifica se existem testemunhos com mesmo Coletor e Número da Coleta nas duas coleções.
+4. Se houver resultado, será exibida uma lista (duas colunas à esquerda = correlata; duas à direita = principal).
+5. Marque os itens que deseja cadastrar como correlatos.
+6. Clique no botão **Salvar**.

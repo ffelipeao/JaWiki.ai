@@ -1,9 +1,18 @@
-==== Planilhas: ====
+# Planilhas – resumo (Jabot)
 
-  * Após o login, acesse o menu Espécime -> Validar Planilha .
-  * Baixe a planilha padrão aqui.
-  * Toda Planilha enviada tem que estar no formato .xls e todas as colunas devem ser iguais a planilha padrão.
-  * O padrão taxonômico é o da Lista do Brasil.
-  * Coordenadas devem ser preenchidas com ',' e não com '.' .
-  * Espaços no nome de um mesmo autor devem ser retirados.
-  * O Padrão do nome da base gerado pelo sistema é: Coletas + Seu Login + Data atual
+## Objetivo
+Resumo das regras e do fluxo para enviar planilhas ao Jabot para validação e importação.
+
+## Como acessar no Jabot
+**Espécime > Validar Planilha**
+
+## Regras gerais
+- Após o login, acesse **Espécime > Validar Planilha**.
+- Baixe a planilha padrão na própria tela.
+- A planilha enviada deve estar no formato .xls e todas as colunas devem ser iguais à planilha padrão.
+- Padrão taxonômico: Lista do Brasil.
+- Coordenadas: use vírgula (,) e não ponto (.).
+- Espaços no nome de um mesmo autor devem ser retirados.
+- Padrão do nome da base gerado pelo sistema: Coletas + Seu Login + Data atual.
+
+Para o processo completo de validação e importação, consulte o tópico **Validar planilha** no manual.

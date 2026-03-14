@@ -1,23 +1,19 @@
-====== Controle de Lâminas da Xiloteca ======
-###
-Acesse o menu <b>Curadoria / Controle de Lâminas (Xiloteca)</b>, A funcionalidade de Controle de Lâmina (Xiloteca) foi criada para a inclusão das imagens das lâminas nos diferentes tipos de cortes.
-Na parte inicial da tela (Figura 1) encontramos duas opções de consultas: pelo código de barras do testemunho (Código Testemunho) ou pelo número da lâmina. Caso necessário, sugerimos verificar exemplos na xiloteca do RB, buscando na coleção Xiloteca e Apenas com Imagem.
-###
+# Xiloteca – controle de lâminas (Jabot)
 
-Para o cadastro de uma lâmina deve-se proceder da seguinte forma:
+## Objetivo
+Incluir e gerenciar informações e imagens das lâminas da coleção de Xiloteca (cortes: tangencial, transversal, radial). Consulta por código de barras do testemunho ou número da lâmina; exclusão de lâminas também disponível.
 
-1.	Carregar com a conta de FTP a imagem;
+## Como acessar no Jabot
+**Curadoria > Controle de Lâminas (Xiloteca)**
 
-2.	Registrar na segunda caixa de texto (Lâmina) o valor de identificação da lâmina para o corte, por exemplo, 21335-1;
+## Consulta
+Duas opções na tela: **Código de barras do testemunho** (Código Testemunho) ou **Número da lâmina**. Exemplo: na xiloteca do RB, buscar na coleção Xiloteca com filtro "Apenas com Imagem".
 
-3.	Marcar o tipo de corte ao lado (tangencial, transversal ou radial);
+## Cadastro de uma lâmina
+1. Envie a imagem via FTP para o servidor.
+2. Na tela **Curadoria > Controle de Lâminas**, preencha o código de barras (se consultar por testemunho) e consulte.
+3. No cadastro, preencha o campo **Lâmina** com o valor de identificação do corte (ex.: 21335-1).
+4. Marque o tipo de corte: tangencial, transversal ou radial.
+5. Clique em **Salvar**.
 
-4.	Clicar em Salvar.
-
-Na tela de Controle de Lâminas também é possível realizar a exclusão das lâminas.
-
-
-
-<b>Figura 1 - Tela de Controle de Lâminas da Xiloteca</b>
-
-{{:controle_laminas.png|}}
+Na mesma tela é possível excluir lâminas cadastradas.

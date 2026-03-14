@@ -1,7 +1,15 @@
-====== Coleção correlata com diferença na determinação ======
+# Coleção correlata com diferença na determinação (Jabot)
 
-Para atualizar as coleções correlatas com diferença nas determinações, acesse o menu **Curadoria - Coleções Correlatas - com diferença na determinação**, selecione a "Coleção Botânica (Correlata)", que será atualizada, e a "Coleção Botânica (principal)", melhor classificada, se algum resultado for encontrado uma lista com os dados da coleção correlata e principal será exibida. Basta marcar os itens que deseja aceitar a determinação da coleção principal e clicar no botão **Salvar**, uma nova determinação será cadastrada para cada item da coleção correlata selecionada exatamente como consta na coleção principal.
+## Objetivo
+Atualizar registros de uma coleção correlata usando a determinação da coleção principal (melhor classificada). O sistema lista pares correlata/principal com determinações diferentes; o usuário marca os itens em que aceita a determinação da coleção principal e uma nova determinação é cadastrada na correlata.
 
-{{::diferenca_determinacao.jpg?|}}
+## Como acessar no Jabot
+**Curadoria > Coleções Correlatas > com diferença na determinação**
 
-**Obs.  As duas primeiras colunas a esquerda na imagem acima fazem referência a coleção correlata selecionada e as outras 2 fazem referência a coleção principal.**
+## Passos
+1. Acesse **Curadoria > Coleções Correlatas > com diferença na determinação**.
+2. Selecione a **Coleção Botânica (Correlata)** que será atualizada.
+3. Selecione a **Coleção Botânica (principal)** (melhor classificada).
+4. Se houver resultados, será exibida uma lista com dados da coleção correlata e da principal (duas colunas à esquerda = correlata; duas à direita = principal).
+5. Marque os itens em que deseja aceitar a determinação da coleção principal.
+6. Clique no botão **Salvar**. Uma nova determinação será cadastrada para cada item selecionado, igual à da coleção principal.

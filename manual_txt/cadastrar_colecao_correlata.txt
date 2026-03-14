@@ -1,24 +1,15 @@
-====== Coleção Correlata ======
+# Cadastrar coleção correlata (Jabot)
 
-Para cadastrar os registros que possuem uma coleção correlata, basta efetuar login no sistema, consultar o registro desejado e depois basta clicar no botão com o número tombo que algumas opções serão listadas. Dentre elas temos a opção "Coleções Correlatas" (Imagem 1). 
+## Objetivo
+Cadastrar a associação entre um registro e seus exemplares correlatos (mesma coleta em outra coleção). O fluxo é: consultar o registro, abrir Coleções Correlatas e informar os tombos ou códigos de barras dos correlatos.
 
-Ao clicar sobre ela você será redirecionado para a tela de cadastrado. Nela, temos um resumo do registro selecionando e um campo que pode ser preenchido com os possíveis exemplares correlatos separado por vírgula. Exemplo: "RBv 5220, 930907". Observe que nesse caso estamos cadastrando um registro pelo número de tombo e outro pelo código de barras. Obs. O número tombo precisa vir com a sigla da coleção, já o código de barras apenas os números. Após isso, basta clicar no botão Salvar que a relação será criada e os registros associados serão exibidos logo abaixo (Imagem 2).
+## Como acessar no Jabot
+**Consulta > Consulta** — localize o registro; clique no número do tombo e selecione **Coleções Correlatas**.
 
+## Passos
+1. Consulte o registro desejado (**Consulta > Consulta**).
+2. Clique no número do tombo e escolha **Coleções Correlatas**.
+3. Na tela exibida, preencha o campo com os exemplares correlatos separados por vírgula (ex.: "RBv 5220, 930907" — tombo com sigla da coleção, código de barras só números).
+4. Clique em **Salvar**. Os registros associados serão exibidos abaixo.
 
-**Imagem 1**
-{{::correlata_1.jpg|}}
-
-
-**Imagem 2**
-{{::correlata_2.jpg|}}
-
-
-
-**Obs. Temos outras funções sobre coleções correlatas que podem ser úteis. Elas estão disponíveis nos seguintes links:**
-
-[[colecao_correlata_com_diferenca_na_determinacao|Coleção correlata com diferença na determinação]]
-
-[[possiveis_colecoes_correlatas|Possíveis coleções correlatas]]
-
-[[incluir_especie_via_correlata|Registrar Espécime Via Coleção Correlata]]
-
+Consulte no manual: Coleção correlata com diferença na determinação, Possíveis coleções correlatas, Registrar espécime via coleção correlata.

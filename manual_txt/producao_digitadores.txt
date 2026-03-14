@@ -1,3 +1,10 @@
-====== Produção Digitadores ======
+# Produção de digitadores (Jabot)
 
-{{::captura_de_tela_2023-09-05_131707.png|}}
+## Objetivo
+Acompanhar a produção (quantidade de registros cadastrados ou alterados) dos digitadores ou usuários do sistema, em geral por período. A tela exibe relatório ou painel com essa informação.
+
+## Como acessar no Jabot
+Acesso pelo menu **Admin** ou **Curadoria**, na opção **Produção Digitadores** (ou equivalente conforme a instalação). Consulte o menu do Jabot na sua instituição para o caminho exato.
+
+## Uso
+Na tela é possível filtrar por usuário, período e tipo de operação para visualizar o total de registros cadastrados ou alterados.

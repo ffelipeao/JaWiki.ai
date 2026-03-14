@@ -1,23 +1,20 @@
-====== Controle de Lâminas (Xiloteca) ======
+# Controle de lâminas (Xiloteca) (Jabot)
 
-A funcionalidade de Controle de Lâmina (Xiloteca) foi criada para a inclusão das informações sobres os diferentes tipos de cortes das lâminas da coleção de Xiloteca.
+## Objetivo
+Incluir e consultar informações sobre os tipos de corte das lâminas da coleção de Xiloteca (tangencial, transversal, radial). Acesso por código de barras do testemunho ou número da lâmina; também é possível excluir lâminas.
 
-O acesso a esta funcionalidade é feito pelo menu "Curadoria / Controle de Lâminas (Xiloteca)".
+## Como acessar no Jabot
+**Curadoria > Controle de Lâminas (Xiloteca)**
 
-Na parte inicial da tela (Figura 1) encontramos duas opções de consultas: pelo código de barras do testemunho ou pelo número da lâmina. Caso necessário, sugerimos verificar exemplos na xiloteca do RB, buscando na coleção Xiloteca e Apenas com Imagem.
+## Consulta
+Na parte inicial da tela há duas opções: consulta pelo **código de barras do testemunho** ou pelo **número da lâmina**. Exemplo de uso: na xiloteca do RB, buscar na coleção Xiloteca com filtro "Apenas com Imagem".
 
-Para o cadastro de uma lâmina deve-se proceder da seguinte forma: 
-  - Carregar com a conta de FTP as imagens para o servidor;
-  - Preencha o campo **código de barras** referente ao testemunho que deseja cadastrar e clique em "**Consultar**";
-  - Registrar na parte de cadastro, caixa de texto (Lâmina), o valor de identificação da lâmina para o corte, por exemplo, 21335-1;
-  - Marcar o tipo de corte ao lado (tangencial, transversal ou radial);
-  - Clicar em Salvar.
+## Cadastro de uma lâmina
+1. Envie as imagens para o servidor (conta FTP).
+2. Na tela **Curadoria > Controle de Lâminas**, preencha o campo **código de barras** do testemunho e clique em **Consultar**.
+3. No cadastro, preencha o campo **Lâmina** com o valor de identificação do corte (ex.: 21335-1).
+4. Marque o tipo de corte: tangencial, transversal ou radial.
+5. Clique em **Salvar**.
 
-Na tela de Controle de Lâminas também é possível realizar a exclusão das lâminas.
-
-
-----
-**Figura 1 - Tela de Controle de Lâminas da Xiloteca**
-
-{{::laminas.png|}}
-
+## Exclusão
+Na mesma tela de Controle de Lâminas é possível excluir lâminas cadastradas.

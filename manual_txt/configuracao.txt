@@ -1,75 +1,25 @@
-====== Configuração ======
+# Configuração (Jabot)
 
-Na tela de configuração do sistema você pode definir os dados cadastrais de sua instituição e também deixar predefinido como o sistema deve se comportar em algumas situações.
+## Objetivo
+Definir dados cadastrais da instituição e o comportamento do sistema em várias situações: validação/importação de planilha, coordenadas obrigatórias, validação de localidade, logos e importador de planilha. Acesso restrito a Administrador/Curador.
 
+## Como acessar no Jabot
+**Admin > Configuração**
 
-====== Validação de Planilha ======
+## Validação de planilha
+- **Validar e importar planilha de uma só vez (MARCADA):** o usuário valida a planilha e, se não houver erros, um botão **Importar** é exibido; ele pode importar na hora.
+- **Validar e importar em duas etapas (DESMARCADA):** o usuário só valida e clica em **Enviar**; os dados ficam pendentes até quem tem permissão **Importador de Planilha** concluir em **Espécime > Importar Planilha**. O importador recebe e-mail automático (verifique spam).
 
-É possível definir que o sistema de importação de planilha funcione de duas maneiras:
-  - Validar e importar planilha de uma só vez.
-  - Validar e importar planilha em duas etapas.
+Outras opções na mesma seção: **Substituir táxon com sp.**; preenchimento automático de autor para espécies da Lista Flora2020; **Impedir a validação de número de coleta para o coletor na mesma coleção botânica** (desmarcado = não duplicar; marcado = permitir duplicações).
 
-Quando a opção **"Validar e importar planilha de uma só vez"** está **MARCADA** (ver imagem), o usuário depois que validar a planilha, pode escolher importar os dados, se nenhum tipo de erro for encontrado em sua planilha. Funciona da seguinte maneira, primeiro é necessário validar os dados e depois de corrigir todos os erros, um botão "Importar" na parte superior direita será exibido, para importar, basta clicar nesse botão.
+## Importador de planilha
+Se o sistema estiver em duas etapas: **Espécime > Importar Planilha**. Lista de planilhas pendentes; clique no nome da base, confira se necessário (pode excluir registros), depois **Importar**. O dono da planilha recebe e-mail quando a importação for concluída.
 
+## Coordenadas obrigatórias
+Em **Admin > Configuração**: marque "Definir coordenadas como obrigatórias" e preencha "Ano para iniciar a validação de coordenadas obrigatórias". Ex.: ano 2020 — apenas coletas com ano >= 2020 terão coordenadas obrigatórias.
 
-Quando a opção **"Validar e importar planilha de uma só vez"** está **DESMARCADA**, o processo de importação **funciona em duas etapas**. Com essa opção o usuário comum não consegue importar a planilha, ele apenas valida e envia para importação. Quando ele terminar de validar um botão **Enviar** será exibido, ao clicar nesse botão, os dados ficam em estado de espera, até que o responsável por importar conclua o processo (O responsável é definido na tela de permissões de usuário, quem estiver com a permissão de **Importador de Planilha** marcada).
+## Validar localidade com coordenadas
+Marque "Validar localidade informada com a localidade referente às coordenadas". Com isso, a importação só é aceita quando a localidade das coordenadas coincidir com country, majorarea, minorarea. Ajuste coordenadas ou localidade na planilha conforme necessário.
 
-Essa configuração só pode ser feita por quem tem a permissão de Administrador/Curador do sistema. 
-
-Acesse o menu **Admin/Configuração**, vá até a parte de "Configurações para importação de planilha" e **marque ou desmarque** a opção "**Validar e importar planilha de uma só vez**". O ajuste deve ser feito para configurar o sistema de acordo com a descrição anterior.
-
-Obs. Quando o usuário envia a planilha, o sistema automaticamente envia um e-mail para a pessoa responsável, informando que existe uma planilha pendente de importação. Para utilizar essa opção de configuração acesse o menu **Admin->Configuração** e marque ou desmarque a opção **Validar e importar planilha de uma só vez** dependendo de como queira utilizar.
-
-Outra opção muito importante é a **Substituir táxon com sp.**. O usuário ao marcar essa opção, irá substituir os táxons que estejam com sp no processo de importação da planilha.
-
-É possível também configurar o sistema para fazer o preenchimento automático do autor para espécies presentes na Lista da Flora2020, para isso é só marcar a opção.
-
-E por fim, também é possível configurar o sistema para impedir a validação de número de coleta a fim de permitir que os números fiquem duplicados na mesma coleção. Funciona da seguinte maneira, para **não** duplicar é só deixar **desmarcada** a opção **Impedir a validação de número de coleta para o coletor na mesma coleção botânica**, caso queira **permitir** as duplicações basta **marcar** a opção **Impedir a validação de número de coleta para o coletor na mesma coleção botânica**.
-
-{{:configuracao1.png?|}}
-;#;
-**Figura 1 - Configurações**
-;#;
-
-
-
-====== Importador de Planilha ======
-
-Caso o sistema esteja configurado para funcionar conforme a descrição da opção 2, algum usuário precisará ficar responsável por concluir o processo de importação. O importador de planilha receberá um e-mail automático do sistema, sempre que uma planilha for validada (é importante conferir a caixa de spam do e-mail). 
-
-Para concluir a importação, basta acessar o menu **Espécime/Importar Planilha**, caso existam planilhas aguardando a importação, uma tela será exibida com a lista de planilhas disponíveis, com seus respectivos nomes de base, informados durante a validação. 
-Basta clicar no nome da base desejada, e em seguida, uma outra tela será exibida com informações mínimas sobre a planilha, caso seja necessário uma breve conferência. Será possível excluir algum registro se for necessário, basta marcar os registros e clicar no botão "**Excluir**". 
-
-Para concluir a importação clique em "**Importar**", ao final do processo uma mensagem de sucesso será exibida e o dono da planilha receberá um e-mail automático informando que a planilha foi importada.
-
-====== Coordenadas Obrigatórias ======
-
-O sistema também oferece a opção para definir o campo de coordenadas como obrigatório.
-Para isso, basta acessar  o menu **Admin/Configuração**, marcar a opção "Definir coordenadas como obrigatórias" e digitar o ano de coleta cujas coordenadas serão obrigatórias, preenchendo o campo "Ano para iniciar a validação de coordenadas obrigatórias". Exemplo: Se for definido o ano de 2020 como ano inicial para validar as coordenas, apenas as coletas com ano igual ou superior a 2020 terão esse dado como obrigatório.
-
-Veja a imagem com o modelo de preenchimento:
-
-{{:coordenadas_obrigatorias.jpg|}}
-
-
-====== Validar localidade informada com a localidade referentes as coordenadas. ======
-
-Também temos a opção para definir como obrigatório a validação das localidades informadas com as localidades referentes as coordenadas. Para habilitar essa verificação basta marcar o campo "Validar localidade informada com a localidade referente as coordenadas". Com esse campo marcado o sistema só aceitará a importação de planilha quando as localidades referentes as coordenadas forem as mesmas das localidades informadas. A correção poderá ser feita ao corrigir as coordenadas ou alterar a localidade informada nos campos "country", "majorarea", "minorarea".
-
-Veja a imagem com o modelo de preenchimento:
-
-{{::coordenadas_localidades.jpg|}}
-
-
-====== Enviar Logo ======
-
-Para que sua logo marca apareça no sistema, você pode fazer o upload da imagem pela tela de configuração, acesse o menu **Admin/Configuração** e escolha qual logo deseja carregar(logo da instituição principal, logo para o menu, logo da etiqueta ou logo da instituição acima). Ao final do processo basta clicar no botão "Salvar" e para excluir as imagem basta clicar na lixeira.
-
-**Obs:**
-  * As imagens devem ter a extensão **JPG** ou **PNG**.
-  * A logo para etiqueta obrigatoriamente deve ter a extensão **JPG**.
-  * Tendo em vista as diferentes medidas da logo escolhida para etiqueta nas diferentes instituições, tornou-se necessário a configuração da largura e altura de cada logo. Sendo assim, com esse ajuste o sistema adotará essas medidas no momento da gerar as etiquetas.
-
-**Figura 1 - Escolher e enviar logo**
-
-{{::jabot_-_cadastro_de_configuracao_-_google_chrome.jpg|}}
+## Enviar logo
+**Admin > Configuração**: escolha qual logo carregar (instituição principal, menu, etiqueta, instituição acima). Formatos: JPG ou PNG; logo para etiqueta obrigatoriamente JPG. Pode configurar largura e altura da logo da etiqueta. Para excluir: use o ícone da lixeira. Clique em **Salvar** ao final.

@@ -1,44 +1,20 @@
-====== Configuração Planilha ======
+# Configuração para importação de planilha (Jabot)
 
-É possível definir que o sistema de importação de planilha funcione de duas maneiras:
-  - Validar e importar planilha de uma só vez.
-  - Validar e importar planilha em duas etapas.
+## Objetivo
+Definir se a importação de planilha será em uma etapa (validar e importar de uma vez) ou em duas etapas (validar e depois importador conclui). Inclui coordenadas obrigatórias e validação de localidade. Apenas Administrador/Curador.
 
-Quando a opção **"Validar e importar planilha de uma só vez"** está **MARCADA** (ver imagem), o usuário depois que validar a planilha, pode escolher importar os dados, se nenhum tipo de erro for encontrado em sua planilha. Funciona da seguinte maneira, primeiro é necessário validar os dados e depois de corrigir todos os erros, um botão "Importar" na parte superior direita será exibido, para importar, basta clicar nesse botão.
+## Como acessar no Jabot
+**Admin > Configuração** — seção "Configurações para importação de planilha"
 
+## Opção "Validar e importar planilha de uma só vez"
+- **MARCADA:** após validar e corrigir todos os erros, o botão **Importar** aparece; o usuário pode importar na hora.
+- **DESMARCADA:** processo em duas etapas. O usuário só valida e clica em **Enviar**; os dados ficam pendentes. Quem tem permissão **Importador de Planilha** conclui em **Espécime > Importar Planilha** (recebe e-mail automático; conferir spam).
 
-Quando a opção **"Validar e importar planilha de uma só vez"** está **DESMARCADA**, o processo de importação **funciona em duas etapas**. Com essa opção o usuário comum não consegue importar a planilha, ele apenas valida e envia para importação. Quando ele terminar de validar um botão **Enviar** será exibido, ao clicar nesse botão, os dados ficam em estado de espera, até que o responsável por importar conclua o processo (O responsável é definido na tela de permissões de usuário, quem estiver com a permissão de **Importador de Planilha** marcada).
+## Importador de planilha (quando em duas etapas)
+Acesse **Espécime > Importar Planilha**. Liste as planilhas pendentes, clique no nome da base, confira os registros (pode excluir algum), depois **Importar**. O dono da planilha recebe e-mail ao concluir.
 
-Essa configuração só pode ser feita por quem tem a permissão de Administrador/Curador do sistema. 
+## Coordenadas obrigatórias
+Em **Admin > Configuração**: marque "Definir coordenadas como obrigatórias" e preencha "Ano para iniciar a validação de coordenadas obrigatórias". Apenas coletas com ano igual ou superior ao informado terão coordenadas obrigatórias.
 
-Acesse o menu **Admin/Configuração**, vá até a parte de "Configurações para importação de planilha" e **marque ou desmarque** a opção "**Validar e importar planilha de uma só vez**". O ajuste deve ser feito para configurar o sistema de acordo com a descrição anterior.
-
-
-{{::confplanilha1.jpg?1500|}}
-
-====== Importador de Planilha ======
-
-Caso o sistema esteja configurado para funcionar conforme a descrição da opção 2, algum usuário precisará ficar responsável por concluir o processo de importação. O importador de planilha receberá um e-mail automático do sistema, sempre que uma planilha for validada (é importante conferir a caixa de spam do e-mail). 
-
-Para concluir a importação, basta acessar o menu **Espécime/Importar Planilha**, caso existam planilhas aguardando a importação, uma tela será exibida com a lista de planilhas disponíveis, com seus respectivos nomes de base, informados durante a validação. 
-Basta clicar no nome da base desejada, e em seguida, uma outra tela será exibida com informações mínimas sobre a planilha, caso seja necessário uma breve conferência. Será possível excluir algum registro se for necessário, basta marcar os registros e clicar no botão "**Excluir**". 
-
-Para concluir a importação clique em "**Importar**", ao final do processo uma mensagem de sucesso será exibida e o dono da planilha receberá um e-mail automático informando que a planilha foi importada.
-
-====== Coordenadas Obrigatórias ======
-
-O sistema também oferece a opção para definir o campo de coordenadas como obrigatório.
-Para isso, basta acessar  o menu **Admin/Configuração**, marcar a opção "Definir coordenadas como obrigatórias" e digitar o ano de coleta cujas coordenadas serão obrigatórias, preenchendo o campo "Ano para iniciar a validação de coordenadas obrigatórias". Exemplo: Se for definido o ano de 2020 como ano inicial para validar as coordenas, apenas as coletas com ano igual ou superior a 2020 terão esse dado como obrigatório.
-
-Veja a imagem com o modelo de preenchimento:
-
-{{:coordenadas_obrigatorias.jpg|}}
-
-
-====== Validar localidade informada com a localidade refente as coordenadas. ======
-
-Também temos a opção para definir como obrigatório a validação das localidades informadas com as localidades refentes as coordenadas. Para habilitar essa verificação basta marcar o campo "Validar localidade informada com a localidade refente as coordenadas". Com esse campo marcado o sistema só aceitará a importação de planilha quando as localidades referentes as coordenadas forem as mesmas das localidades informadas. A correção poderá ser feita ao corrigir as coordenadas ou alterar a localidade informada nos campos "country", "majorarea", "minorarea".
-
-Veja a imagem com o modelo de preenchimento:
-
-{{::coordenadas_localidades.jpg|}}
+## Validar localidade com coordenadas
+Marque "Validar localidade informada com a localidade referente às coordenadas". O sistema só aceita a importação quando as localidades das coordenadas forem as mesmas das informadas nos campos country, majorarea, minorarea. Corrija coordenadas ou localidade na planilha conforme necessário.

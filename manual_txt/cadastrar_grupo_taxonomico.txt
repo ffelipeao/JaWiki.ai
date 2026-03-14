@@ -1,10 +1,13 @@
-===== Cadastrar Grupo Taxonômico =====
+# Cadastrar grupo taxonômico (Jabot)
 
+## Objetivo
+Informar ou corrigir o grupo taxonômico associado a uma família. O sistema possui rotina noturna que carrega automaticamente o grupo taxonômico para famílias que ainda não têm; esta tela serve para correção ou cadastro manual quando necessário.
 
-O sistema tem uma rotina que carrega toda noite o grupo taxonômico para as famílias que ainda não tem uma grupo taxonômico cadastrado. 
+## Como acessar no Jabot
+**Taxonomia > Cadastrar Grupo Taxonômico**
 
-Em caso de correção ou em uma necessidade de informar o grupo taxonômico manualmente, basta acessar o menu **Taxonomia-Cadastrar Grupo Taxonômico**, selecione a família desejada e o grupo correspondente e clique no botão Salvar.
-
-//**Veja a imagem demonstrativa.**//
-
-{{:grupo_taxonomico.jpg?700|}}  
+## Passos
+1. Acesse **Taxonomia > Cadastrar Grupo Taxonômico**.
+2. Selecione a família desejada.
+3. Selecione o grupo correspondente.
+4. Clique no botão **Salvar**.

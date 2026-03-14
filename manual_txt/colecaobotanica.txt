@@ -1,23 +1,20 @@
-====== Coleção Botânica ======
+# Coleção botânica (Jabot)
 
-Para cadastrar/alterar uma Coleção Botânica, Clique no menu **Espécime-Coleção Botânica**, nesse tela será possível ver todas as coleções já cadastradas. 
-   - Para alterar basta clicar no nome da coleção que o sistema será redirecionado para a tela de alteração.
-  
-{{:colecao.jpg?nolink|}}
+## Objetivo
+Cadastrar ou alterar uma Coleção Botânica. Na tela são listadas todas as coleções já cadastradas; é possível alterar uma existente ou criar uma nova e configurar o sequencial de número de tombo.
 
+## Como acessar no Jabot
+**Espécime > Coleção Botânica**
 
-  - Para cadastrar uma coleção nova basta clicar no botão **Nova Coleção** e será redirecionado para a tela de cadastro.  
+## Alterar uma coleção
+Na tela de Coleção Botânica, clique no nome da coleção desejada; o sistema redireciona para a tela de alteração. Faça as alterações e salve.
 
-Preencha todos os campos, como na figura a seguir. 
+## Cadastrar nova coleção
+1. Acesse **Espécime > Coleção Botânica**.
+2. Clique no botão **Nova Coleção**.
+3. Preencha todos os campos obrigatórios na tela de cadastro.
+4. Configure o controle de número de tombo (veja abaixo) e clique em **Salvar**.
 
-{{::cadcolecao.jpg|}}
-
-
-
-**Obs. É possível configurar a coleção para seguir o mesmo sequencial de número tombo de uma coleção já cadastrada ou iniciar um novo sequencial.** 
-
-Opções para controle de número de tombo:
-
-   * **Opção 1** - Para utilizar a mesma sequencia de números de uma coleção, basta selecionar na opção 1 a coleção de referencia (principal). Dessa forma, caso a coleção de referência já esteja no número de tombo 100 o próximo número a ser gerado na coleção que está sendo criada, será o 101. O mesmo número será incrementado conforme o cadastro for sendo realizado em casa coleção.
-   * **Opção 2** - Para iniciar um novo sequencial, basta informar o número inicial desta sequencia na opção 2. No exemplo da imagem anterior, o primeiro número de tombo a ser criado será o 1000.
-
+## Controle de número de tombo
+- **Opção 1 – Mesma sequência:** Selecione na opção 1 a coleção de referência (principal). A nova coleção passará a usar a mesma sequência; por exemplo, se a referência está no tombo 100, o próximo tombo na nova coleção será 101, incrementando em cada cadastro.
+- **Opção 2 – Novo sequencial:** Informe o número inicial na opção 2. O primeiro tombo criado nessa coleção será o número informado (ex.: 1000).

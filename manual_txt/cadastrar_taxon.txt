@@ -1,13 +1,20 @@
-====== Cadastrar Táxon ======
+# Cadastrar táxon (Jabot)
 
-Para cadastrar um novo táxon, acesse o menu **Taxonomia/Cadastrar Táxon**, preencher os campos de acordo o nível do táxon que desejado, seguindo as seguinte descrição:
+## Objetivo
+Cadastrar um novo táxon (família, gênero, espécie, subespécie, variedade ou forma) no sistema para uso nas determinações e registros.
 
-  * Para cadastrar uma nova Espécie - Selecione a família, o gênero, a unidade taxonômica correspondente (Espécie), preencha o nome da espécie no campo **Táxon**, o nome do autor no campo **Autor** e clique em **Salvar**.
-  * Para cadastrar um novo Gênero - Selecione a família, a unidade taxonômica correspondente (Gênero), preencha o nome do Gênero no campo **Táxon** e clique em **Salvar**.
-  * Para cadastrar uma nova Família - Selecione a unidade taxonômica correspondente (Família), preencha o nome da Família no campo **Táxon** e clique em **Salvar**.
-  * Para cadastrar Subespécie/Variedade/Forma - Selecione a família, o gênero, a espécie, a unidade taxonômica correspondente, preencha o nome da Subespécie/Variedade/Forma no campo **Táxon**, o nome do autor no campo **Autor** e clique em **Salvar**.
+## Como acessar no Jabot
+**Taxonomia > Cadastrar Táxon**
 
+## Passos por nível taxonômico
 
-Obs. Para cadastrar família e gênero não é necessário informar o nome do autor.
+**Nova Espécie:** Selecione a família, o gênero e a unidade taxonômica "Espécie". Preencha o campo **Táxon** com o nome da espécie e o campo **Autor** com o nome do autor. Clique em **Salvar**.
 
-{{::cadastrar_taxon.jpg?direct|}}
+**Novo Gênero:** Selecione a família e a unidade taxonômica "Gênero". Preencha o campo **Táxon** com o nome do gênero. Clique em **Salvar**. (Autor não é obrigatório para gênero.)
+
+**Nova Família:** Selecione a unidade taxonômica "Família". Preencha o campo **Táxon** com o nome da família. Clique em **Salvar**. (Autor não é obrigatório para família.)
+
+**Subespécie / Variedade / Forma:** Selecione família, gênero, espécie e a unidade taxonômica correspondente (Subespécie, Variedade ou Forma). Preencha o campo **Táxon** e o campo **Autor**. Clique em **Salvar**.
+
+## Observação
+Para família e gênero não é necessário informar o nome do autor.

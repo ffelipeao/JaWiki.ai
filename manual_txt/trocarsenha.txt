@@ -1,3 +1,17 @@
-====== Alterar senha ======
-{{::alterar_senha.png?}}
-Para alterar a senha de para seu login, acesse o menu Admin / Usuário. Preencha por nome ou login e clique em Filtrar. Depois clique no nome do usuário e Editar usuário. Depois clique em Trocar Senha
+# Alterar senha (Jabot)
+
+## Objetivo
+Permitir alterar a senha do login no Jabot. O usuário pode trocar a própria senha pelo menu Admin (ou o administrador pode alterar a senha de outro usuário).
+
+## Como acessar no Jabot
+**Admin > Usuário**
+
+## Passos para alterar a senha
+1. Acesse o menu **Admin > Usuário**.
+2. Preencha por nome ou login e clique em **Filtrar**.
+3. Clique no nome do usuário desejado.
+4. Clique em **Editar usuário**.
+5. Clique em **Trocar Senha** e preencha a nova senha.
+
+## Observação
+Para quem esqueceu a senha e não está logado, use **Esqueci minha senha** na tela de login; o sistema enviará um link de redefinição por e-mail.

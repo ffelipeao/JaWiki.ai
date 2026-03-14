@@ -1,15 +1,14 @@
-====== Trocar Base atual ======
+# Trocar base atual (Jabot)
 
-Para cadastrar novos registros e trabalhar em uma base de dados, é necessário que ela seja selecionada como base de dados atual. Clique no menu **Espécime/Trocar base atual**, depois selecione a base de dados desejada através da lista de bases de dados e clique em **Salvar**, repare que a partir de agora logo a baixo do menu a base de dados atual sempre estará visível, demostrando em qual base você está trabalhando no momento.
+## Objetivo
+Para cadastrar novos registros e trabalhar em uma base de dados específica, ela precisa estar selecionada como base de dados atual. A base atual fica visível logo abaixo do menu.
 
-Veja as Imagens na ordem das seleções para trocar de base:
+## Como acessar no Jabot
+**Espécime > Trocar base atual**
 
-  * Selecionar no menu **Trocar base atual**. 
-  {{::baseatual.jpg?direct|}}
-  * Selecionar a base de dados desejada e **Salvar**. 
-  {{::trocarbase.jpg?direct|}}
-  * Ver base de dados em uso.
-  {{::baseatual.2jpg.jpg?direct|}}
+## Passos para trocar a base atual
+1. Clique no menu **Espécime > Trocar base atual**.
+2. Selecione a base de dados desejada na lista de bases de dados.
+3. Clique em **Salvar**.
 
-
-
+A partir daí a base de dados atual ficará sempre visível abaixo do menu, mostrando em qual base você está trabalhando.

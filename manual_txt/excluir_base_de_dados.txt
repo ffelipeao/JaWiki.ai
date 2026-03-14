@@ -1,18 +1,23 @@
-====== Excluir Base de Dados ======
+# Excluir base de dados (Jabot)
 
-Para excluir uma base de dados basta acessar o Menu "Espécime/Base de Dados", localizar a base de dados que deseja excluir, marcar a caixa de seleção e clicar no botão "Excluir", como na imagem abaixo.
+## Objetivo
+Excluir uma base de dados e, opcionalmente, todos os registros associados a ela. Esta ação não pode ser desfeita.
 
-{{::excluir_base_de_dados.jpg|}}
+## Como acessar no Jabot
+**Espécime > Base de Dados**
 
-Após isso, um alerta de confirmação será exibido com a seguinte mensagem "Confirma a exclusão desta base de dados e todos os seus registros? Obs. Esta ação NÃO poderá ser desfeita.", caso deseje confirmar, basta marcar a caixa de seleção com a mensagem "Excluir todos os registros associados a esta base de dados?" e clicar no botão "Excluir", como na imagem abaixo.
+## Passos para excluir uma base de dados
+1. Acesse **Espécime > Base de Dados**.
+2. Localize a base de dados que deseja excluir.
+3. Marque a caixa de seleção dessa base.
+4. Clique no botão **Excluir**.
+5. No alerta de confirmação, leia a mensagem: "Confirma a exclusão desta base de dados e todos os seus registros? Obs. Esta ação NÃO poderá ser desfeita."
+6. Se confirmar, marque a caixa "Excluir todos os registros associados a esta base de dados?" e clique em **Excluir**.
 
-{{::confirmar_excluir_base_dados.jpg|}}
+## Permissão necessária
+O botão Excluir só aparece para usuários com a permissão **Excluir espécime**. Para solicitar: fale com o Curador ou Administrador do Jabot na sua instituição.
 
-====== Atenção ======
+Para o administrador atribuir a permissão: **Admin > Usuário** > clique no nome do usuário > **Permissões** > marque **Assistente de curadoria – excluir espécime**. O usuário precisa fazer novo login para a funcionalidade ficar disponível.
 
-O botão de excluir só será visível para usuários com a permissão de "Excluir espécime", essa opção pode ser solicitada ao Curador/Administrador do Jabot em sua instituição.
- 
-Para atribuir a permissão de "Excluir espécime" a algum usuário, basta acessar o menu "Admin/Usuário", clicar sobre o nome do usuário que deseja atribuir esta opção, clicar sobre o botão "Permissões" e marcar a opção "Assistente de curadoria – excluir espécime".
-Após isso, basta solicitar que o usuário faça um novo login no sistema que a funcionalidade estará disponível.
-
-**Cuidado!** Usuários com essa opção habilitada poderão excluir as bases de dados com todos os registros.
+## Cuidado
+Usuários com essa permissão podem excluir bases de dados com todos os registros. Use com responsabilidade.

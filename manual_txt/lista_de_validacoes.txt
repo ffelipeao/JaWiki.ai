@@ -1,94 +1,10 @@
-====== Lista de validações feitas no processo de importação de planilha ======
+# Lista de validações na importação de planilha (Jabot)
 
-Para facilitar o entendimento do processo de importação de planilha, seguem abaixo as validações que são feitas.
+## Objetivo
+Referência das validações feitas durante o processo de importação de planilha, para facilitar a correção de erros antes de importar.
 
-|< 100% 50px - 5em 10em 10% >|
-^ Nr ^ Validação ^
-| 1  | Valida se a planilha enviada está no formato padrão. |
-| 2  | Verifica obrigatoriedade dos campos que compõem o táxon (se informar um deve informar o outro). Exemplo, espécie sem o gênero OU gênero sem família; |
-|    | 2.1 - Verifica se a família foi informada para verificar o gênero. |
-|    | 2.2 - Verifica se a família não está vazia no táxon. |
-|    | 2.3 - Verifica se o gênero não está vazio no táxon. |
-|    | 2.4 - Verifica se a espécie não está vazia no táxon. |
-|    | 2.5 - Verifica se o autor não está vazio no táxon. |
-| 3  | Verifica se a família existe na Flora do Brasil. |
-| 4  | Verifica se a família existe no jabot. |
-| 5  | Verifica o Gênero e a Família no jabot. |
-| 6  | Verifica o Gênero e a Família na Flora do Brasil. |
-| 7  | Verifica a Família, Gênero, Espécie e autor no Jabot. |
-| 8  | Verifica a Família, Gênero, Espécie e autor na Flora do Brasil. |
-| 9  | Verifica o táxon completo quanto é informado rank1. |
-| 10 | Valida autor no Jabot. |
-| 11 | Verifica se o autor está correto para o epíteto (gênero e espécie) e informa o autor sugerido de acordo com a Flora do Brasil. |
-| 12 | Verifica se o campo país está preenchido. |
-| 13 | Verifica se o país existe no JABOT. |   
-|14| Verifica se o campo Estado foi preenchido – obrigatório. |
-|15| Verifica se o Estado e existe no JABOT. |
-|16| Verifica se o campo cidade foi preenchido – obrigatório. |
-|17| Verifica se a Cidade e existe no JABOT. |
-|18| Verifica se existe Grau/Min/N.S. |
-|19| Verifica se as coordenadas coincidem com a unidade geopolítica informada.  |
-|20| Verificar se o campo lat_min é menor que zero ou maior que 59. |
-|21| Verificar se o campo lat_grau é menor que zero ou maior que 90. |
-|22| Verifica longitude Grau/Min/ E.W. |
-|23| Converte coordenadas GMS para GrauDecimal (Converte apenas para verificar o ponto, não salva como GrauDecimal). |
-|24| Retira símbolos dos campos de coordenadas. Exemplo, grau (º), minuto (‘) e segundo(’’). |
-|25| Verifica valores válidos no campo N.S. |
-|26| Verifica valores válidos no campo E.W. |
-|27| Verifica se as coordenadas foram encontradas e informa unidade geopolítica sugerida. |
-|28| O Campo long_min não pode ser menor que zero nem maior que 59. |
-|29| O Campo long_grau não pode ser menor que zero nem maior que 180. |
-|30| Verifica se o NRDUPS é numérico. |
-|31| Valida o ano "detyy" da determinação em quatro dígitos. |
-|32| Valida o ano "detyy" da determinação se é numérico. |
-|33| Valida o ano "detyy" da determinação se não é maior que o ano atual. |
-|34| Verifica se o mês da determinação "detmm" está correto (de 1 a 12).  |
-|35| Verifica se o mês determinação "detmm" se é numérico. |
-|36| Verifica se o mês da determinação "detmm" tem 2 dígitos. |
-|37| Verifica se o dia da determinação "detdd" está correto.  |
-|38| Verifica se o dia da determinação "detdd" se é numérico. |
-|39| Verifica se o dia da determinação "detdd" tem 2 dígitos. |
-|40| Verifica se a data de coleta foi informada – Obrigatório. |
-|41| Verifica se o dia da coleta "colldd" está correto. |
-|42| Verifica se o dia da coleta "colldd" se é numérico. |
-|43| Verifica se o dia da coleta "colldd"  tem 2 dígitos. |
-|44| Verifica se o mês da coleta "collmm" está correto. |
-|45| Verifica se o mês da coleta "collmm" se é numérico. |
-|46| Verifica se o mês da coleta "collmm"  tem 2 dígitos. |
-|47| Verifica se o ano da coleta "collyy" está correto. |
-|48| Verifica se o ano da coleta "collyy" tem 4 dígitos. |
-|49| Verifica se o ano da coleta "collyy" se é numéricos. |
-|50| Verifica se o ano da coleta "collyy" se não é maior que o ano atual. |
-|51| Verifica se a data de determinação é menor do que a data de coleta. |
-|52| Caso exista data de determinação é preciso informar a data da coleta. |
-|53| Verifica se foi informada a data de determinação e não foi informada data de coleta. |
-|54| Verifica datas informadas em romano e converte para numérico (correção automática). |
-|55| Verifica se o coletor foi informado – obrigatório. |
-|56| Verifica se existe o número da coleta – obrigatório. |
-|57| Verifica se o número de coleta já existe para o mesmo coletor em determinada coleção. |
-|58| Verifica se o número de coleta já existe para o mesmo coletor na própria planilha. |
-|59| Verifica se o nome do coletor principal aparece como coletor adicional. |
-|60| Verifica se o tipo de rank informado é válido. Ex: var., f., ssp. ou Infr. |
-|61| Valida campo "unidmedaltura"  se a unidade de medida informada existe cadastrada no banco (Também converte de ‘m’ para ‘m.’). |
-|62| Valida campo "unidmedaltprof"  se a unidade de medida informada existe cadastrada no banco. |
-|63| Converte "unidmedaltprof" de ‘m’ para ‘m.’, formato padrão. |
-|64| Verifica o preenchimento correto dos campos altprof e altprofmax (para o caso de informar altprofmax e não informar altprof, nesse caso o sistema já pega a informação de altprofmax e transfere para altprof). |
-|65| Verifica se o campo altprof está recebendo um valor numérico. |
-|66| Verifica se o campo altprofmax está recebendo um valor numérico. |
-|67| Verifica se o foi informado unidade de medida e não foi informado altprox ou altprofmax. |
-|68| Verifica se o foi informado unidmedaltura e não foi informado altura. |
-|69| Valida campo "flor". Exemplo, se foi marcado com um ‘x’. |
-|70| Valida campo "fruto". Exemplo, se foi marcado com um ‘x’. |
-|71| Testa Nome Base de Dados (para não ter conflito no caso de já existir uma base com o mesmo nome). |
-|72| Retira espaços dados no inicio e no final dos campos de textos. |
-|73| Sugere Família de acordo com Flora do Brasil, passando gênero e espécie. |
-|74| Verifica se o campo número tombo é do tipo inteiro |
-|75| Verifica se o Tombo já existe do sistema para não duplicar |
-|76| Verifica se o tombo está duplicado na própria planilha |
-|77| Verifica se o tombo já está sendo usado no processo de importação. Para o caso da importação de planilha estar dividida em 2 etapas e o segundo passo ainda não tenha sido executado, caso alguém tente mandar uma nova planilha com o mesmo número. |
-|78| Verifica se o autor está correto para o epíteto (gênero e espécie) e informa o autor sugerido de acordo com Jabot de cada herbário.|
-|79| Verifica se a família existe no Catalogue Of Life. |
-|80| Verifica se o gênero existe no Catalogue Of Life. |
-|81| Verifica se a espécie existe no Catalogue Of Life. |
-|82| Verifica se o autor existe no Catalogue Of Life. Caso o autor informado seja diferente do que consta no Catalogue Of Life, uma mensagem é exibida sugerido o nome do autor com base no Catalogue. |
+## Onde usar
+Ao validar uma planilha em **Espécime > Validar Planilha**, o sistema aplica estas regras. Erros (X) devem ser corrigidos; alertas (!) podem ser revisados. A lista completa está disponível no manual online do Jabot (lista de validações).
 
+## Exemplos de validações
+Formato padrão da planilha; obrigatoriedade e consistência do táxon (família, gênero, espécie, autor); existência da família/gênero/espécie na Flora do Brasil e no Jabot; país, estado e cidade preenchidos e existentes no Jabot; coordenadas (Grau/Min/Seg, N/S, E/W, valores válidos, conversão GMS-decimal); coincidência das coordenadas com a unidade geopolítica; altitude/profundidade; campos de coleta (coletor, número, data); e outras regras específicas. Para a lista completa e atualizada, consulte a documentação oficial do Jabot (Lista de validações).

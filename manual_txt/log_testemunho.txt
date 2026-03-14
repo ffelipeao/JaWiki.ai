@@ -1,11 +1,10 @@
-====== Log Testemunho ======
+# Log testemunho (Jabot)
 
-A tela de "Log testemunho" foi criada com o objetivo de manter um histórico das operações (inclusão, alteração e exclusão) que os usuários pode realizar no sistema.
-Esta funcionalidade pode ser usada também para gerar um relatório com o total de registros que foram cadastrados nos sistema por um usuário ou um período. Sendo assim, uma vez que o sistema já esteja em uso, será possível utilizar essa função para saber tudo que está ocorrendo.
+## Objetivo
+Manter histórico das operações (inclusão, alteração e exclusão) realizadas pelos usuários nos registros. Também permite gerar relatórios com o total de registros cadastrados por usuário ou por período.
 
-Para acessar esta funcionalidade basta clicar no menu "Admin/Log testemunho" e aplicar os filtros para buscar todos as informações pertinentes, como pode ser visto na Figura 1.
+## Como acessar no Jabot
+**Admin > Log testemunho**
 
-**Figura 1 - Resultado de consulta na tela de Log testemunho.**
-
-{{::log_testemunho.png|}}
- 
+## Uso
+Acesse **Admin > Log testemunho** e aplique os filtros (usuário, período, tipo de operação, etc.) para buscar as informações desejadas. Os resultados mostram o histórico de alterações nos testemunhos.

@@ -1,6 +1,19 @@
-====== Coleção Correlata ======
+# Coleção correlata (Jabot)
 
-===== Coleção correlata com diferença na determinação =====
+## Objetivo
+Cadastrar a relação entre um registro e seus exemplares correlatos (ex.: mesmo número de coleta em outra coleção – herbário e arboreto). Outras funções relacionadas: coleção correlata com diferença na determinação, possíveis coleções correlatas e registrar espécime via coleção correlata.
 
+## Como acessar no Jabot
+**Consulta > Consulta** — localize o registro; clique no número do tombo e escolha **Coleções Correlatas**.
 
+## Passos para cadastrar coleção correlata
+1. Efetue login e consulte o registro desejado em **Consulta > Consulta**.
+2. Clique no botão com o número do tombo; na lista de opções, clique em **Coleções Correlatas**.
+3. Na tela de cadastro: confira o resumo do registro e preencha o campo com os possíveis exemplares correlatos, separados por vírgula.
+4. Exemplo: "RBv 5220, 930907" — pode usar número de tombo (com sigla da coleção) e código de barras (apenas números).
+5. Clique em **Salvar**. A relação será criada e os registros associados aparecerão logo abaixo.
 
+## Outras funções sobre coleções correlatas
+- Coleção correlata com diferença na determinação.
+- Possíveis coleções correlatas.
+- Registrar espécime via coleção correlata (incluir espécie via correlata).

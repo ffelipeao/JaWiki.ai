@@ -1,16 +1,19 @@
-====== Consulta Interna ======
-=== Utilizando filtros ===
-Preencha os campos e em seguida clique o botão [Consultar].
-  * Exemplo de consulta:  Todos os registros da coleção **RB**, gênero **Aecmea**, família **Bromeliaceae** da localidade **Bahia** que possuem imagem **ordenado pelo coletor**. 
-{{:manual_consultainterna01.png?|}}
-  * Número da coleta, número de tombo e código de barra - É permitido colocar valores separados por virgula. Ex.: "746886, 304985" no campo **Código de Barra**. 
-  * Registro de uma base de dados. No campo base de dados, selecione a base que deseja consultar e clique no botão consulta. A lista das bases é composta pelas que o usuário possui acesso. Podemos utilizar os outros filtros em conjunto com a base de dados. Ex.: Todos os registros da base **Inventário Arboreto** da que possui informação no campo Plantado por = **'Nicoletti"**.
-{{::manual_consultainterna02.png?|}}
-  * Utilizando Shapes na consulta - O sistema disponibiliza alguns shapefiles para realização de consulta. Apenas os registros georeferenciados serão utilizados na consulta. Ex.: **Bromeliacea** no bioma **Caatinga** (RJ).
-{{::manual_consultainterna03.png?|}}
-  * Ficha do espécime - Para gerar a ficha do espécime, clique no **número do código de barras**.
-{{::manual_consultainterna04.png?|}}
-{{:manual_consultainterna05.png?|}}
+# Consulta Interna (Jabot)
 
-  * Seção/Canteiro - Utilize os caracteres / ou - para separar os valores da seção e canteiro. Exemplo 20/E, 14-A.
- 
+## Objetivo
+Realizar consultas internas no Jabot utilizando filtros (base de dados, coleção, gênero, família, localidade, etc.) e acessar a ficha do espécime. Também permite usar shapes (mapas) na consulta.
+
+## Como acessar no Jabot
+**Consulta > Consulta**
+
+Preencha os campos desejados e clique no botão **Consultar**.
+
+## Exemplos de uso
+- Consulta por base de dados: no campo **Base de dados** selecione a base desejada e clique em **Consultar**. A lista de bases é composta pelas que o usuário possui acesso. Outros filtros podem ser usados em conjunto (ex.: todos os registros da base "Inventário Arboreto" com o campo Plantado por = "Nicoletti").
+- Exemplo de consulta com filtros: todos os registros da coleção **RB**, gênero **Aecmea**, família **Bromeliaceae**, localidade **Bahia**, com imagem, ordenado pelo coletor.
+- Número da coleta, número de tombo e código de barra: é permitido colocar valores separados por vírgula (ex.: no campo **Código de Barra**: "746886, 304985").
+- Utilizando Shapes na consulta: o sistema disponibiliza shapefiles para consulta. Apenas registros georreferenciados são considerados. Ex.: **Bromeliaceae** no bioma **Caatinga** (RJ).
+- Seção/Canteiro: use os caracteres / ou - para separar seção e canteiro (ex.: 20/E, 14-A).
+
+## Ficha do espécime
+Para abrir a ficha do espécime, clique no **número do código de barras** do registro na lista de resultados.

@@ -1,13 +1,16 @@
-====== Migrar Dados Entre Espécies na Flora do RJ ======
+# Migrar dados entre espécies na Flora (Jabot)
 
-Esta funcionalidade tem como objetivo permitir migrar os dados relacionados a uma espécie (Ex. Distribuição Geográfica, Tipo de Vegetação, Unidade de Conservação, Status de Conservação e etc) a outra no Catálogo da Flora do RJ.
+## Objetivo
+Migrar dados associados a uma espécie no Catálogo da Flora (ex.: Flora do RJ) para outra espécie: distribuição geográfica, tipo de vegetação, unidade de conservação, status de conservação, etc. Os dados da espécie de origem passam a constar na espécie de destino; os dados que já estavam na espécie de destino permanecem.
 
-Para migrar dados entre espécies e outra no catálogo da Flora do RJ, basta logar no sistema e acessar o menu "Flora/Rio de Janeiro/Migrar dados entre espécies". Uma nova tela será aberta exibindo 2 campos de seleção, basta selecionar a "Espécies de Origem" (que possui todos os dados que deseja migrar), a "Espécie Destino" (Que receberá os novos dados) e clicar no botão "Enviar".
+## Como acessar no Jabot
+**Flora > [Nome da Flora, ex.: Rio de Janeiro] > Migrar dados entre espécies**
 
-Ao final do processo, todos os dados que constavam associados a espécie de origem passarão a fazer parte da espécie de destino.
+## Passos
+1. Efetue login e acesse o menu **Flora** e a opção correspondente (ex.: **Rio de Janeiro > Migrar dados entre espécies**).
+2. Na tela serão exibidos dois campos de seleção.
+3. Selecione a **Espécie de Origem** (que possui os dados a migrar).
+4. Selecione a **Espécie Destino** (que receberá os dados).
+5. Clique no botão **Enviar**.
 
-Obs. Os dados que já estavam associados a espécie de destino permanecerão associados a ela.
-
-Veja a imagem a seguir com um exemplo de preenchimento.
-
-{{::migrar_dados_flora.jpg|}}
+Ao final, todos os dados associados à espécie de origem passarão a fazer parte da espécie de destino. Os dados já associados à espécie de destino permanecem.

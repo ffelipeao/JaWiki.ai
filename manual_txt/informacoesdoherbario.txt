@@ -1,8 +1,9 @@
-====== Informações do Herbário ======
+# Informações do herbário (Jabot)
 
-Acessando o menu **Sobre → Informações do Herbário**, você terá acesso a uma tela com **Informações sobre a Instituição**, incluindo alguns dados da própria Instituição, além dos nomes dos Colaboradores e Curador.
+## Objetivo
+Visualizar as informações públicas sobre a instituição: dados da instituição, colaboradores e curador.
 
+## Como acessar no Jabot
+**Sobre > Informações do Herbário**
 
-{{:informacoessobreinstituicao.png?nolink&1300 |}}
-
-
+Não é necessário login para acessar essa tela. Nela são exibidas as informações sobre a instituição cadastradas no Jabot, incluindo colaboradores e curador. Para alterar essas informações, use **Admin > Configuração** (acesso de curador/administrador).

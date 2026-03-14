@@ -1,0 +1,14 @@
+# Parceiros (Jabot)
+
+## Objetivo
+Consultar instituições parceiras que utilizam o sistema Jabot: visualizar logos e estatísticas de dados cadastrados por herbário.
+
+## Como acessar no Jabot
+- **Parceiros > Logos** — visualização dos logos das instituições parceiras.
+- **Parceiros > Estatísticas dos dados** — quantidade de dados cadastrados por instituição (última alteração e número de registros).
+
+## Onde fica no menu
+Menu principal: **Parceiros**. Em seguida escolha **Logos** ou **Estatísticas dos dados**.
+
+## Informação útil para o usuário
+As instituições parceiras aparecem listadas com: sigla do herbário, nome completo, data da última alteração e quantidade de registros. A lista é atualizada conforme os herbários utilizam o Jabot.

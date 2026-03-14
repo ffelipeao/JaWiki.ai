@@ -1,57 +1,25 @@
-====== Arboreto Consulta ======
-=== Este item permite a pesquisa diretamente no mapa do arboreto (no exemplo o do Jardim Botânico) por indivíduos e localização.===
- \\ 
-{{ :arboreto_1.png?nolink |}}
- \\ 
-===Clicando no botão amarelo ( + ) a direita do botão Consultar, são apresentadas as formas de consultas disponíveis que podem ser por : Canteiro, Nome Popular, Coletor ou Homenagem.===
- \\ 
-{{ :arboreto_2.png?nolink |}}
- \\ 
-===Você também pode pesquisar usando o botão do polígono disponível para pesquisas por área. O resultado da busca é exibido no mapa com as ocorrências. ===
- \\ 
-{{ ::arboreto_3.png?nolink |}}
+# Arboreto – consulta e mapa (Jabot)
 
-=== Ao clicar em um indivíduo (ponto) serão exibidas informações sobre a ocorrência. ===
- \\ 
-{{ ::arboreto_4.png?nolink |}}
- \\ 
+## Objetivo
+Pesquisar no arboreto (coleção viva) diretamente no mapa: por indivíduos, localização, canteiro, nome popular, coletor, homenagem ou por área (polígono). Com login, é possível acessar o mapa interno para informar ou alterar coordenadas e usar recursos como Coleções Correlatas, Enviar Imagem, Gerar Duplicata, Alterar e Excluir.
 
-====== Mais campos para consulta: ======
-=== Com o objetivo de melhorar a experiência do usuário, foi incluído nas opções de consulta do sistema, um filtro do tipo "ComboBox". Onde o usuário tem a opção de selecionar um dos campos adicionais que ele deseje utilizar em suas buscas dentro do Arboreto. Esse recurso é oferecido, para que seja possível incluídos recursos complementares como opção de consulta, sem a necessidade de "poluir" o layout da tela.===
-=== Para fazer uso, o usuário precisa clicar o botão de mais opções ("+"), selecionar o campo desejado em "Selecione um Campo", preencher o valor desejado no campo texto ao lado e clicar em "Consultar", que caso exista algum resulta será exibido na tela. ===
+## Como acessar no Jabot
+- **Arboreto** (menu principal) — consulta no mapa do arboreto (ex.: Jardim Botânico).
+- **Arboreto > Mapa Arboreto Interno** — após login; mapa interno com edição de coordenadas e botões de ação.
 
-{{ ::maisfiltros.png |}}
+## Formas de consulta no arboreto
+- Clicando no botão **+** (amarelo) à direita do botão Consultar, são exibidas as opções: Canteiro, Nome Popular, Coletor ou Homenagem.
+- Botão de polígono: pesquisa por área; o resultado é exibido no mapa com as ocorrências.
+- Ao clicar em um indivíduo (ponto) no mapa, são exibidas as informações da ocorrência.
 
-====== Busca por Proximidade de Palavras: ======
+## Mais campos para consulta
+Clique no botão **+** (mais opções), em "Selecione um Campo" escolha o campo desejado, preencha o valor no campo de texto ao lado e clique em **Consultar**.
 
-===Caso existam dúvidas sobre a escrita correta da palavra a ser aplicada em uma das opções de buscas, é possível ativar a opção de busca por proximidade de palavras ("soundex"). Com esse recurso ativado, mesmo que exista algum erro na escrita do dado que deseja usar no filtro, o sistema aplica a função "soundex" que encontrará apenas os dados que possuam alguma familiaridade com o dado informado. Por se tratar de uma busca por proximidade fonética, é esperado como parte dos resultados valores cujas palavras possuam sons similares ao que foi consultado.  ===
+## Busca por proximidade de palavras (soundex)
+Ative "Ativar busca por proximidade de palavras (soundex)" quando houver dúvida na escrita. O sistema encontra dados com familiaridade fonética ao informado. Aplicável aos campos Táxon, Nome Popular, Coletor e Homenagem. Ex.: buscar "MiRTACEAE" pode encontrar "MYRTACEAE".
 
-===Para efetuar uma busca pelo nome científico de uma família e fique na dúvida da forma correta de escrita, basta clicar na opção "Ativar busca por proximidade de palavras ("soundex")" e digitar o nome da família desejada que, mesmo se a escrita possuir algum erro, o sistema aplicará uma busca por proximidade das palavras. Assim, ao analisar os resultados será possível identificar o nome correto e efetuar uma nova consulta mais exata por ele. === 
-
-=== Ex: Caso seja aplicada uma consulta por "MYRTACEAE" e acabe escrevendo "MiRTACEAE" o sistema será capaz de encontrar os testemunhos cadastrados com o nome correto. Na próxima imagem é possível ver que o sistema encontrou as ocorrências de "MYRTACEAE", mesmo tendo usado a palavra "MiRTACEAE" na busca. ===
-===Obs. Esse funcionalidade pode ser aplicada aos campos "Táxon, Nome Popular, Coletor e Homenagem". ===
-
-{{:busca_por_proximidade.png|}}
-=== Outras formas de consulta no Arboreto são apresentadas em Consultas / Arboreto. ===
-
-====== Mapa do Arboreto Interno ======
-
-=== Além de todas as funcionalidades descritas anteriormente, temos algumas outras que só podem ser acessadas efetuando "Login" no sistema. Após informar seu usuário e senha, basta clicar no menu "Arboreto / Mapa Arboreto Interno" que o mapa será carregado. ===
-
-{{::arboretointerno.png|}}
-
-===Através desse mapa é possível informar as coordenadas de um espécime, que já esteja cadastrado, apenas clicando no local do mapa desejado e informando o código de barras que corresponde ao espécime.===
-
-{{::arboretointerno_alter.png|}}
-
-=== Caso o registro desejado já possua suas coordenadas associadas, basta "localizar", "clicar", "arrastar" e "soltar" no local do mapa que for mais adequado. Assim, uma mensagem será exibida com a seguinte mensagem "Deseja alterar as coordenadas do tombo (XXXX) para Lat: XXXX e Long: XXXX ?", se tudo estiver correto, basta clicar no Botão "Alterar".   ===
-
-{{::arboretointerno_alter_v2.png|}}
-
-=== Com o mapa interno também é possível fazer uso de alguns botões com recursos para ajudar nas operações com os dados. Para ter acesso a essas funcionalidades basta clicar em um dos botões disponíveis. Ex. Coleções Correlatas, Enviar Imagem, Gerar Duplicata, Alterar e Excluir.  ===
-
-{{::arboretointerno_alter_botoes.png|}}
-
-
-
-
+## Mapa do Arboreto Interno (com login)
+1. Efetue login e acesse **Arboreto > Mapa Arboreto Interno**.
+2. Informar coordenadas de um espécime já cadastrado: clique no local do mapa e informe o código de barras do espécime.
+3. Alterar coordenadas existentes: localize o registro, clique, arraste e solte no novo local; confirme na mensagem "Deseja alterar as coordenadas do tombo (XXXX) para Lat: XXXX e Long: XXXX?" clicando em **Alterar**.
+4. Botões disponíveis no mapa interno: Coleções Correlatas, Enviar Imagem, Gerar Duplicata, Alterar e Excluir.

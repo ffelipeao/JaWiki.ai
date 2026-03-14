@@ -1,21 +1,21 @@
-====== Editar Dados do Usuário ======
-###
-Para editar os dados do usuário, vá em menu <b>Admin->usuário</b>, pesquise o usuário desejado por "nome" ou "login" e clique em filtrar, clique no nome e em seguida no botão <b>Editar Usuário</b>.
-###
-{{:editar_usuario1.png?}}
-###
-<b>Figura 1 - Tela Pesquisa de Usuário</b>
-###
+# Editar dados do usuário (Jabot)
 
-###
-Tela de editar usuário aberta é só fazer as alterações necessárias e clicar no botão <b>Salvar</b>, o botão <b>Desativar</b> tira o acesso do usuário que não vai utilizar mais o sistema e o botão <b>Trocar Senha</b>, é uma opção que o adm do sistema usa para auxiliar o usuário.
-###
-{{:editar_usuario2.png?}}
-###
-<b>Figura 2 - Tela Editar Dados do Usuário</b>
-###
+## Objetivo
+Alterar dados cadastrais de um usuário, desativar acesso ou trocar a senha (com auxílio do administrador).
 
-{{:editar_usuario3.png?}}
-###
-<b>Figura 3 - Tela Recadastramento de Usuário</b>
-###
+## Como acessar no Jabot
+**Admin > Usuário**
+
+## Passos para editar um usuário
+1. Acesse **Admin > Usuário**.
+2. Pesquise o usuário por "nome" ou "login" e clique em **Filtrar**.
+3. Clique no nome do usuário na lista.
+4. Clique no botão **Editar Usuário**.
+5. Na tela de edição, faça as alterações necessárias e clique em **Salvar**.
+
+## Outras opções na tela de edição
+- **Desativar** — remove o acesso do usuário que não utilizará mais o sistema.
+- **Trocar Senha** — opção para o administrador auxiliar o usuário a redefinir a senha.
+
+## Recadastramento
+Em certas situações o sistema exibe a tela de Recadastramento de Usuário (por exemplo após um ano de cadastro); siga as instruções na tela para concluir.

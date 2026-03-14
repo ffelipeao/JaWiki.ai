@@ -1,22 +1,15 @@
-====== Alterar dados ======
+# Alterar dados de um registro (Jabot)
 
-Para alterar um registro já cadastrado no sistema, basta seguir os seguintes passos:
-Ao efetuar login no sistema com seu usuário e senha, acesse o menu **Consulta/Consulta**, como consta na imagem 1. Preencha um dos campos de consulta pra localizar o registro que deseja alterar e clique em **Consultar** (ex. tombo = 1000), como consta na imagem 2. Quando a tela e o resulta da consulta for exibido, clique sobre o botão que apresenta o número tombo e vá na opção **Alterar**, como consta na imagem 3. Logo em seguida uma nova tela será aberta com os campos editáveis, basta localizar o campo que deseja alterar, inserir os novos dados e clicar no botão **Salvar**, como consta na Imagem 4.
+## Objetivo
+Alterar um registro (testemunho) já cadastrado no sistema: localizar o registro pela consulta e abrir a tela de edição.
 
+## Como acessar no Jabot
+**Consulta > Consulta**
 
-
-  * Imagem 1 (Menu **Consulta/Consulta**):
-
-{{::consulta_consulta.jpg|}}
-
-  * Imagem 2 (**Exemplo de Filtro**)
-
-{{::filtro.jpg|}}
-
-  * Imagem 3 (**Abrindo a opção de alterar**)
- 
-{{::resultado.jpg|}}
-
-  * Imagem 4 (**Editar e Salvar dados**)
-
-{{::salvardados.jpg|}}
+## Passos para alterar um registro
+1. Efetue login no sistema.
+2. Acesse **Consulta > Consulta**.
+3. Preencha um ou mais campos de consulta para localizar o registro (ex.: tombo = 1000) e clique em **Consultar**.
+4. Nos resultados, clique no botão que apresenta o número do tombo do registro desejado.
+5. Escolha a opção **Alterar** no menu que aparecer.
+6. Na tela de edição, localize o campo que deseja alterar, insira os novos dados e clique em **Salvar**.

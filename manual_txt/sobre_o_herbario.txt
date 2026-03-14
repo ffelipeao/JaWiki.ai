@@ -1,18 +1,14 @@
-====== Sobre a Instituição ======
+# Sobre a instituição / Informações do herbário (Jabot)
 
-A página "Sobre a Instituição" é um local para acesso público das informações básicas sobre a Instituição e seus colaboradores.
+## Objetivo
+A página "Sobre a Instituição" (ou Informações do Herbário) exibe informações básicas da instituição e colaboradores para acesso público. Os dados são preenchidos no cadastro da instituição no Jabot e podem ser atualizados na configuração.
 
-O preenchimento dessa página é feito com informações que são enviadas no momento do cadastro da Instituição no Jabot.
-Após o primeiro cadastro, esses dados também podem ser atualizados na tela de configuração de cada instituição (menu: Admin/Configuração), **Figura 1**. A página Sobre a Instituição será exibida nas opções sem login sistema (menu: Sobre/Informações do Herbário), e vista como na **Figura 2**.
+## Como acessar no Jabot
+- **Sobre > Informações do Herbário** — visualização pública (sem login).
+- **Admin > Configuração** — para editar os dados da instituição (curador/administrador).
 
-**Figura 1 - Página de configuração com dados da Instituição.**
- 
-{{::tela_configuracao.jpg|}}
+## Conteúdo exibido
+Informações sobre a instituição, nomes dos colaboradores e do curador. A lista de colaboradores é gerada a partir dos usuários cadastrados no sistema que têm o campo "staff" marcado no cadastro. Opcionalmente preencha o campo "Especialidade" para cada usuário para destacar a atividade na instituição.
 
-
-**Figura 2 - Sobre a Instituição.**
-
-{{::sobre_a_instituicao.jpg|}}
-
-
-A **lista de colaboradores** é gerada a medida que cada usuário é cadastro no sistema e o campo "staff" é marcado em seu cadastro. Se necessário, também é possível preencher o campo "Especialidade" para destacar a especialidade/atividade que cada usuário exerce na Instituição. Para mais informações consulte o manual sobre como cadastrar [[cadastrarusuario|novos usuários]].
+## Como atualizar
+Após o primeiro cadastro, os dados podem ser atualizados em **Admin > Configuração**, na seção de dados da instituição. Para cadastrar novos usuários e marcar como staff, consulte o manual em **Cadastrar usuário**.

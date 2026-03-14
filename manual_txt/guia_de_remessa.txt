@@ -1,45 +1,27 @@
-====== Guia de Remessa ======
+# Guia de remessa (Jabot)
 
-O sistema de gerencialmente de guias de remessa foi desenvolvido buscando facilitar o controle de empréstimos e doações.
+## Objetivo
+Gerenciar guias de remessa para controle de empréstimos e doações de espécimes. Cadastrar, alterar, receber (devolução) e atualizar duplicatas dos testemunhos da guia.
 
-Para cadastrar/alterar uma nova guia de remessa, acesse o menu **Curadoria/Guia Remessa**, como mostra a **imagem 1**, uma nova tela será aberta e caso já exista alguma guia cadastrada, uma lista de guias será exibida, como mostra a **imagem 2**. 
+## Como acessar no Jabot
+**Curadoria > Guia Remessa**
 
+## Listar e filtrar guias
+Ao acessar **Curadoria > Guia Remessa** é exibida a lista de guias (se houver). Filtros disponíveis: Nº da Guia, Ano, Código de barras, Tipo de Remessa, Situação. Preencha e clique em **Filtrar**. Cores: verde = no prazo ou devolvida; vermelha = vencida.
 
-**Imagem 1**
+## Cadastrar nova guia
+1. **Curadoria > Guia Remessa** > botão **Novo**.
+2. Preencha os campos. Para instituição destinatária: preencha **Sigla/Nome** e clique em **Buscar**; se não existir, cadastre em **Curadoria > Instituição**.
+3. Em "Selecione a instituição para destinatário", escolha a instituição.
+4. Informe os códigos dos registros (tombo ou código de barras; vários separados por vírgula).
+5. Selecione **Tipo remessa**. Ajuste **Data para devolução** se necessário (padrão: um ano).
+6. Clique em **Salvar**.
 
-{{::menu_-_guia_de_remessa.jpg?300|}}
+## Alterar guia
+**Curadoria > Guia Remessa** > clique no link na coluna **Nº/Ano** da guia. Atualize as informações ou acrescente itens (código de barras ou tombo) e clique em **Salvar**.
 
-**Imagem 2**
+## Receber guia (devolução total ou parcial)
+Como na alteração, abra a guia. Na tela dos itens, marque o checkbox ao lado de cada item devolvido e clique no botão **Receber**. Na coluna "Forma de Remessa" aparecerá **Devolução** para os itens recebidos.
 
-{{::lista_-_guia_de_remessa.jpg?800|}}
-
-É possível aplicar alguns **filtros para localizar uma guia especifica**, filtros como pelo **Nº da Guia, Ano, Código de barras, Tipo de Remessa e Situação** estão disponíveis, basta preencher as informações nos campo adequados e clicar no botão **Filtrar**. O sistema também faz uso de cores intuitivas para dizer se a guia está no prazo ou vencida, as verdes estão no prazo ou já foram devolvidas e as vermelhas estão vencidas.
-
-====== Cadastrar Nova Guia ======
-
-
-
-Para **cadastrar uma nova guia de remessa**, basta acessar o menu **Curadoria/Guia Remessa**, clicar no botão **Novo**, uma nova tela será aberta, preencha os campos com as informações solicitadas. Para evitar ter que preencher diversas vezes as informações da instituição, é necessário utilizar a busca pela sigla da instituição, para isso basta preencher o campo **Sigla/Nome** e em seguida clicar no botão **Buscar**, caso a instituição ainda não esteja cadastrada, acesse o menu **Curadoria/Instituição** e realize o cadastro completo da instituição. Após buscar pela sigla da instituição, uma nova caixa de seleção será exibida na tela com os resultados encontrados, com a seguinte informação "Selecione a instituição para destinatário", clica na lista e selecione a instituição de destino. Para concluir a criação da guia de remessa, basta informar os códigos de registros que deseja cadastrar, isso pode ser feito pelos campos de número tombo ou de código de barras, lembrando que para mais de um envio é possível digitar vários de uma só vez, bastando apenas separa por vírgula. Antes de finalizar é necessário selecionar o tipo de remessa, para isso clique no campo **Tipo remessa** e escolher uma das opções. Como padrão o sistema coloca a data de devolução para um ano, se necessário é possível alterar clicando no campo **Data para devolução**. Para finalizar o processo, basta clicar no botão **Salvar**. A **Imagem 3** mostra um exemplo com as informações básicas para o cadastro com sucesso de uma nova guia de remessa.
-
-====== Alterar Guia de Remessa ======
-
-Sempre que for necessário **alterar uma guia de remessa**, basta acessar o menu **Curadoria/Guia Remessa**, uma tela listando todas as guias já cadastradas será exibida, clique sobre o link na coluna da tabela **Nº/Ano**, assim o sistema será direcionado para tela com todas as informações referentes aquela guia. Cadastre as novas informações ou acrescente os novos itens pelos campos de **código de barras ou de número tombo** e depois clique no botão **Salvar**.
-
-====== Receber Guia de Remessa ======
-Para registrar que uma remessa foi devolvida, **total ou parcial**, basta seguir os passos como se fosse alterar uma guia (descrito no item anterior), na tela onde aparecem todos os itens, como mostra a (**imagem 3**), basta marcar o cheque liste que fica ao lado do numero de cada item, e clicar no botão **Receber**, após isso a coluna **Forma de Remessa** aparecerá escrito **Devolução**, isso significa que foi registrado a devolução do item seleciono.
-
-
-
-**Imagem 3**
-
-{{::nova_-_guia_de_remessa.jpg?800|}}
-
-
-====== Atualizar dados sobre "duplicatas" dos testemunhos da guia de remessa ======
-Para atualizar o campos de "duplicatas" dos testemunhos presentes em uma guia de remessa, basta acessar a guia de remessa desejada e clicar no botão "**Atualizar Dups**" que o sigla da instituição correspondente será adicionado a lista de duplicadas dos testemunhos presentes na guia de remessa. 
-
-**Obs: Para evitar que a mesma sigla seja incluída múltiplas vezes, essa operação só deve ser realizada após o cadastramento completo de todos os testemunhos que farão parte da guia de remessa em questão. 
-**
-
-{{::captura_de_tela_2023-07-10_122458.png|}}
-
+## Atualizar duplicatas dos testemunhos da guia
+Abra a guia desejada e clique no botão **Atualizar Dups**. A sigla da instituição correspondente será adicionada à lista de duplicatas dos testemunhos da guia.

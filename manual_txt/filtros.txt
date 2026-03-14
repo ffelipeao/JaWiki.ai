@@ -1,19 +1,9 @@
-====== Filtros ======
-  * Família
-  * Gênero
-  * Espécie
-  * [[Táxon]]
-  * Localidade
-  * Coletotor
-  * Número da coleta
-  * Determinador
-  * Tombo
-  * Código Barras
-  * Seção/Canteiro/Batch
-  * [[Coleções Correlatas]]
-  * [[Apenas com imagem]]
-  * [[Typus]]
-  * [[Base de dados]]
-  * [[Shape]]
-  * [[Outros Campos]]
+# Filtros da consulta (Jabot)
 
+## Objetivo
+Lista dos filtros disponíveis na consulta interna do Jabot para refinar buscas por espécimes.
+
+## Filtros disponíveis
+Família; Gênero; Espécie; Táxon; Localidade; Coletor; Número da coleta; Determinador; Tombo; Código de Barras; Seção/Canteiro/Batch; Coleções Correlatas; Apenas com imagem; Typus; Base de dados; Shape (área no mapa); Outros campos.
+
+Use um ou mais filtros na tela **Consulta > Consulta** e clique em **Consultar** para obter os resultados.

@@ -1,30 +1,17 @@
-====== Esqueci minha senha ======
-Para recuperar sua senha, acesse o menu **Login**, clicar em **esqueci minha senha**, preencha com o seu e-mail cadastrado e clique no botão **Enviar**. O sistema enviará para o e-mail cadastrado um link para redefinição de senha, acesse seu e-mail (observe também em seu Spam), clique no link e uma nova página será aberta, basta preencher o formulário com a nova senha, confirma-la e clique em **Enviar**. 
+# Esqueci minha senha (Jabot)
 
-Obs. Sempre informe o mesmo e-mail que está cadastrado no sistema, pois o mesmo precisa dessa confirmação para fazer o enviar do link de redefinição de senha.
-\\
-\\ 
-  * **Passo 1**
-{{::esqueciminhasenha.png?|}}
-\\
-\\
-Mensagem de envio do e-mail de recuperação
-\\
-\\
-{{::esqueciminhasenha_2.png?|}}
-\\
-\\
-Mensagem no e-mail do recuperação
-\\
-\\
-{{::email_recuperacao.png?|}}
-\\
-\\
-  * **Passo 2**
-Agora basta cadastrar a nova senha
-\\
-\\
-{{::recuperarsenha.jpg?direct|}}
+## Objetivo
+Recuperar ou redefinir a senha de acesso ao Jabot quando o usuário não lembra a senha atual.
 
+## Como acessar no Jabot
+**Login > Esqueci minha senha**
 
+## Passos para recuperar a senha
+1. No menu **Login**, clique em **Esqueci minha senha**.
+2. Preencha o campo com o e-mail cadastrado no sistema e clique em **Enviar**.
+3. O sistema enviará um link de redefinição para esse e-mail. Verifique também a pasta Spam.
+4. Abra o e-mail, clique no link recebido.
+5. Na nova página, preencha o formulário com a nova senha, confirme a senha e clique em **Enviar**.
 
+## Observação importante
+Sempre informe o mesmo e-mail que está cadastrado no sistema. O Jabot só envia o link de redefinição após confirmar que o e-mail pertence a um usuário cadastrado.

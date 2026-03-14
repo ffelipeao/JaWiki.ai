@@ -1,30 +1,20 @@
-====== Igualar Código de Barras ao Número Tombo ======
-###
-Acesse o menu <b>Curadoria / Alterar Código de barras</b>, Siga as orientações da página e clique no botão <b>Igualar Código de Barras ao Número Tombo</b>. Essa tela mostra o total com  todos os códigos de barras diferentes do tombo.
+# Igualar código de barras ao número tombo e ajustar sequencial (Jabot)
 
+## Objetivo
+Igualar o código de barras ao número de tombo nos registros em que estiverem diferentes, e redefinir o valor sequencial automático de número de tombo e código de barras por coleção.
 
-Caso existam números de tombo duplicado ou que já estejam sendo usado como códigos de barras uma caixinha vermelha com os erros irá aparecer na tela. Você também pode clicar sobre os números de tombo apresentados como erro para ir até a tela de consulta, lá você consegue alterar o registro com problema. Veja a imagem abaixo:
+## Como acessar no Jabot
+**Curadoria > Alterar Código de barras**
 
+## Igualar código de barras ao número tombo
+1. Acesse **Curadoria > Alterar Código de barras**.
+2. Siga as orientações da página e clique no botão **Igualar Código de Barras ao Número Tombo**.
+3. A tela mostra o total de registros com código de barras diferente do tombo. Se houver tombos duplicados ou já usados como código de barras, uma caixa vermelha exibirá os erros; é possível clicar no tombo para ir à tela de consulta e alterar o registro.
 
-<b>Obs.</b>  É possível configurar o sistema para fazer essa atualização automaticamente ao final de cada importação de planilha. Para isso, basta marcar a opção "Igualar os Código de Barras ao número de Tombo" na tela de configuração (Menu Admin/Configuração).
+**Observação:** É possível configurar para essa atualização ser feita automaticamente ao final de cada importação de planilha: em **Admin > Configuração**, marque a opção "Igualar os Código de Barras ao número de Tombo".
 
-
-
-###{{:igualar_codbarras.png?}}
-###
-<b>Figura 1 - Alterar Valor de Códigos de Barras</b>
-###
-
-====== Ajustar Número de sequência para NumTombo e CodBarras ======
-
-Para alterar o número sequencial automático do número de tombo e do código de barras, acesse o menu **Curadoria/Alterar Código de Barras**. 
-Observe a caixa com o título "Redefinir valor de sequencial de código de barras e número tombo", ao selecione a coleção botânica que deseja alterar, duas linhas informativas serão exibidas, com é elas, pode-se consultar os valores de códigos de barras e números de tombo que estão em uso no momento e os valores atuais das sequências.
-Em posse desses informações, basta digitar o novo valor a ser definido na caixa de texto e clique no botão **Alterar Sequencial**.
-
-Seja a imagem ilustrativa a seguir.
-
-
- {{::sequece.jpg?700|}}
-
-
-
+## Ajustar número de sequência (NumTombo e CodBarras)
+1. Acesse **Curadoria > Alterar Código de Barras**.
+2. Na caixa "Redefinir valor de sequencial de código de barras e número tombo", selecione a coleção botânica.
+3. Serão exibidas as informações dos valores atuais em uso e das sequências.
+4. Digite o novo valor desejado na caixa de texto e clique no botão **Alterar Sequencial**.

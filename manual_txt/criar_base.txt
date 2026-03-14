@@ -1,27 +1,19 @@
-====== Base de Dados ======
+# Base de dados – criar e consultar (Jabot)
 
-###
-A base de dados é criada quando um coletor volta de uma expedição e quer ter controle de suas coletas.
-A consulta da base de dados é feita digitando o nome da base no campo "Base" ou selecionando o check e irá listar todas as bases, ambas as funções tem que clicar no botão "Filtrar". (veja figura 1)
-Para se criar uma base de dados o usuário tem que ir em espécime>base de dados, clicar no botão "nova base" e preencher todos os campos necessários, lembrando que os campos <b>Nome da Base</b>, <b>Coleção Botânica Padrão</b> e <b>Tipo de Coleção</b> são campos obrigatórios, dados preenchidos é só clicar no botão "salvar". E clicando na base, você altera as informações contidas nela (veja figura 2).
-###
+## Objetivo
+A base de dados é usada quando um coletor volta de uma expedição e quer ter controle de suas coletas. O Jabot permite criar novas bases, consultar bases existentes e alterar informações de uma base.
 
-Obs. Marque a caixa de seleção "Pode Publicar na web" sempre que desejar que os dados desta base de dados apareçam na consulta externa.
+## Como acessar no Jabot
+**Espécime > Base de Dados**
 
+## Consultar bases de dados
+Na tela de Base de Dados: digite o nome da base no campo "Base" ou marque o check para listar todas as bases; em seguida clique no botão **Filtrar**. Clicando em uma base da lista, você altera as informações dela.
 
-###
-<b>Figura 1 - Base de Dados</b>
-###
+## Passos para criar uma nova base de dados
+1. Acesse **Espécime > Base de Dados**.
+2. Clique no botão **Nova base**.
+3. Preencha todos os campos necessários. Campos obrigatórios: **Nome da Base**, **Coleção Botânica Padrão** e **Tipo de Coleção**.
+4. Clique no botão **Salvar**.
 
-
-{{:base_dados1.png?|}}
-
-
-###
-<b>Figura 2 - Cadastro de Base de Dados</b>
-###
-
-
-{{:base_dados2.png?|}}
-
-
+## Observação
+Marque a caixa de seleção **Pode Publicar na web** quando quiser que os dados dessa base apareçam na consulta externa (consulta pública).

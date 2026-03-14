@@ -1,19 +1,16 @@
-====== Adicionar Curador nas Informações do Herbário ======
+# Adicionar curador nas Informações do Herbário (Jabot)
 
-Para adicionar o Curador na tela de **Informações sobre a Instituição**, acesse o menu **Admin → Usuários**. Você pode utilizar os campos **Nome, Login e E-mail** para **Filtrar** ou pesquisar pela lista de usuários. Selecione o usuário que deseja e em seguida clique em **Editar Usuário**, conforme ilustrado na **Figura 1** abaixo.
+## Objetivo
+Fazer com que um usuário apareça como Curador na tela "Informações sobre a Instituição" (Sobre > Informações do Herbário). Basta definir o tipo de usuário como "Curador do Herbário" no cadastro.
 
-**Figura 1 - Editar usuário selecionado**
+## Como acessar no Jabot
+**Admin > Usuário**
 
+## Passos
+1. Acesse **Admin > Usuário**.
+2. Use **Nome**, **Login** ou **E-mail** para filtrar e localize o usuário.
+3. Clique no usuário e em **Editar Usuário**.
+4. No campo **Tipo de Usuário**, selecione **Curador do Herbário**.
+5. Clique em **Salvar**.
 
-{{::captura_de_tela_2025-03-21_014152.png?nolink |}}
-
-
-Após clicar em **Editar Usuário** será aberta uma tela de edição dos dados do usuário. No campo **Tipo de Usuário** selecione a opção **Curador do Hérbario** e clique em **Salvar**
-
-
-{{::selecionecurador.png?nolink |}}
-
-
-
-Após esse procedimento o nome do Curador irá aparecer nas Informações da Insitutição.
-
+Após isso, o nome do Curador passará a aparecer nas Informações da Instituição.

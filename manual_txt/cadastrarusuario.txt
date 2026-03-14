@@ -1,24 +1,23 @@
-====== Cadastrar/Consultar Usuário ======
+# Cadastrar ou consultar usuário (Jabot)
 
-Para cadastrar ou consultar um novo usuário clique no menu **Admin->Usuário** que será exibida uma tela com todos os usuários já cadastrados, **Figura 1**.
+## Objetivo
+Cadastrar um novo usuário no Jabot ou consultar a lista de usuários já cadastrados. Após o cadastro é necessário atribuir permissões e coleções ao usuário.
 
-**Figura 1 - Lista de usuários cadastrados**
+## Como acessar no Jabot
+**Admin > Usuário**
 
-{{::usuarios_cadastrados.jpg|}}
+Na tela exibida aparecem todos os usuários já cadastrados. Para novo usuário: clique no botão **Cadastrar Usuário**.
 
-Ao clique no botão **Cadastrar Usuário** será aberta uma nova tela (**Figura 2**) com os campos para identificação do novo usuário, preencha os dados e clique em **Salvar**.
+## Passos para cadastrar um usuário
+1. Acesse **Admin > Usuário**.
+2. Clique em **Cadastrar Usuário**.
+3. Preencha os dados do novo usuário na tela de cadastro e clique em **Salvar**.
+4. Atribua as permissões: marque as permissões correspondentes ao perfil do usuário e clique em **Salvar**.
+5. Selecione as coleções botânicas às quais o usuário terá acesso, marque as coleções e clique em **Salvar**.
 
-**Figura 2 - Tela de cadastro de usuário.**
+## Permissões e perfis
+- Para usuários iniciantes recomenda-se conceder apenas a permissão **Assistente de curadoria – registrar espécime**. Com esse perfil o usuário poderá cadastrar amostras, validar planilhas e alterar apenas registros criados por ele.
 
-{{::cadastrar_usuario.jpg|}}
-
-Após salvar, será necessário atribuir as devidas permissões (**Figura 3**), para o usuário. Marque as permissões correspondentes ao perfil do usuário cadastrado e clique em **Salvar**. Também será preciso selecione as coleções botânicas que o usuário terá acesso. Marque as coleções e clique em **Salvar**.
-
-**Figura 3 - Lista de Permissões e Coleções do usuário. **
-
-{{::permissao_de_acesso.jpg|}}
-
-Observações: 
-  - Para usuários iniciantes o recomendável é dar apenas permissão de "**Assistente de curadoria – registrar espécime**", com esse perfil o novo usuário só poderá cadastrar amostras, validar planilhas e alterar registros que criados por ele.
-  - Após completar um ano de cadastro, o sistema solicitará que o usuário realize o recadastramento junto com a alteração de senha.
-  - Se o usuário ficar mais de 60 dias sem realizar esse recadastramento, ele perderá o acesso e será necessário que um administrador ou curador realize a reativação dessa conta.
+## Observações do sistema
+- Após um ano de cadastro, o sistema solicita recadastramento junto com alteração de senha.
+- Se o usuário ficar mais de 60 dias sem realizar o recadastramento, perderá o acesso; um administrador ou curador precisará reativar a conta.

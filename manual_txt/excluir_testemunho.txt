@@ -1,21 +1,17 @@
-====== Excluir Testemunho ======
+# Excluir testemunho (Jabot)
 
-###
-Para excluir um testemunho basta realizar a pesquisa, clique no número de tombo para abrir uma lista de links, no testemunho escolhido basta clicar no link para excluir. Em seguida irá direcionar para uma outra tela para confirmar os dados do testemunho, se estiver tudo correto basta confirmar a exclusão.
-###
+## Objetivo
+Excluir um registro (testemunho) do sistema. A exclusão é definitiva após confirmação.
 
+## Como acessar no Jabot
+**Consulta > Consulta** — localize o testemunho; o link para excluir aparece na lista de opções ao clicar no número do tombo.
 
-<b>Obs:</b> O link para excluir o testemunho só aparece para <b>administrador</b> ou <b>curador</b> do sistema.
+## Passos para excluir um testemunho
+1. Realize a pesquisa na **Consulta > Consulta** e localize o testemunho desejado.
+2. Clique no número de tombo para abrir a lista de links/opções.
+3. Clique no link **Excluir** para o testemunho escolhido.
+4. O sistema redireciona para uma tela de confirmação com os dados do testemunho.
+5. Verifique se está tudo correto e confirme a exclusão.
 
-
-Segue os exemplos abaixo:
-
-{{:excluir_testemunho1.png?}}
-
-
-<b>Figura 1 - Selecionando o Testemunho</b>
-
-{{:excluir_testemunho2.png?}}
-
-
-<b>Figura 2 - Confirmando Testemunho</b>
+## Permissão necessária
+O link para excluir testemunho só aparece para usuários com perfil de **administrador** ou **curador** do sistema.

@@ -1,80 +1,12 @@
-====== Função ======
-###
-Nessa página o curador poderá verificar a lista de perfis de usuários, a lista de funções que o sistema oferece e os usuários que estão cadastrados em cada um dos perfis; além das funções que possuem. Para acessar, ir no menu Admin / Função (ver figura abaixo).
-###
-\\
-{{ ::admin_funcoes.png?nolink |}}
-\\
-\\
-A lista contém atualmente 32 funções e é apresentada a seguir:
-\\
-\\
-1.	Adicionar coleção correlata
-\\
-2.	Adicionar determinação
-\\
-3.	Administrar Jabot
-\\
-4.	Alterar Base de Dados
-\\
-5.	Alterar coleção botânica
-\\
-6.	Alterar determinação
-\\
-7.	Alterar exsicata
-\\
-8.	Associar táxon à base de dados
-\\
-9.	Controle de Lâminas (Xiloteca)
-\\
-10.	Controle Manejo Coleção Viva
-\\
-11.	Detalhar táxon (Flora RJ)
-\\
-12.	Efetuar download de ferramentas
-\\
-13.	Emissão Guia Remessa
-\\
-14.	Enviar imagem
-\\
-15.	Especialista (Flora RJ)
-\\
-16.	Excluir coleção correlata
-\\
-17.	Excluir testemunho
-\\
-18.	Exsicata Download
-\\
-19.	Gerar duplicata (testemunho)
-\\
-20.	Gerenciar projeto Reflora
-\\
-21.	Gerenciar táxons
-\\
-22.	Importador planilhas para coleções simultâneas
-\\
-23.	Importar planilha
-\\
-24.	Manter Base de Dados
-\\
-25.	Manter Coleção Botânica
-\\
-26.	Manter Evento (Coleções Vivas)
-\\
-27.	Manter Papel ao Usuário
-\\
-28.	Manter Unidade Conservação
-\\
-29.	Matar planta (Coleção viva)
-\\
-30.	Qualidade de Dados
-\\
-31.	Registrar Espécime
-\\
-32.	Registrar Espécime (Base)
-\\
-\\
-Na lista o curador pode selecionar perfis para atribuição em sua equipe permanente ou perfis para a equipe variável, como estagiários e bolsistas. Assim, um estagiário poderia ter apenas a função para registrar espécimes dentro de uma base de dados específica (Assistente de curadoria - registrar base). Para verificar as atividades que um determinado perfil pode executar no sistema, deve-se clicar no perfil e no botão Filtrar. Veja o exemplo abaixo para o perfil Assistente de curadoria:
-\\
-\\
-{{ ::admin_funcoes_2.png?nolink |}}
+# Função (Jabot)
+
+## Objetivo
+O curador pode ver a lista de perfis de usuários, as funções que o sistema oferece e quais usuários estão em cada perfil; além das funções de cada perfil. Útil para atribuir perfis à equipe (permanente ou variável, como estagiários).
+
+## Como acessar no Jabot
+**Admin > Função**
+
+## Conteúdo
+O sistema possui dezenas de funções (ex.: Adicionar coleção correlata, Adicionar determinação, Administrar Jabot, Alterar Base de Dados, Registrar Espécime, Importar planilha, Qualidade de Dados, etc.). Na tela o curador pode selecionar perfis para a equipe. Para ver as atividades de um perfil: clique no perfil e no botão **Filtrar** (ex.: perfil "Assistente de curadoria").
+
+Exemplo: estagiário pode ter apenas a função de registrar espécimes em uma base específica (Assistente de curadoria - registrar base).

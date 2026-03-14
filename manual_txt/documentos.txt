@@ -1,13 +1,15 @@
-====== Documentos do Herbário ======
+# Documentos do herbário (Jabot)
 
-A tela de documentos do herbário foi criada com o objetivo de permitir que cada instituição tenha uma local para disponibilizar seus manuais e procedimentos internos. Sempre que for necessário disponibilizar um modelo de arquivo, manual ou tutorial sobre seus procedimentos internos, basta acessar o menu "Curadoria/Documentos", clicar em "Cadastrar Novo" e preencher os campos para título, descrição e seleção do arquivo (Figura 1).
+## Objetivo
+Cada instituição pode disponibilizar manuais, procedimentos internos e modelos de arquivo em um único local. Os documentos ficam disponíveis para todos os usuários cadastrados da instituição.
 
-**Figura 1 - Tela para cadastro de documentos.**
+## Como acessar no Jabot
+**Curadoria > Documentos**
 
-{{::cadastro_de_documentos.png|}}
+## Cadastrar novo documento
+1. Acesse **Curadoria > Documentos**.
+2. Clique em **Cadastrar Novo**.
+3. Preencha os campos: título, descrição e seleção do arquivo (upload).
+4. Conclua o cadastro.
 
-Ao finalizar este cadastro, o sistema passará a exibir todos os arquivos na tela principal de documentos do herbário e ficará disponível para todos os usuário cadastrados (Figura 2).
-
-**Figura 2 - Tela com documentos cadastrados.**
-
-{{::documentosherbarios.png|}}
+Os arquivos passam a aparecer na tela principal de Documentos do herbário e ficam disponíveis para todos os usuários cadastrados.

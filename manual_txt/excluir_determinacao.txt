@@ -1,5 +1,15 @@
-====== Excluir histórico de determinação ======
+# Excluir histórico de determinação (Jabot)
 
-Para excluir histórico de determinação, entre na tela de alteração de cadastro, nos campos de Determinação serão exibidos os campos com histórico de determinação, basta clicar na "lixeira", como consta na imagem, e aquela determinação será excluída.
+## Objetivo
+Remover uma entrada do histórico de determinações de um espécime (ex.: determinação equivocada ou duplicada).
 
-{{:sem_titulo.jpg?nolink&900|}}
+## Como acessar no Jabot
+**Consulta > Consulta** — localize o registro; em seguida abra a tela de alteração de cadastro.
+
+## Passos
+1. Localize o registro pela **Consulta > Consulta** e abra a opção **Alterar** (pelo tombo ou código de barras).
+2. Na tela de alteração, nos campos de Determinação serão exibidas as determinações com histórico.
+3. Clique no ícone da "lixeira" ao lado da determinação que deseja excluir.
+4. Aquela determinação será removida do histórico.
+
+Observação: é necessário ter permissão para alterar determinação.

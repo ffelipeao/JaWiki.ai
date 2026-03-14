@@ -1,17 +1,15 @@
-====== Registrar Espécime Via Coleção Correlata ======
+# Registrar espécime via coleção correlata (Jabot)
 
-Para registrar um novo espécime com base nos dados de outro espécime já cadastrado no sistema em uma coleção cujos registros são correlatos.  
+## Objetivo
+Registrar um novo espécime usando como base os dados de outro espécime já cadastrado em uma coleção correlata. O formulário é preenchido com os dados do correlato; o usuário ajusta e salva.
 
-Basta seguir os seguintes passos:
-Selecione a base de dados correspondente onde os dados serão cadastrados, acesse o menu "Espécime/Registrar Espécime" e escolha a coleção botânica que receberá o novo espécime. Uma tela será aberta com o formulário padrão de preenchimento onde será possível buscar os dados já cadastrados em um espécime de uma coleção correlata. Clique no botão "Incluir Dados Via Correlata" (**Figura 1**), informe o CódBarras, NúmTombo ou Coletor e Número de coleta, também será preciso selecionar a coleção correlata e clicar em "Buscar" para encontrar o espécime na coleção correlata (**Figura 2**). Após isso, esse espécime correlatado será listado para seleção, basta clicar sobre o CódBarras que a tela de cadastro será aberta com os campos preenchidos com base nesse espécime correlato.
+## Como acessar no Jabot
+**Espécime > Registrar Espécime**
 
-Veja a seguir a sequencia de imagens com exemplo de preenchimento:
-
-**Figura 1 - Botão "Incluir Dados Via Correlata"**
-
-{{::dadosviacorrelata.png|}}
-
-
-**Figura 2 - Modelo de preenchimento com espécime correlata selecionada**
-
-{{::formulario-dadosviacorrelata.jpg|}}
+## Passos
+1. Selecione a base de dados onde os dados serão cadastrados (Trocar base atual se necessário).
+2. Acesse **Espécime > Registrar Espécime** e escolha a coleção botânica que receberá o novo espécime.
+3. Na tela do formulário de cadastro, clique no botão **Incluir Dados Via Correlata**.
+4. Informe **CódBarras**, **NúmTombo** ou **Coletor e Número de coleta**; selecione a **coleção correlata** e clique em **Buscar**.
+5. O espécime encontrado será listado; clique no **CódBarras** para abrir o cadastro com os campos preenchidos com base nesse espécime correlato.
+6. Ajuste os dados se necessário e salve o novo registro.

@@ -1,17 +1,19 @@
-====== Substituir Município Usando a Opção 'DE: PARA:' ======
+# Substituir município (unidade geopolítica) – DE: PARA: (Jabot)
 
-Sempre que for necessário, é possível usar a função **Trocar município 'DE: PARA:'** para substituir um País, Estado ou Município que esteja duplicado ou cadastrado de forma incorreta.
+## Objetivo
+Substituir em massa um país, estado ou município cadastrado de forma duplicada ou incorreta por outro (correto). Todos os registros que usam o código errado passam a usar o correto e a localidade errada é removida da lista.
 
-Para acessar essa função, basta clicar no menu "**Curadoria/Unidade Geopolítica**" e ir em "**Trocar município 'DE: PARA:'**" (**Figura 1**).
+## Como acessar no Jabot
+**Curadoria > Unidade Geopolítica > Trocar município 'DE: PARA:'**
 
-**Figura 1 - Trocar município.**
+## Passos
+1. Acesse **Curadoria > Unidade Geopolítica**.
+2. Clique em **Trocar município 'DE: PARA:'**.
+3. Na nova tela, aplique um filtro pela localidade que deseja corrigir.
+4. Localize os códigos **CodUnidGeo** do correto e do errado.
+5. Preencha os campos "DE" (código errado) e "PARA" (código certo) e clique em **Enviar**.
 
-{{::trocar_municipio.png}}
+Os registros com o código errado serão atualizados para o correto e a localidade errada será excluída automaticamente.
 
-Ao clicar no botão **Trocar município 'DE: PARA:'**, uma nova tela será carregada, e nela, basta aplicar um filtro pela localidade que deseja fazer a correção, localizar os códigos "**CodUnidGeo**" certo e o errado, preencher os campos correspondes e clicar em "**Enviar**" (**Figura 2**).
-
-**Figura 2 - Exemplo de como substituir um município cadastrado de forma incorreta.**
-
-{{::substituir_municipio.png|}}
-
-**obs.** Caso só apareça um item na lista, basta ajustar o filtro e buscar novamente. Se necessário basta anotar o código do táxon que já está na tela e consultar novamente alterando o filtro pela localidade desejada. Os registros cadastrados com o código errado serão substituídos pelo correto e a localidade "errada" será excluída da lista automaticamente.
+## Observação
+Se aparecer apenas um item na lista, ajuste o filtro e busque novamente. Se necessário, anote o código já exibido e consulte de novo alterando o filtro pela localidade desejada.
