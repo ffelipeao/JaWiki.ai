@@ -136,6 +136,9 @@
     const input = document.getElementById("input");
     const submit = document.getElementById("submit");
 
+    // Histórico da conversa (para enviar ao backend e o modelo manter contexto)
+    const conversationHistory = [];
+
     function addMsg(content, isUser, sources = null) {
       const div = document.createElement("div");
       div.className = "msg " + (isUser ? "user" : "bot");
@@ -177,12 +180,18 @@
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message }),
+          body: JSON.stringify({
+            message: message,
+            history: conversationHistory
+          }),
         });
         const data = await res.json();
         typing.remove();
         if (data.ok) {
           addMsg(data.answer, false, data.sources || []);
+          conversationHistory.push({ role: "user", content: message });
+          conversationHistory.push({ role: "bot", content: data.answer });
+          if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
         } else {
           addMsg("Erro: " + (data.error || res.status), false);
         }

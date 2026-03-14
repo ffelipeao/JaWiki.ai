@@ -91,16 +91,74 @@ def index():
     return render_template("chat.html")
 
 
+def _build_answer_from_context_with_history(
+    pergunta: str,
+    sources: list[RagRow],
+    history: list[dict[str, str]],
+) -> str:
+    """Como _build_answer_from_context, mas inclui o histórico da conversa no prompt do LLM."""
+    if not sources:
+        return "Não encontrei informações relevantes no banco para essa pergunta."
+    cleaned_parts = [clean_for_display(s.conteudo) for s in sources]
+    context = "\n\n---\n\n".join(cleaned_parts)
+
+    if not OLLAMA_CHAT_MODEL:
+        return (
+            "Com base na base de conhecimento:\n\n"
+            + context
+            + "\n\n_(Defina OLLAMA_CHAT_MODEL no .env para gerar respostas com IA.)_"
+        )
+
+    history_text = ""
+    if history:
+        lines = []
+        for h in history[-10:]:  # últimas 10 mensagens (5 pares user/bot)
+            role = "Usuário" if (h.get("role") == "user") else "Assistente"
+            lines.append(f"{role}: {h.get('content', '').strip()}")
+        history_text = "HISTÓRICO RECENTE DA CONVERSA:\n" + "\n".join(lines) + "\n\n"
+
+    try:
+        import requests
+        prompt = f"""Você é um assistente que responde dúvidas sobre o sistema com base na documentação disponível.
+
+{history_text}PERGUNTA ATUAL DO USUÁRIO:
+{pergunta}
+
+CONTEÚDO BUSCADO NO BANCO (use apenas o que for relevante):
+---
+{context}
+---
+
+REGRAS: Use apenas informações do conteúdo acima. Responda em passo a passo quando for "como fazer". Se nada for relevante, diga que não encontrou. Considere o histórico acima para dar continuidade à conversa (ex.: "como disse antes", "o passo 2 é...")."""
+
+        r = requests.post(
+            f"{OLLAMA_BASE_URL.rstrip('/')}/api/generate",
+            json={"model": OLLAMA_CHAT_MODEL, "prompt": prompt, "stream": False},
+            timeout=90,
+        )
+        r.raise_for_status()
+        out = r.json()
+        return (out.get("response") or "").strip() or context
+    except Exception as e:
+        return "Erro ao gerar resposta. Mostrando os trechos:\n\n" + context + f"\n\n(Erro: {e})"
+
+
 @app.route("/api/chat", methods=["POST"])
 def api_chat():
-    """Recebe uma pergunta, consulta o RAG e retorna resposta + fontes. Body: { "message": "sua pergunta" }"""
+    """Recebe uma pergunta (e opcionalmente histórico). Body: { "message": "...", "history": [{ "role": "user"|"bot", "content": "..." }] }"""
     data: dict[str, Any] = request.get_json() or {}
     message = (data.get("message") or "").strip()
     if not message:
         return jsonify({"ok": False, "error": "Campo 'message' é obrigatório."}), 400
+    history = data.get("history") or []
+    if not isinstance(history, list):
+        history = []
     try:
         sources = _query_rag(message, k=CHAT_TOP_K)
-        answer = _build_answer_from_context(message, sources)
+        if history:
+            answer = _build_answer_from_context_with_history(message, sources, history)
+        else:
+            answer = _build_answer_from_context(message, sources)
         sources_cleaned = []
         for s in sources:
             c = clean_for_display(s.conteudo)
