@@ -99,7 +99,7 @@ class Database:
     # ---------- cache de perguntas respondidas ----------
 
     def ensure_cache_table(self) -> None:
-        """Cria a tabela de cache de perguntas se não existir (esquema e coluna vector com dimensão fixa)."""
+        """Cria a tabela de cache de perguntas se não existir (com colunas de avaliação)."""
         with self.conn, self.conn.cursor() as cur:
             cur.execute(f'CREATE SCHEMA IF NOT EXISTS "{CACHE_SCHEMA}"')
             cur.execute(
@@ -110,36 +110,48 @@ class Database:
                     embedding vector({CACHE_EMBEDDING_DIM}) NOT NULL,
                     resposta text NOT NULL,
                     fontes text,
+                    rating_avg real,
+                    rating_count int NOT NULL DEFAULT 0,
                     created_at timestamp with time zone DEFAULT now()
                 )
                 """
             )
+            # Migração: adicionar colunas de rating se a tabela já existia (uma coluna por vez)
+            for col, defn in [("rating_avg", "real"), ("rating_count", "int NOT NULL DEFAULT 0")]:
+                try:
+                    cur.execute(
+                        f'ALTER TABLE "{CACHE_SCHEMA}"."{CACHE_TABLE}" ADD COLUMN IF NOT EXISTS {col} {defn}'
+                    )
+                except Exception:
+                    pass
 
     def get_cached_answer(
         self,
         query_embedding: Union[list[float], np.ndarray],
         max_distance: float = CACHE_THRESHOLD,
-    ) -> Optional[Tuple[str, list]]:
+    ) -> Optional[Tuple[int, str, list]]:
         """
-        Busca uma pergunta muito similar no cache. Retorna (resposta, fontes_list) ou None.
+        Busca uma pergunta muito similar no cache. Prioriza respostas com melhor avaliação.
+        Retorna (cache_id, resposta, fontes_list) ou None.
         """
         vec = _as_vector(query_embedding)
         with self.conn, self.conn.cursor() as cur:
             cur.execute(
                 f"""
-                SELECT resposta, fontes, (embedding <-> %s) AS dist
+                SELECT id, resposta, fontes, (embedding <-> %s) AS dist
                 FROM "{CACHE_SCHEMA}"."{CACHE_TABLE}"
-                ORDER BY embedding <-> %s
+                WHERE (embedding <-> %s) <= %s
+                ORDER BY rating_avg DESC NULLS LAST, (embedding <-> %s) ASC
                 LIMIT 1
                 """,
-                (vec, vec),
+                (vec, vec, max_distance, vec),
             )
             row = cur.fetchone()
-            if not row or row[2] is None or float(row[2]) > max_distance:
+            if not row:
                 return None
-            resposta, fontes_raw = row[0], row[1]
+            cache_id, resposta, fontes_raw = row[0], row[1], row[2]
             fontes_list = json.loads(fontes_raw) if fontes_raw else []
-            return (resposta, fontes_list)
+            return (cache_id, resposta, fontes_list)
 
     def add_cached(
         self,
@@ -147,8 +159,8 @@ class Database:
         embedding: Union[list[float], np.ndarray],
         resposta: str,
         fontes: list[dict],
-    ) -> None:
-        """Salva pergunta, embedding, resposta e fontes no cache para reutilização futura."""
+    ) -> int:
+        """Salva pergunta, embedding, resposta e fontes no cache. Retorna o id da linha inserida."""
         vec = _as_vector(embedding)
         fontes_json = json.dumps(fontes, ensure_ascii=False)
         with self.conn, self.conn.cursor() as cur:
@@ -156,9 +168,31 @@ class Database:
                 f"""
                 INSERT INTO "{CACHE_SCHEMA}"."{CACHE_TABLE}" (pergunta, embedding, resposta, fontes)
                 VALUES (%s, %s, %s, %s)
+                RETURNING id
                 """,
                 (pergunta, vec, resposta, fontes_json),
             )
+            row = cur.fetchone()
+            return row[0] if row else 0
+
+    def rate_response(self, cache_id: int, stars: int) -> bool:
+        """Registra avaliação (1-5 estrelas) para uma resposta em cache. Atualiza média e contagem."""
+        if not (1 <= stars <= 5):
+            return False
+        with self.conn, self.conn.cursor() as cur:
+            cur.execute(
+                f"""
+                UPDATE "{CACHE_SCHEMA}"."{CACHE_TABLE}"
+                SET rating_avg = COALESCE(
+                    (COALESCE(rating_avg, 0) * rating_count + %s) / (rating_count + 1),
+                    %s
+                ),
+                rating_count = rating_count + 1
+                WHERE id = %s
+                """,
+                (stars, stars, cache_id),
+            )
+            return cur.rowcount > 0
 
 
 __all__ = ["Database", "RagRow"]

@@ -162,12 +162,13 @@ def api_chat():
                 db.ensure_cache_table()
                 cached = db.get_cached_answer(query_embedding)
                 if cached:
-                    resposta, fontes_list = cached
+                    cache_id, resposta, fontes_list = cached
                     return jsonify({
                         "ok": True,
                         "answer": resposta,
                         "sources": fontes_list,
                         "from_cache": True,
+                        "response_id": cache_id,
                     })
             sources = db.query_similar(query_embedding, k=CHAT_TOP_K)
             if history:
@@ -178,9 +179,43 @@ def api_chat():
             for s in sources:
                 c = clean_for_display(s.conteudo)
                 sources_cleaned.append({"id": s.id, "conteudo": c[:500] + ("..." if len(c) > 500 else "")})
+            response_id = None
             if CACHE_ENABLED:
-                db.add_cached(message, query_embedding, answer, sources_cleaned)
-            return jsonify({"ok": True, "answer": answer, "sources": sources_cleaned})
+                response_id = db.add_cached(message, query_embedding, answer, sources_cleaned)
+            return jsonify({
+                "ok": True,
+                "answer": answer,
+                "sources": sources_cleaned,
+                "response_id": response_id,
+            })
+        finally:
+            db.close()
+    except Exception as e:
+        return jsonify({"ok": False, "error": str(e)}), 500
+
+
+@app.route("/api/rate", methods=["POST"])
+def api_rate():
+    """Registra avaliação de 1 a 5 estrelas para uma resposta. Body: { "response_id": number, "stars": number }"""
+    data: dict[str, Any] = request.get_json() or {}
+    response_id = data.get("response_id")
+    stars = data.get("stars")
+    if response_id is None or stars is None:
+        return jsonify({"ok": False, "error": "response_id e stars são obrigatórios."}), 400
+    try:
+        response_id = int(response_id)
+        stars = int(stars)
+    except (TypeError, ValueError):
+        return jsonify({"ok": False, "error": "response_id e stars devem ser números."}), 400
+    if not (1 <= stars <= 5):
+        return jsonify({"ok": False, "error": "stars deve ser entre 1 e 5."}), 400
+    try:
+        db = Database()
+        try:
+            ok = db.rate_response(response_id, stars)
+            if not ok:
+                return jsonify({"ok": False, "error": "Resposta não encontrada."}), 404
+            return jsonify({"ok": True})
         finally:
             db.close()
     except Exception as e:

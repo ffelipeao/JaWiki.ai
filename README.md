@@ -128,9 +128,9 @@ python query_example.py
 # Digite a pergunta quando solicitado; retorna os trechos mais similares.
 ```
 
-### Cache de perguntas (respostas similares)
+### Cache de perguntas e avaliação por estrelas
 
-Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (tabela `jabot_rag_perguntas`). Quando uma pergunta **muito parecida** é feita de novo, a resposta anterior é reutilizada (sem nova busca RAG nem chamada ao Ollama), o que acelera e mantém consistência. No chat, respostas vindas do cache aparecem com o texto “(Resposta reutilizada de pergunta similar)”. A “similaridade” é definida por `CACHE_THRESHOLD` (distância do embedding; ex.: `0.35`).
+Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (tabela `jabot_rag_perguntas`). Quando uma pergunta **muito parecida** é feita de novo, a resposta anterior é reutilizada. No chat, o usuário pode avaliar cada resposta com 1 a 5 estrelas; as respostas melhor avaliadas são priorizadas quando há várias similares no cache. Respostas vindas do cache podem aparecer com o texto “(Resposta reutilizada de pergunta similar)”. A “similaridade” é definida por `CACHE_THRESHOLD` (distância do embedding; ex.: `0.35`).
 
 ## Fluxo resumido
 

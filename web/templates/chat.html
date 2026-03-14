@@ -31,6 +31,24 @@
       border-bottom: 1px solid var(--border);
       font-weight: 600;
       font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    header .btn-new-chat {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.875rem;
+      background: transparent;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    header .btn-new-chat:hover {
+      color: var(--accent);
+      border-color: var(--accent);
     }
     #chat {
       flex: 1;
@@ -67,6 +85,20 @@
     }
     .msg .sources summary { cursor: pointer; }
     .msg .sources ul { margin: 0.25rem 0 0 1rem; padding: 0; }
+    .rating-wrap {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .rating-wrap .stars {
+      display: inline-flex;
+      gap: 2px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .rating-wrap .stars span { font-size: 1.2rem; }
+    .rating-wrap .stars span.filled { color: #f0c14b; }
+    .rating-wrap .stars span:hover { color: #f0c14b; }
     .typing::after {
       content: "...";
       animation: dots 1s steps(4, end) infinite;
@@ -122,7 +154,10 @@
   </style>
 </head>
 <body>
-  <header>JaWiki – Base de conhecimento</header>
+  <header>
+    <span>JaWiki – Base de conhecimento</span>
+    <button type="button" class="btn-new-chat" id="btn-new-chat" title="Encerrar esta conversa e iniciar uma nova">Nova conversa</button>
+  </header>
   <main id="chat"></main>
   <section id="form">
     <form id="chat-form">
@@ -137,9 +172,16 @@
     const submit = document.getElementById("submit");
 
     // Histórico da conversa (para enviar ao backend e o modelo manter contexto)
-    const conversationHistory = [];
+    let conversationHistory = [];
 
-    function addMsg(content, isUser, sources = null) {
+    function startNewConversation() {
+      chat.replaceChildren();
+      conversationHistory = [];
+    }
+
+    document.getElementById("btn-new-chat").addEventListener("click", startNewConversation);
+
+    function addMsg(content, isUser, sources = null, responseId = null) {
       const div = document.createElement("div");
       div.className = "msg " + (isUser ? "user" : "bot");
       let html = escapeHtml(content);
@@ -150,8 +192,35 @@
         });
         html += '</ul></details></div>';
       }
+      if (!isUser && responseId != null) {
+        html += '<div class="rating-wrap" data-response-id="' + responseId + '">';
+        html += 'Avalie esta resposta: <span class="stars" aria-label="1 a 5 estrelas">';
+        for (let i = 1; i <= 5; i++) html += '<span data-stars="' + i + '" title="' + i + ' estrela(s)">★</span>';
+        html += '</span></div>';
+      }
       div.innerHTML = html;
       chat.appendChild(div);
+      if (!isUser && responseId != null) {
+        const wrap = div.querySelector(".rating-wrap");
+        const stars = div.querySelectorAll(".stars span");
+        stars.forEach((s, i) => {
+          s.addEventListener("click", function() {
+            if (wrap.dataset.rated) return;
+            const num = i + 1;
+            fetch("/api/rate", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ response_id: responseId, stars: num }),
+            }).then(r => r.json()).then(data => {
+              if (data.ok) {
+                wrap.dataset.rated = "1";
+                stars.forEach((st, j) => { st.classList.toggle("filled", j < num); });
+                wrap.innerHTML = 'Obrigado pela avaliação!';
+              }
+            });
+          });
+        });
+      }
       chat.scrollTop = chat.scrollHeight;
     }
 
@@ -191,7 +260,7 @@
           const answerText = data.from_cache
             ? "(Resposta reutilizada de pergunta similar)\n\n" + data.answer
             : data.answer;
-          addMsg(answerText, false, data.sources || []);
+          addMsg(answerText, false, data.sources || [], data.response_id || null);
           conversationHistory.push({ role: "user", content: message });
           conversationHistory.push({ role: "bot", content: data.answer });
           if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
