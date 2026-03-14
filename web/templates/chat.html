@@ -17,16 +17,20 @@
       --bot-msg: var(--surface);
     }
     * { box-sizing: border-box; }
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
+    }
+    body {
       font-family: "Segoe UI", system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
     header {
+      flex-shrink: 0;
       padding: 0.75rem 1rem;
       border-bottom: 1px solid var(--border);
       font-weight: 600;
@@ -35,6 +39,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+      background: var(--bg);
     }
     header .btn-new-chat {
       padding: 0.4rem 0.8rem;
@@ -52,7 +57,9 @@
     }
     #chat {
       flex: 1;
+      min-height: 0;
       overflow-y: auto;
+      overflow-x: hidden;
       padding: 1rem;
       display: flex;
       flex-direction: column;
@@ -109,6 +116,7 @@
       60%, 100% { content: "..."; }
     }
     #form {
+      flex-shrink: 0;
       padding: 1rem;
       border-top: 1px solid var(--border);
       background: var(--bg);
@@ -221,7 +229,75 @@
           });
         });
       }
-      chat.scrollTop = chat.scrollHeight;
+      scrollChatToEnd();
+    }
+
+    function scrollChatToEnd() {
+      requestAnimationFrame(function() {
+        chat.scrollTop = chat.scrollHeight;
+      });
+    }
+
+    function addMsgStreaming(text, sources, responseId, onDone) {
+      const div = document.createElement("div");
+      div.className = "msg bot";
+      const contentDiv = document.createElement("div");
+      contentDiv.className = "msg-content";
+      div.appendChild(contentDiv);
+      chat.appendChild(div);
+      scrollChatToEnd();
+      const words = text.split(/(\s+)/);
+      let i = 0;
+      const delay = 12;
+      function tick() {
+        if (i < words.length) {
+          contentDiv.textContent += words[i];
+          i++;
+          scrollChatToEnd();
+          setTimeout(tick, delay);
+        } else {
+          if (sources && sources.length) {
+            const wrap = document.createElement("div");
+            wrap.className = "sources";
+            wrap.innerHTML = "<details><summary>Fontes (" + sources.length + ")</summary><ul></ul></details>";
+            const ul = wrap.querySelector("ul");
+            sources.forEach(function(s, idx) {
+              const li = document.createElement("li");
+              li.textContent = "#" + (idx + 1) + " (id " + (s.id || "") + "): " + (s.conteudo || "").slice(0, 120) + "…";
+              ul.appendChild(li);
+            });
+            div.appendChild(wrap);
+          }
+          if (responseId != null) {
+            const ratingWrap = document.createElement("div");
+            ratingWrap.className = "rating-wrap";
+            ratingWrap.dataset.responseId = responseId;
+            ratingWrap.innerHTML = 'Avalie esta resposta: <span class="stars">' +
+              [1,2,3,4,5].map(function(n) { return '<span data-stars="' + n + '" title="' + n + ' estrela(s)">★</span>'; }).join('') + '</span>';
+            div.appendChild(ratingWrap);
+            ratingWrap.querySelectorAll(".stars span").forEach(function(star, idx) {
+              star.addEventListener("click", function() {
+                if (ratingWrap.dataset.rated) return;
+                const num = idx + 1;
+                fetch("/api/rate", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ response_id: responseId, stars: num }),
+                }).then(function(r) { return r.json(); }).then(function(data) {
+                  if (data.ok) {
+                    ratingWrap.dataset.rated = "1";
+                    ratingWrap.querySelectorAll(".stars span").forEach(function(st, j) { st.classList.toggle("filled", j < num); });
+                    ratingWrap.innerHTML = "Obrigado pela avaliação!";
+                  }
+                });
+              });
+            });
+          }
+          scrollChatToEnd();
+          if (onDone) onDone();
+        }
+      }
+      tick();
     }
 
     function escapeHtml(s) {
@@ -243,33 +319,130 @@
       typing.className = "msg bot typing";
       typing.textContent = "Buscando";
       chat.appendChild(typing);
-      chat.scrollTop = chat.scrollHeight;
+      scrollChatToEnd();
 
       try {
-        const res = await fetch("/api/chat", {
+        const res = await fetch("/api/chat/stream", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             message: message,
-            history: conversationHistory
+            history: conversationHistory,
           }),
         });
-        const data = await res.json();
-        typing.remove();
-        if (data.ok) {
-          const answerText = data.from_cache
-            ? "(Resposta reutilizada de pergunta similar)\n\n" + data.answer
-            : data.answer;
-          addMsg(answerText, false, data.sources || [], data.response_id || null);
-          conversationHistory.push({ role: "user", content: message });
-          conversationHistory.push({ role: "bot", content: data.answer });
-          if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
+        const contentType = res.headers.get("Content-Type") || "";
+        if (contentType.indexOf("application/json") !== -1) {
+          const data = await res.json();
+          typing.remove();
+          if (data.ok) {
+            const answerText = data.from_cache
+              ? "(Resposta reutilizada de pergunta similar)\n\n" + data.answer
+              : data.answer;
+            if (data.from_cache) {
+              addMsgStreaming(answerText, data.sources || [], data.response_id || null, function() {
+                conversationHistory.push({ role: "user", content: message });
+                conversationHistory.push({ role: "bot", content: data.answer });
+                if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
+              });
+            } else {
+              addMsg(answerText, false, data.sources || [], data.response_id || null);
+              conversationHistory.push({ role: "user", content: message });
+              conversationHistory.push({ role: "bot", content: data.answer });
+              if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
+              scrollChatToEnd();
+            }
+          } else {
+            addMsg("Erro: " + (data.error || res.status), false);
+            scrollChatToEnd();
+          }
         } else {
-          addMsg("Erro: " + (data.error || res.status), false);
+          typing.remove();
+          const msgDiv = document.createElement("div");
+          msgDiv.className = "msg bot";
+          const contentDiv = document.createElement("div");
+          contentDiv.className = "msg-content";
+          const sourcesWrap = document.createElement("div");
+          sourcesWrap.className = "sources";
+          sourcesWrap.style.display = "none";
+          msgDiv.appendChild(contentDiv);
+          msgDiv.appendChild(sourcesWrap);
+          chat.appendChild(msgDiv);
+          scrollChatToEnd();
+          let fullAnswer = "";
+          let responseId = null;
+          const reader = res.body.getReader();
+          const decoder = new TextDecoder();
+          let buffer = "";
+          while (true) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const parts = buffer.split("\n\n");
+            buffer = parts.pop() || "";
+            for (const part of parts) {
+              let event = "";
+              let data = "";
+              part.split("\n").forEach(function(line) {
+                if (line.startsWith("event: ")) event = line.slice(7).trim();
+                else if (line.startsWith("data: ")) data = line.slice(6);
+              });
+              try {
+                const parsed = data ? JSON.parse(data) : null;
+                if (event === "sources" && parsed) {
+                  sourcesWrap.style.display = "block";
+                  sourcesWrap.innerHTML = "<details><summary>Fontes (" + parsed.length + ")</summary><ul></ul></details>";
+                  const ul = sourcesWrap.querySelector("ul");
+                  parsed.forEach(function(s, i) {
+                    const li = document.createElement("li");
+                    li.textContent = "#" + (i + 1) + " (id " + (s.id || "") + "): " + (s.conteudo || "").slice(0, 120) + "…";
+                    ul.appendChild(li);
+                  });
+                } else if (event === "token" && parsed) {
+                  fullAnswer += parsed;
+                  contentDiv.textContent = fullAnswer;
+                  scrollChatToEnd();
+                } else if (event === "done" && parsed) {
+                  responseId = parsed.response_id || null;
+                } else if (event === "error" && parsed) {
+                  contentDiv.textContent = fullAnswer + "\n\n(Erro: " + (parsed.error || "") + ")";
+                }
+              } catch (_) {}
+            }
+          }
+          if (responseId != null) {
+            const ratingWrap = document.createElement("div");
+            ratingWrap.className = "rating-wrap";
+            ratingWrap.dataset.responseId = responseId;
+            ratingWrap.innerHTML = 'Avalie esta resposta: <span class="stars">' +
+              [1,2,3,4,5].map(i => '<span data-stars="' + i + '" title="' + i + ' estrela(s)">★</span>').join('') + '</span>';
+            msgDiv.appendChild(ratingWrap);
+            ratingWrap.querySelectorAll(".stars span").forEach(function(star, i) {
+              star.addEventListener("click", function() {
+                if (ratingWrap.dataset.rated) return;
+                const num = i + 1;
+                fetch("/api/rate", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ response_id: responseId, stars: num }),
+                }).then(r => r.json()).then(function(data) {
+                  if (data.ok) {
+                    ratingWrap.dataset.rated = "1";
+                    ratingWrap.querySelectorAll(".stars span").forEach(function(st, j) { st.classList.toggle("filled", j < num); });
+                    ratingWrap.innerHTML = "Obrigado pela avaliação!";
+                  }
+                });
+              });
+            });
+          }
+          conversationHistory.push({ role: "user", content: message });
+          conversationHistory.push({ role: "bot", content: fullAnswer });
+          if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);
+          scrollChatToEnd();
         }
       } catch (err) {
         typing.remove();
         addMsg("Erro de rede: " + err.message, false);
+        scrollChatToEnd();
       }
       submit.disabled = false;
     });
