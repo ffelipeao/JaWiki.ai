@@ -8,7 +8,7 @@ Sistema de **RAG (Retrieval-Augmented Generation)** local que usa o manual do si
    Lê os `.txt` do manual (com suporte a subpastas), limpa marcações DokuWiki, divide em chunks, gera embeddings com Ollama e grava na tabela PostgreSQL com pgvector.
 
 2. **Chat web**  
-   Interface local onde o usuário faz perguntas; o sistema busca os trechos mais relevantes no banco e o Ollama (opcional) formula a resposta em passo a passo.
+   Interface local onde o usuário faz perguntas; o sistema busca os trechos mais relevantes no banco e o Ollama (opcional) formula a resposta em passo a passo. Quando o modelo de chat está ativo, as respostas podem ser exibidas em **streaming** (tempo real via SSE). O chat mantém **histórico da conversa** (últimas mensagens) enviado ao modelo para respostas com mais contexto.
 
 3. **Organização por tema**  
    O tema/assunto é derivado do caminho do arquivo (e do título da página quando existir), para a busca priorizar conteúdo do mesmo assunto.
@@ -77,6 +77,7 @@ JaWiki.ai/
    | `CHAT_TOP_K` | Quantidade de trechos buscados por pergunta (ex.: `5`) |
    | `CACHE_PERGUNTAS` | `1` = ativa cache de perguntas (respostas similares reutilizadas); `0` = desligado |
    | `CACHE_THRESHOLD` | Distância máxima para considerar “mesma” pergunta (ex.: `0.35`). Quanto menor, mais exigente. |
+   | `CACHE_MIN_STARS` | Reutilizar cache só para respostas com avaliação média ≥ N estrelas (ex.: `4` = só 4 ou 5 estrelas). |
    | `CACHE_EMBEDDING_DIM` | Dimensão do embedding (ex.: `1024` para mxbai-embed-large). Deve bater com o modelo. |
    | `FLASK_HOST`, `FLASK_PORT` | Host e porta do servidor do chat |
 
@@ -119,7 +120,7 @@ A pasta de dados (`DATA_DIR`) é percorrida recursivamente; cada `.txt` é limpo
 python run_web.py
 ```
 
-Acesse no navegador: **http://127.0.0.1:5000** (ou o host/porta definidos em `FLASK_HOST`/`FLASK_PORT`).
+Acesse no navegador: **http://127.0.0.1:5000** (ou o host/porta definidos em `FLASK_HOST`/`FLASK_PORT`). Na interface você pode iniciar uma **nova conversa** (botão no topo) para limpar o histórico e recomeçar; as respostas do Ollama são exibidas em **streaming** (texto aparecendo em tempo real) quando o modelo de chat está configurado.
 
 ### Busca por linha de comando (exemplo)
 
@@ -130,7 +131,7 @@ python query_example.py
 
 ### Cache de perguntas e avaliação por estrelas
 
-Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (tabela `jabot_rag_perguntas`). Quando uma pergunta **muito parecida** é feita de novo, a resposta anterior é reutilizada. No chat, o usuário pode avaliar cada resposta com 1 a 5 estrelas; as respostas melhor avaliadas são priorizadas quando há várias similares no cache. Respostas vindas do cache podem aparecer com o texto “(Resposta reutilizada de pergunta similar)”. A “similaridade” é definida por `CACHE_THRESHOLD` (distância do embedding; ex.: `0.35`).
+Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (tabela `jabot_rag_perguntas`). Quando uma pergunta **muito parecida** é feita de novo, a resposta anterior é reutilizada. No chat, o usuário pode avaliar cada resposta com **1 a 5 estrelas**; as respostas com melhor avaliação são priorizadas quando há várias similares no cache. Só são reutilizadas respostas com avaliação média ≥ `CACHE_MIN_STARS` (ex.: 4 = só 4 ou 5 estrelas). No chat, a avaliação é feita pela API `/api/rate`. Respostas vindas do cache podem aparecer com o texto “(Resposta reutilizada de pergunta similar)”. A “similaridade” é definida por `CACHE_THRESHOLD` (distância do embedding; ex.: `0.35`).
 
 ## Fluxo resumido
 
@@ -138,7 +139,9 @@ Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (t
 manual_txt/*.txt  →  run_ingest / core.ingest (limpeza, chunking, embeddings)  →  PostgreSQL (pgvector)
                                                                                         ↓
 Pergunta do usuário  →  run_web / web.app  →  embedding da pergunta  →  busca por similaridade
+                                           →  (opcional) cache por pergunta similar  →  resposta reutilizada
                                            →  trechos + Ollama (opcional)  →  resposta em passo a passo
+                                                                           →  streaming (SSE) quando LLM ativo
 ```
 
 ## Licença e uso
