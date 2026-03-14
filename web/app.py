@@ -55,7 +55,8 @@ REGRAS:
 - Responda sempre no mesmo idioma em que o usuário escreveu a pergunta (ex.: pergunta em português = resposta em português).
 - Os trechos podem começar com "Assunto: <tema>". Priorize informações do mesmo assunto.
 - Use APENAS informações do conteúdo abaixo que tenham relação com a pergunta.
-- Escreva em PASSO A PASSO numerado (1., 2., 3., ...) quando for explicar como fazer algo.
+- Responda com o máximo de informação obtida dos documentos relacionados.
+- Sempre que possível, cite os caminhos do menu para acessar funcionalidades no sistema (ex.: Parceiros > Logos, Configurações > Usuários).
 - Se nada for relevante, responda: "Não encontrei informação sobre isso na base de conhecimento."
 {history_text}PERGUNTA DO USUÁRIO:
 {pergunta}
@@ -96,7 +97,8 @@ REGRAS:
 - Responda sempre no mesmo idioma em que o usuário escreveu a pergunta (ex.: pergunta em português = resposta em português).
 - Os trechos podem começar com "Assunto: <tema>". Priorize informações do mesmo assunto e evite misturar temas diferentes.
 - Sua resposta deve ser dirigida à pergunta. Use APENAS informações do conteúdo abaixo que tenham relação com a pergunta.
-- Escreva em PASSO A PASSO numerado (1., 2., 3., ...) quando for explicar como fazer algo no sistema.
+- Responda com o máximo de informação obtida dos documentos relacionados.
+- Sempre que possível, cite os caminhos do menu para acessar funcionalidades no sistema (ex.: Parceiros > Logos, Configurações > Usuários).
 - Se nada do conteúdo for relevante, responda: "Não encontrei informação sobre isso na base de conhecimento."
 
 PERGUNTA DO USUÁRIO:
@@ -165,7 +167,7 @@ CONTEÚDO BUSCADO NO BANCO (use apenas o que for relevante):
 {context}
 ---
 
-REGRAS: Responda sempre no mesmo idioma em que o usuário escreveu a pergunta. Use apenas informações do conteúdo acima. Responda em passo a passo quando for "como fazer". Se nada for relevante, diga que não encontrou. Considere o histórico acima para dar continuidade à conversa (ex.: "como disse antes", "o passo 2 é...")."""
+REGRAS: Responda sempre no mesmo idioma em que o usuário escreveu a pergunta. Use apenas informações do conteúdo acima. Responda com o máximo de informação obtida dos documentos relacionados. Sempre que possível, cite os caminhos do menu para acessar funcionalidades (ex.: Parceiros > Logos). Se nada for relevante, diga que não encontrou. Considere o histórico acima para dar continuidade à conversa."""
 
         r = requests.post(
             f"{OLLAMA_BASE_URL.rstrip('/')}/api/generate",
