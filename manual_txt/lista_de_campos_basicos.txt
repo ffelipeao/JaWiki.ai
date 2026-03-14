@@ -1,0 +1,64 @@
+====== Lista de Campos Básicos ======
+
+Para facilitar o entendimento da planilha, segue abaixo todos os campos e suas respectivas descrições.
+
+
+^ Nr ^ Campo ^ Formato ^ Significado ^
+| 1  | numtombo | numérico | Número tombo do espécime. Caso não seja informado, o sistema criará um novo seguindo a numeração atual. |
+| 2  | sufixo | caracter | Sufixo do número de tombo. Ex: a, b, c. |
+| 3  | family | caracter | Família |
+| 4  | genus | caracter | Gênero |
+| 5  | cf | caracter | Detalhe da identificação taxonômica. Preencher com cf. ou aff. |
+| 6  | sp1 | caracter | Espécie |
+| 7  | author1 | caracter | Autor da espécie – não cadastrar o nome do autor do gênero e família. |
+| 8  | rank1 | caracter | Tipo da primeira infraespécie: variedade, forma etc. Ex: var., f., ssp. ou Infr. |
+| 9  | sp2 | caracter | Primeira infraespécie. Contém o epíteto da variedade ou forma. |
+| 10 | author2 | caracter | Autor da primeira infraespécie. |
+| 11 | rank2 | caracter | Tipo da segunda infraespécie: variedade, forma etc. Algumas vezes, ocorre de uma espécie ter mais de uma infra. Este campo é dicionarizado. |
+| 12 | sp3 | caracter | Segunda infraespécie. Cadastrar o epíteto da variedade ou forma. |
+| 13 | author3 | caracter | Autor da segunda infraespécie. |
+| 14 | vernacular | caracter | Nome vulgar. Nome (ou nomes) pelo qual é conhecida a espécie em sua região. |
+| 15 | typestat | caracter | Refere-se às exsicatas que são typus nomenclaturais. É um campo dicionarizado. Ex.: “clonótipo”, “holótipo”, etc. |
+| 16 | country | caracter | País onde a coleta foi realizada. |
+| 17 | majorarea | caracter | Estado onde a coleta foi realizada. Caso seja informada a sigla de um estado brasileiro, essa será trocada automaticamente no sistema por extenso. |
+| 18 | minorarea | caracter | Município onde a coleta foi realizada. |
+| 19 | gazetteer | caracter | Campo para especificação da localidade, dentro do Município. Exemplo: "Serra de Ouro Preto". |
+| 20 | uc | caracter | Unidade de conservação |
+| 21 | latitude | numérico | Latitude em formato decimal, com até 5 casas decimais. Ex. -22.96576. Não há necessidade de informar as coordenadas em Grau/Minuto/Segundo e também em decimal, basta um formato|
+| 22 | longitude | numérico | Longitude em formato decimal, com até 5 casas decimais. Ex. -43.22824. |
+| 23 | lat_grau | numérico | Valor do grau da latitude do local da coleta. Somente números. Não precisa colocar símbolo de grau (º). |
+| 24 | lat_min | numérico | Valor dos minutos da latitude do local da coleta. Somente números. |
+| 25 | lat_seg | numérico | Valor dos segundos da latitude do local da coleta. Somente números. |
+| 26 | ns | caracter | Norte ou sul, referente à latitude. Digite N ou S. |
+| 27 | long_grau | numérico | Valor do grau da longitude do local da coleta. Somente números. Não precisa colocar símbolo de grau (º). |
+| 28 | long_min | numérico | Valor dos minutos da longitude do local da coleta. Somente números. |
+| 29 | long_seg | numérico | Valor dos segundos da longitude do local da coleta. Somente números. |
+| 30 | ew | caracter | Leste ou oeste (East or West). Digite E ou W. |
+| 31 | altprof | numérico | Altitude ou profundidade – só números. |
+| 32 | altprofmax | numérico | Valor máximo da altitude ou profundidade, caso tenha – só números. O valor mínimo fica no campo ALTPROF. |
+| 33 | unidmedaltprof | caracter | m, cm, mm ou ft. |
+| 34 | locnotes | caracter | Observações, notas e descrições sobre a localidade onde foi realizada a coleta. Campo é do tipo texto, que permite a entrada de textos sem limitação de tamanho. |
+| 35 | flor | caracter | Verifica a existência de flor. Marcar com um "X". |
+| 36 | fruto | caracter | Verifica a existência de fruto. Marcar com um "X". |
+| 37 | fuste | numérico | Valor do fuste. |
+| 38 | altura | numérico | Valor da altura do indivíduo. Só números. |
+| 39 | unidmedaltura | caracter | m, cm ou mm. |
+| 40 | collector | caracter | Nome do coletor principal. |
+| 41 | number | caracter | Número da coleta do principal coletor. |
+| 42 | addcoll | caracter | Nome dos demais coletores. |
+| 43 | colldd | numérico | Dia da coleta, com 2 dígitos. |
+| 44 | collmm | numérico | Mês da coleta, com 2 dígitos. |
+| 45 | collyy | numérico | Ano da coleta, com 4 dígitos. |
+| 46 | detby | caracter | Determinadores da espécie principal. |
+| 47 | detdd | numérico | Dia do mês em que foi identificada a espécie, com 2 dígitos. |
+| 48 | detmm | numérico | Mês em que foi identificada a espécie, com 2 dígitos. |
+| 49 | detyy | numérico | Ano em que foi identificada a espécie, com 4 dígitos. |
+| 50 | sigla_colbot_origem | caracter | Sigla da coleção botânica de origem. Ex: RB. |
+| 51 | dups | caracter | Sigla dos herbários com duplicatas. |
+| 52 | nrdups | numérico | Total de duplicatas. |
+| 53 | notes | caracter | Descrição do indivíduo. Atenção: A altura e o habitat devem ser colocados em campos próprios. |
+| 54 | usos | caracter | Estado de caráter etonobotânico. Lista de usos a que se destina. |
+| 55 | uso_especifico | caracter | Campo etonobotânico para o uso específico da espécie. |
+| 56 | projeto | caracter | Nome do projeto. |
+| 57 | habitat | caracter | Descrição do local onde o espécime habita. |
+| 58 | habito | caracter | Hábito da espécie. |

@@ -1,0 +1,30 @@
+====== Controle de Fenologia da Coleção viva ======
+
+Esse item permite realizar o manejo a fim de consultar e cadastrar a parte de fenologia sobre uma espécie/espécime.
+
+====== Consultar a Fenologia sobre uma Espécie ======
+
+Para consultar a parte de fenologia cadastrada sobre uma espécie, basta efetuar login no Jabot, acessar o menu "Arboreto - Curadoria - Consultar Fenologia" que uma tela será carregada contendo a lista de espécies e sua fenologia agrupada por ano.
+Nesse tela serão listadas todos as espécies que possuem alguma informação já cadastrada.
+
+Sempre que for necessário, basta clicar sobre o nome da espécies para realizar uma consulta no Mapa do Arboreto Interno. Por lá será possível ter acesso a todos os espécimes cadastrados, além de abrir a opção para cadastrar ou alterar os dados de Fenologia sobre o espécime.
+
+{{::consfenologia.png|}}
+
+
+====== Cadastrar a Fenologia sobre uma Espécie ======
+
+Após realizar uma consulta no Mapa do Arboreto Interno, caso você tenha acesso, o sistema exibirá uma opção para cadastrar ou alterar as informações de Fenologia. Para isso, basta clicar no botão "Cad. Fenologia" do espécime que deseja acessar.
+
+{{::cadfenologia.png|}}
+
+Com o clique, o sistema abrirá a tela de cadastro contendo a sigla da coleção, o número de tombo e o nome da espécie relacionada. Também serão apresentadas as opções para seleção. Basta marcar as caixinhas correspondentes ao estada observado da espécie e clicar em "Salvar".
+
+{{::cadfenologia_hist.png|}}
+
+
+Nessa mesma tela, o sistema também exibe o histórico contendo todas as informações já cadastradas sobre a fenologia do espécime. Se necessário, também é possível clicar no botão "Excluir" para remover as informação que estiverem incorreto.
+
+Obs. As informações de fenologia cadastradas sobre uma espécie serão agrupadas na tela de consulta, mesmo se forem cadastradas para tombos diferentes.
+
+

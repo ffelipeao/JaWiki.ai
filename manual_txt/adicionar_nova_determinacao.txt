@@ -1,0 +1,16 @@
+====== Adicionar nova determinação ======
+
+Existem duas maneiras de adicionar uma nova determinação para a coleção botânica desejada: a simples e a em lote.
+
+**Simples:** Como o nome mesmo diz, é muito simples essa opção, na tela de consulta selecione a coleção e preencha pelo menos um campo(tombo ou código de barras) de preferência  e clique no botão consultar. Tendo êxito no resultado, se você tiver permissão para alterar essa determinação é só clicar na seta que aparece ao lado do tombo e escolher a opção "alterar".
+{{:adicionar_determinacao1.png?|}}
+{{:adicionar_determinacao2.png?|}}
+
+Em seguida irá abrir uma página para poder fazer a alteração, clique no botão "adicionar" e irá abrir uma tela para poder pesquisar e preencher os campos da nova determinação, ao final do processo clique no botão "salvar nova determinação".
+{{:adicionar_determinacao3.png?|}}
+{{:adicionar_determinacao4.png?|}}
+
+**Em Lote:**
+No mesmo processo inicial do simples, na tela de consulta selecione a coleção e preencha pelo menos um campo(tombo ou código de barras) de preferência  e clique no botão consultar. Se você tiver permissão para alterar é só selecionar as determinações que deseja adicionar, clique na opção "em lote" e no link "adicionar determinação". Irá abrir uma tela para poder pesquisar e preencher os campos da nova determinação, ao final do processo clique no botão "salvar nova determinação".
+{{:adicionar_determinacao5.png?|}}
+{{:adicionar_determinacao4.png?|}}

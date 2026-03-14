@@ -1,0 +1,21 @@
+====== Excluir Testemunho ======
+
+###
+Para excluir um testemunho basta realizar a pesquisa, clique no número de tombo para abrir uma lista de links, no testemunho escolhido basta clicar no link para excluir. Em seguida irá direcionar para uma outra tela para confirmar os dados do testemunho, se estiver tudo correto basta confirmar a exclusão.
+###
+
+
+<b>Obs:</b> O link para excluir o testemunho só aparece para <b>administrador</b> ou <b>curador</b> do sistema.
+
+
+Segue os exemplos abaixo:
+
+{{:excluir_testemunho1.png?}}
+
+
+<b>Figura 1 - Selecionando o Testemunho</b>
+
+{{:excluir_testemunho2.png?}}
+
+
+<b>Figura 2 - Confirmando Testemunho</b>

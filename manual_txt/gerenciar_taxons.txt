@@ -1,0 +1,44 @@
+====== Gerenciar Táxons ======
+
+Para fazer alteração no táxon entre no menu **Taxonomia-Gerenciar Táxons**.
+
+{{::menu_gerenciar.png|}}
+
+Na próxima tela selecione o táxon que deseje alterar.
+
+{{::selecionar_taxon.png|}}
+
+Clique no item, selecione uma das opções: **Alterar o epiteto/Autores** ou **Substituir táxon** 
+
+{{::selecionar_op_substituir.png|}}
+
+**Para opção "Alterar Epíteto/Autores":**
+
+Altere os dados que achar necessário nos campos "Alterar Epiteto para:" ou "Alterar Autor(es) para:". Se necessário, marque a opção "Repetir alteração nos autores de todos os Táxons(de minhas especialidades) com os mesmos autores.".
+
+{{::alterar_epiteto_e_autores.png|}}
+
+
+**Para opção "Substituir Táxon":**
+
+Cadastre as novas informações que achar necessário e clique em "Salvar".
+
+{{::substituir_de_para_1.png|}}
+
+
+
+====== Trocar Táxon 'DE: PARA:' ======
+
+
+Caso seja necessário é possível usar a função **Trocar Táxon 'DE: PARA:'**.
+
+Ao clicar no botão **Trocar Táxon 'DE: PARA:'**, uma nova tela será carregada, e nela, basta informar o código do táxon certo e o código errado.
+obs. Caso só apareça um item na lista, basta ajustar o filtro e buscar novamente. Se necessário basta anotar o código do táxon que já está na tela e consultar novamente alterando o filtro pelo táxon desejado. O registros cadastrado com o táxon errado será substituído pelo correto e o errado será excluído da lista automaticamente.
+
+{{::substituir_de_para.png|}}
+
+
+
+
+ 
+

@@ -1,0 +1,34 @@
+====== Padronizar nome de coletores ======
+
+Essa função foi criado para permitir a padronização dos nomes dos coletores no banco de dados.
+
+Para acessar, basta clicar no menu "Curadoria-Qualidade de Dados-Padronização de Coletor" que uma nova tela será aberta para permitir filtrar os coletores por parte do nome. Ex: Para buscar todas as variações do nome Rafaela Forzza, basta filtrar por forzza. Assim, uma lista será aberta com todas os coletores com o nome forzza em parte do texto.
+
+Caso realmente seja necessário fazer a correção, basta selecionar os nomes que estão fora do padrão e preencher o campo "Nome correto" com o nome padronizado.
+
+
+__**Obs. Essa função altera os dados originais. Caso seja necessário realizar consultas ou emitir novas etiquetas, o sistema utilizará o nome do coletor já alterado.**__
+
+Veja as imagens e siga os passos para fazer essa alteração.
+
+  - Selecione uma coleção
+  - Digite parte do nome do coletor
+  - Clique em Buscar
+
+{{:padronizar_coletor_p1.jpg|}}
+
+  - Marque um os mais nomes que estejam fora do padrão.
+  - Digite o novo nome no padrão desejado
+  - Clique no botão Alterar.
+
+{{::padronizar_coletor_p2.jpg|}}
+
+
+===== Permissão de Acesso =====
+
+Para que essa funcionalidade fique ativa, o curador/administrador do herbário precisa marcar a opção "Desbloquear a opção de padronização de coletor do menu qualidade de dados" na tela de configuração do sistema.
+
+{{::padronizar_coletor_-_permissao.jpg|}}
+
+É importante destacar que apenas os usuários com os perfis de Administrador, Curador ou Assistente de Curadoria poderão acessar esse recurso, caso ele esteja desbloqueado na tela de configuração.
+

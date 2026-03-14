@@ -1,0 +1,18 @@
+====== Sobre a Instituição ======
+
+A página "Sobre a Instituição" é um local para acesso público das informações básicas sobre a Instituição e seus colaboradores.
+
+O preenchimento dessa página é feito com informações que são enviadas no momento do cadastro da Instituição no Jabot.
+Após o primeiro cadastro, esses dados também podem ser atualizados na tela de configuração de cada instituição (menu: Admin/Configuração), **Figura 1**. A página Sobre a Instituição será exibida nas opções sem login sistema (menu: Sobre/Informações do Herbário), e vista como na **Figura 2**.
+
+**Figura 1 - Página de configuração com dados da Instituição.**
+ 
+{{::tela_configuracao.jpg|}}
+
+
+**Figura 2 - Sobre a Instituição.**
+
+{{::sobre_a_instituicao.jpg|}}
+
+
+A **lista de colaboradores** é gerada a medida que cada usuário é cadastro no sistema e o campo "staff" é marcado em seu cadastro. Se necessário, também é possível preencher o campo "Especialidade" para destacar a especialidade/atividade que cada usuário exerce na Instituição. Para mais informações consulte o manual sobre como cadastrar [[cadastrarusuario|novos usuários]].

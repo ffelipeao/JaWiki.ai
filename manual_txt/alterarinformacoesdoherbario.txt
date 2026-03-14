@@ -1,0 +1,6 @@
+====== Adicionar Informações do Herbário ======
+
+Para adicionar as **Informações sobre a Instituição**, basta acessar o menu **Admin → Configuração**. Você poderá modificar os campos conforme necessário e, em seguida, clicar em **Salvar** no final da página.
+
+
+{{::confdadosobreherbario.png?nolink&1300 |}}

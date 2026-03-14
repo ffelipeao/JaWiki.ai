@@ -1,0 +1,21 @@
+====== Incluir Colaboradores - Informações do Herbário ======
+
+Para adicionar colaboradores na tela de **Informações sobre a Instituição**, acesse o menu **Admin → Usuários**. Você pode utilizar os campos **Nome, Login e E-mail** para **Filtrar** ou pesquisar pela lista de usuários. Selecione o usuário que deseja e em seguida clique em **Editar Usuário**, conforme ilustrado na **Figura 1** abaixo.
+
+**Figura 1 - Editar usuário selecionado**
+
+
+{{::captura_de_tela_2025-03-21_014152.png?nolink |}}
+
+
+Após clicar em **Editar Usuário** será aberta uma tela de edição dos dados do usuário. Logo abaixo será exibida uma caixa de seleção com o nome **Staff**, marque essa opção. Conforme solicitado a orientação do checkbox, preencha também o campo **Especialidade** e clique em **Salvar**, conforme demostrado na **Figura 2**.
+
+**Figura 2 - Selecionar Staff**
+
+
+{{::selecionacolaborador.png?nolink |}}
+
+
+
+Após esse procedimento o nome do Colaborador irá aparecer na tela de **Informações sobre a Insitutição**.
+

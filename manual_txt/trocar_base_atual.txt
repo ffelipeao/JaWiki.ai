@@ -1,0 +1,15 @@
+====== Trocar Base atual ======
+
+Para cadastrar novos registros e trabalhar em uma base de dados, é necessário que ela seja selecionada como base de dados atual. Clique no menu **Espécime/Trocar base atual**, depois selecione a base de dados desejada através da lista de bases de dados e clique em **Salvar**, repare que a partir de agora logo a baixo do menu a base de dados atual sempre estará visível, demostrando em qual base você está trabalhando no momento.
+
+Veja as Imagens na ordem das seleções para trocar de base:
+
+  * Selecionar no menu **Trocar base atual**. 
+  {{::baseatual.jpg?direct|}}
+  * Selecionar a base de dados desejada e **Salvar**. 
+  {{::trocarbase.jpg?direct|}}
+  * Ver base de dados em uso.
+  {{::baseatual.2jpg.jpg?direct|}}
+
+
+

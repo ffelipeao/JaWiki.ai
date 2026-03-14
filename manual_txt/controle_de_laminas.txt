@@ -1,0 +1,23 @@
+====== Controle de Lâminas (Xiloteca) ======
+
+A funcionalidade de Controle de Lâmina (Xiloteca) foi criada para a inclusão das informações sobres os diferentes tipos de cortes das lâminas da coleção de Xiloteca.
+
+O acesso a esta funcionalidade é feito pelo menu "Curadoria / Controle de Lâminas (Xiloteca)".
+
+Na parte inicial da tela (Figura 1) encontramos duas opções de consultas: pelo código de barras do testemunho ou pelo número da lâmina. Caso necessário, sugerimos verificar exemplos na xiloteca do RB, buscando na coleção Xiloteca e Apenas com Imagem.
+
+Para o cadastro de uma lâmina deve-se proceder da seguinte forma: 
+  - Carregar com a conta de FTP as imagens para o servidor;
+  - Preencha o campo **código de barras** referente ao testemunho que deseja cadastrar e clique em "**Consultar**";
+  - Registrar na parte de cadastro, caixa de texto (Lâmina), o valor de identificação da lâmina para o corte, por exemplo, 21335-1;
+  - Marcar o tipo de corte ao lado (tangencial, transversal ou radial);
+  - Clicar em Salvar.
+
+Na tela de Controle de Lâminas também é possível realizar a exclusão das lâminas.
+
+
+----
+**Figura 1 - Tela de Controle de Lâminas da Xiloteca**
+
+{{::laminas.png|}}
+

@@ -1,0 +1,24 @@
+====== Cadastrar / Excluir Unidade Geo Política ======
+
+Clique no Botão **+Nova** para criar uma nova unidade
+
+{{:unidadegeo.png?600|}}
+
+Existem três formas de cadastrar uma nova unidade geo política:
+
+1º Se for cadastrar apenas um **pais**, digite o nome desse pais no último campo do formulário **Nome da Unidade Geopolítica (*)**, esse asterisco significa que o campo é obrigatório e clique em salvar.
+
+{{:unidadegeo1.png?600|}}
+
+2º Se for cadastrar apenas o **estado**, digite o nome desse estado no último campo do formulário **Nome da Unidade Geopolítica (*)** e selecione um país na caixa de seleção de países e clique em salvar.
+
+{{:unidadegeo2.png?600|}}
+
+3º Se for cadastrar um **município**, digite o nome desse município no último campo do formulário **Nome da Unidade Geopolítica (*)** e selecione um país na caixa de seleção de países e um estado na caixa de seleção de estados e clique em salvar.
+
+{{:unidadegeo3.png?600|}}
+
+Concluído o passo escolhido, pesquise a unidade cadastrada e através dessa pesquisa você poderá alterar ou excluir. Para alterar clique no link, agora para excluir selecione o item e clique no botão excluir.
+
+{{:unidadegeo4.png?600|}}
+

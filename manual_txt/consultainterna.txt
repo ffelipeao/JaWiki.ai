@@ -1,0 +1,16 @@
+====== Consulta Interna ======
+=== Utilizando filtros ===
+Preencha os campos e em seguida clique o botão [Consultar].
+  * Exemplo de consulta:  Todos os registros da coleção **RB**, gênero **Aecmea**, família **Bromeliaceae** da localidade **Bahia** que possuem imagem **ordenado pelo coletor**. 
+{{:manual_consultainterna01.png?|}}
+  * Número da coleta, número de tombo e código de barra - É permitido colocar valores separados por virgula. Ex.: "746886, 304985" no campo **Código de Barra**. 
+  * Registro de uma base de dados. No campo base de dados, selecione a base que deseja consultar e clique no botão consulta. A lista das bases é composta pelas que o usuário possui acesso. Podemos utilizar os outros filtros em conjunto com a base de dados. Ex.: Todos os registros da base **Inventário Arboreto** da que possui informação no campo Plantado por = **'Nicoletti"**.
+{{::manual_consultainterna02.png?|}}
+  * Utilizando Shapes na consulta - O sistema disponibiliza alguns shapefiles para realização de consulta. Apenas os registros georeferenciados serão utilizados na consulta. Ex.: **Bromeliacea** no bioma **Caatinga** (RJ).
+{{::manual_consultainterna03.png?|}}
+  * Ficha do espécime - Para gerar a ficha do espécime, clique no **número do código de barras**.
+{{::manual_consultainterna04.png?|}}
+{{:manual_consultainterna05.png?|}}
+
+  * Seção/Canteiro - Utilize os caracteres / ou - para separar os valores da seção e canteiro. Exemplo 20/E, 14-A.
+ 

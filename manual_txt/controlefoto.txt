@@ -1,0 +1,27 @@
+====== Controle Fotos da Coleção Viva ======
+
+Este item permite carregar e gerenciar as imagens enviadas para aprovação da curadoria da coleção viva.
+
+Sempre que for preciso enviar uma foto para aprovação da coleção viva, o usuário precisará estar logado no sistema e clicar no menu "Arboreto - Curadoria - Controle de Foto". Quando a nova tela for carrega, basta selecionar a "Coleção Botânica" que será possível visualizar todas as imagens que já foram enviadas e ainda estão esperando aprovação.
+
+{{::controle_de_foto.png|}}
+
+
+Para os usuário com a permissão de "Curadoria de Imagem", será apresentado junto de cada imagem duas opção, uma para "Excluir" e outra para "Aceitar" a imagem em questão. Basta clicar na opção desejada que o sistema irá efetuar a operação selecionada.
+
+{{::controle_de_foto_alterar_e_excluir.png|}}
+
+
+====== Cadastrar Nova Imagem ======
+
+Para enviar uma nova imagem para aprovação, nessa mesma tela, basta clicar no botão "Novo Cadastro". Uma nova tela será carregada com as opções de preenchimento e seleção dos arquivos a serem enviados. Informe o "Número de Tombo" que corresponde as fotos que serão enviadas e selecione o nome do fotógrafo na lista, caso seja você mesmo, seu nome já estará seleciono. 
+É importante destacar que, caso o usuário não esteja visível na lista, ele precisará ser cadastrado antes de toda a operação.
+Ao finalizar o preenchimento de todos os campos, basta clicar em "Salvar".
+
+{{::cadastro_de_foto.png|}}
+
+Ao final do processo, as imagens enviadas serão exibidas na tela de aprovação para análise do responsável.
+
+**Observação importante:**
+
+**As imagens aprovadas só serão exibidas na tela principal de consulta do sistema após do período de processamento das mesmas pelo servidor de imagens.** 

@@ -1,0 +1,10 @@
+==== Consulta Por Base de Dados e geração de etiquetas: ====
+
+  * Para visualizar todos os itens de uma base de dados, acesse a consulta interna e no menu Consulta selecione a opção Consulta, no campo Base de Dados da tela de pesquisa, escolha a base desejada e depois clique no botão Consultar.
+
+  * Para gerar as etiquetas, realize a consulta da base desejada (Passo 1), após exibir os resultados, observe na parte inferior da tela a caixa que indica o total de amostras exibidas para a geração das etiquetas (escolha a opção que contenha todas as amostras de sua base). Feito isso, basta escolher a opção de marcar todos os itens (primeiro quadradinho da barra antes dos resultados), agora basta clicar no botão - Gerar etiquetas para espécimes marcados, Escolha o tamanho da etiqueta desejada e irar abrir um PDF com todas as etiquetas selecionadas.
+
+
+A imagem abaixo apresenta todos os passos necessário para gerar as etiquetas.
+
+{{ :consulta_por_base.png?nolink |}}

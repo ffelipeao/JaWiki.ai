@@ -1,0 +1,69 @@
+====== Exportar Dados ======
+###
+Para exportar os dados, após a realização de uma consulta interna ou externa, verifique na parte inferior dos resultados o botão <b>Exportar</b>, clique e selecione o formato desejado.
+Veja a imagem abaixo:
+###
+
+{{:jabot_-_consulta_-_google_chrome_2.jpg|}}
+
+===== Formato "XLS (Arboreto)"=====
+
+
+Esse formato é utilizado por instituições que usam o sistema para o gerenciamento de seu arboreto. O formato possui campos específicos para esse fim, como: tipo de coleção, local físico e desaparecido/morto.
+
+===== Formato "CSV (Darwincore)"=====
+
+
+A exportação de dados no formato "XLS (Darwincore)" pode ser lenta dependendo da quantidade de dados do herbário, chegando a se tornar inviável e fonte de reclamação, por esse motivo, foi necessário criar uma alternativa com um formato mais leve e que abre em poucos segundos, mesmo que o herbário possua muitos dados. Assim, agora temos o formato "CSV (Darwincore)", que abre exatamente com o mesmo formato das colunas do antigo XLS. A seguir seguem os passos para uso desse formato no Excel e no LibreOffice. 
+\\
+\\
+**Uso do formato .CSV no Excel:**
+\\
+Executar sua consulta e baixar o .CSV. Abrir o Excel. Criar uma nova planilha (em branco). Ir no menu "Dados". Selecionar "De Text/CSV". Selecionar o arquivo .CSV em suas pastas e clicar em "Importar". Após isso, uma tela será aberta e nela escolha Origem do Arquivo - "65001: Unicode (UTF-8)", o Delimitador "Personalizado", na caixinha a baixo informe o "|" (pipe) como separador e em "Detecção de Tipo de Dados" marque a opção "Com base em um conjunto de dados inteiro". Depois, clicar em "Carregar". Quando o arquivo for aberto, escolha o formato desejado e salve novamente como desejar.
+
+{{ :exportar_csv_excel.png |}}
+\\
+\\
+**Uso do formato .CSV no LibreOffice:**
+\\
+Funciona assim, basta abrir o arquivo e selecionar o "|" (piper) como opção de delimitador das colunas e o arquivo será aberto rapidamente. Recomendamos a utilização do programa "Libre Office", uma ferramenta grátis que está disponível para download na internet pelo link ([[https://pt-br.libreoffice.org]]). 
+Com ele, ao abrir um novo arquivo, aparece uma mensagem perguntando a codificação a ser utilizada e o delimitador (separador).
+Ao finalizar a instalação, abra o arquivo e preenche os campos seguinte o exemplo a imagem abaixo.
+\\
+\\
+{{ :image_libreoffice.png?nolink |}}
+\\
+\\
+Caso ainda precise de um formato em XLS, basta abrir o arquivo, ir na opção "Salvar Como" e escolher a opção de salvar com a extensão ".XLS".
+\\
+\\
+===== Formato "XLS (Planilha Padrão)"=====
+
+Os dados da consulta são exportados em formato .XLS com o mesmo conjunto de campos da planilha padrão.
+\\
+\\
+**Uma dica importante:** para herbários parceiros que estão no processo de digitação de dados e no caso do herbário possuir duplicatas em outro herbário que já usa o Jabot, basta fazer a consulta naquele herbário, exportar os dados em XLS Planilha Padrão e importar em seu Jabot; evitando assim a digitação dos dados dessas amostras.
+
+\\
+\\
+A seguir serão apresentados mais alguns formatos para exportação para atendimento as orientações de uso de Dados Abertos (https://www.gov.br/governodigital/pt-br/dados-abertos).
+\\
+\\
+===== Formato "CSV"=====
+
+A exportação é realizada em formato CSV sem seguir o padrão Darwin Core.
+
+\\
+===== Formato "ODS"=====
+
+A exportação é realizada no formato aberto ODS que pode ser aberto em diversos softwares, como o Excel, Libre e OpenOffice.
+
+\\
+===== Formato "JSON"=====
+
+O formato JSON (JavaScript Object Notation) é um formato textual, que segue o padrão aberto e é independente de softwares. Ele é usado para intercâmbio de dados entre sistemas.
+
+\\
+===== Formato "XML"=====
+
+O formato XML (eXtensible Markup Language) é um outro formato muito usado para a troca de dados entre sistemas e para a importação para um banco de dados.

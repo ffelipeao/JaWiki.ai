@@ -1,0 +1,26 @@
+====== Migrar Dados para Outra Base de Dados ======
+Caso seja necessário migrar os registros entre bases de dados, basta logar no sistema, abrir a tela de consulta interna e consultar os registros desejados. Ao fazer isso, a página de consulta será carregada com todas informações consultadas. 
+Caso você tenha permissão para tal, o sistema exibirá em cada número de tombo um botão com algumas opções disponíveis, entre elas está a opção "Migrar para Outra Base", Figura 1. Basta clicar sobre ela que uma nova tela será carregada.
+
+**Figura 1 - Opção para migrar dados para outra base de dados.**
+
+{{::migrar_dados_para_outra_base.png|}}
+
+Nessa nova tela será exibido um resumo sobre os dados selecionadas um campo com a "Base de dados Atual" e outro para seleção da "Nova base dados" que receberá o registro, Figura 2. Basta selecionar a "Nova Base dados" e clicar em Salvar.
+
+**Figura 2 - Selecionando a nova base dados.**
+{{::novabasedados.png|}}
+
+
+====== Migrar Dados para Outra Base de Dados Em Lote ======
+
+Caso seja necessário realizar o mesmo procedimento para vários registros simultaneamente, basta realizar a busca desejada na página de consulta interna, marcar os registros desejados, clicar na opção "Em Lote - Migrar para Outra Base", Figura 3.
+
+**Figura 3 - Opção para migrar para outra base de dados em Lote.**
+
+{{::migrar_dados_para_outra_base_em_lote.png|}}
+
+Quando as nova tela for carregada, serão exibidos todos os registros que foram selecionados e uma opção para escolher a nova base de dados. Marque novamente os registros que deseja migrar, escolha a nova base de dados em questão e clique em Salvar, Figura 4, que a migração será efetuada.
+
+**Figura 4 - Seleção dos registros e da nova base de dados.**
+{{::migrar_dados_para_outra_base_em_lote_selecao.png|}}

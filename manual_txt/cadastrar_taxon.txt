@@ -1,0 +1,13 @@
+====== Cadastrar Táxon ======
+
+Para cadastrar um novo táxon, acesse o menu **Taxonomia/Cadastrar Táxon**, preencher os campos de acordo o nível do táxon que desejado, seguindo as seguinte descrição:
+
+  * Para cadastrar uma nova Espécie - Selecione a família, o gênero, a unidade taxonômica correspondente (Espécie), preencha o nome da espécie no campo **Táxon**, o nome do autor no campo **Autor** e clique em **Salvar**.
+  * Para cadastrar um novo Gênero - Selecione a família, a unidade taxonômica correspondente (Gênero), preencha o nome do Gênero no campo **Táxon** e clique em **Salvar**.
+  * Para cadastrar uma nova Família - Selecione a unidade taxonômica correspondente (Família), preencha o nome da Família no campo **Táxon** e clique em **Salvar**.
+  * Para cadastrar Subespécie/Variedade/Forma - Selecione a família, o gênero, a espécie, a unidade taxonômica correspondente, preencha o nome da Subespécie/Variedade/Forma no campo **Táxon**, o nome do autor no campo **Autor** e clique em **Salvar**.
+
+
+Obs. Para cadastrar família e gênero não é necessário informar o nome do autor.
+
+{{::cadastrar_taxon.jpg?direct|}}

@@ -1,0 +1,5 @@
+====== Excluir histórico de determinação ======
+
+Para excluir histórico de determinação, entre na tela de alteração de cadastro, nos campos de Determinação serão exibidos os campos com histórico de determinação, basta clicar na "lixeira", como consta na imagem, e aquela determinação será excluída.
+
+{{:sem_titulo.jpg?nolink&900|}}

@@ -1,0 +1,27 @@
+====== Exsicata Download ======
+
+===== Opção 1 =====
+
+Temos no sistema a ferramenta "Exsicata Download" que permite baixar as imagens das exsicatas em alta definição. Para isso, basta apenas informar uma lista de códigos de barras separados por vírgula. Exemplo: 1000,2000,3000. Para acessa-la, entre no Menu **Curadoria/Exsicata Download**. Após preencher o formulário com os dados do usuário e os códigos de barras, basta submeter o pedido. Após isso, é necessário aguardar o sistema processar o pedido. O processamento é feito a cada 3 horas (Exemplo: 12:16h, 15:16h, 18:16h e etc), você receberá um e-mail de confirmação com o link para baixar as imagens, também é possível voltar ao Menu **Curadoria/Exsicata Download** e consultar todas as suas solicitações, assim como, clicar no botão "Download" para baixar as imagens que já estejam disponíveis. Atenção! Após a solicitação ser processada, o arquivo ficará disponível para download pelo período de 7 dias.
+
+**Veja a imagem com um exemplo de preenchimento dos campos.**
+
+{{::jabot_-_exsicata_download_-_google_chrome.jpg|}}
+
+**Veja na imagem a seguir onde clicar para baixar as solicitadas que já foram processadas.**
+
+{{::baixar_imagem_exsicata_download.jpg|}}
+
+==== Opção 2 ====
+
+
+Uma opção que pode facilita o uso dessa ferramenta é a seguinte:
+Acesse o menu **Consulta/Consulta**, preencha o formulário para buscar os dados desejados e marque a opção **Apenas com imagem** e clique no botão **Consultar**. Ao carregar a página com todos os resultados clique no botão **Em Lote/Exsicata Download**, o sistema será redirecionado para página da ferramenta com todos os códigos de barras do resultado da consulta anterior já preenchido, basta informar o e-mail desejado e Clicar em **Salvar**.
+
+Veja a imagem da opção **em Lote/Exsicata Download** da tela de consulta interna.
+
+{{::em_lote_exsicata_download.jpg|}}
+
+Menu:
+
+{{:jabot_-_consulta_-_google_chrome.jpg|}}

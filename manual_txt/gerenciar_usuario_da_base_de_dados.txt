@@ -1,0 +1,14 @@
+====== Gerenciar usuário da Base de Dados ======
+
+Após criar uma nova base de dados é possível associar os usuários que poderão ter acesso a ela. Basta trocar a Base de dados [[trocar_base_atual|atual para a base desejada]]. Com a nova base selecionada, clique em **Gerenciar usuário da Base de Dados**, já nessa primeira tela, é possível ver quais são os usuários que tem acesso a base de dados e quem é responsável por ela, somente os responsáveis podem associar/excluir novos usuários. Para associar clique em **Associar novos usuários** selecione o usuário na lista, marque se ele também será um dos responsáveis e clique em **Salvar**.
+
+  * Clique em **Gerenciar usuário da Base de Dados**.
+{{::gerenciar_usuario.jpg?direct|}} 
+
+  * Veja quais são os usuários que tem acesso a base de dados e clique em **Associar novos usuários**.
+{{::gerenciar_usuario2.jpg?direct|}}
+
+  * Selecione o usuário na lista, marque se ele também será um dos responsáveis e clique em **Salvar**.
+{{::gerenciar_usuario3.jpg?direct|}}
+
+

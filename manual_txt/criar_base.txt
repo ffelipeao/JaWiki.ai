@@ -1,0 +1,27 @@
+====== Base de Dados ======
+
+###
+A base de dados é criada quando um coletor volta de uma expedição e quer ter controle de suas coletas.
+A consulta da base de dados é feita digitando o nome da base no campo "Base" ou selecionando o check e irá listar todas as bases, ambas as funções tem que clicar no botão "Filtrar". (veja figura 1)
+Para se criar uma base de dados o usuário tem que ir em espécime>base de dados, clicar no botão "nova base" e preencher todos os campos necessários, lembrando que os campos <b>Nome da Base</b>, <b>Coleção Botânica Padrão</b> e <b>Tipo de Coleção</b> são campos obrigatórios, dados preenchidos é só clicar no botão "salvar". E clicando na base, você altera as informações contidas nela (veja figura 2).
+###
+
+Obs. Marque a caixa de seleção "Pode Publicar na web" sempre que desejar que os dados desta base de dados apareçam na consulta externa.
+
+
+###
+<b>Figura 1 - Base de Dados</b>
+###
+
+
+{{:base_dados1.png?|}}
+
+
+###
+<b>Figura 2 - Cadastro de Base de Dados</b>
+###
+
+
+{{:base_dados2.png?|}}
+
+

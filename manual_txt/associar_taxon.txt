@@ -1,0 +1,30 @@
+====== Associar Táxon a Base de Dados======
+
+**Para Associar** um táxon à  Listagem da Flora do Estado do Rio de Janeiro, basta clicar no menu Flora/Rio de Janeiro - Associar Táxon a Base de Dados (ver imagem), marcar o(s) táxon(s) que deseja associar a base e confirmar.
+
+Obs. Nessa opção só são listados os táxons que estão cadastrados no Jabot e que ainda NÃO foram associados ao catálogo da flora.
+
+**Menu Associar Táxon**
+
+{{::associar_taxon.jpg|}}
+
+
+**Passos para associar uma nova espécie**
+
+{{:associar_especie.jpg|}}
+
+
+====== Desassociar Táxon a Base de Dados======
+
+**Para Desassociar** um táxon à  Listagem da Flora do Estado do Rio de Janeiro, basta clicar no menu Flora/Rio de Janeiro - Desassociar Táxon da Base de Dados (Ver Imagem), marcar o(s) táxon(s) que deseja desassociar da base e confirmar. 
+
+Obs. Nessa opção só são listados os táxons que estão associados ao catálogo da flora.
+
+**Menu Desassociar Táxon**
+
+{{::desassociar_taxon.jpg|}}
+
+
+**Passos para desassociar uma nova espécie**
+
+{{::desassociar_especie.jpg|}}

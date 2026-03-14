@@ -1,0 +1,19 @@
+====== Filtros ======
+  * Família
+  * Gênero
+  * Espécie
+  * [[Táxon]]
+  * Localidade
+  * Coletotor
+  * Número da coleta
+  * Determinador
+  * Tombo
+  * Código Barras
+  * Seção/Canteiro/Batch
+  * [[Coleções Correlatas]]
+  * [[Apenas com imagem]]
+  * [[Typus]]
+  * [[Base de dados]]
+  * [[Shape]]
+  * [[Outros Campos]]
+

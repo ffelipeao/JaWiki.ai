@@ -1,0 +1,3 @@
+====== Alterar senha ======
+{{::alterar_senha.png?}}
+Para alterar a senha de para seu login, acesse o menu Admin / Usuário. Preencha por nome ou login e clique em Filtrar. Depois clique no nome do usuário e Editar usuário. Depois clique em Trocar Senha

@@ -1,0 +1,8 @@
+====== Possíveis coleções correlatas ======
+
+Para cadastrar as possíveis coleções correlatas, acesse o menu **Curadoria - Coleções Correlatas - Possíveis coleções correlatas**, duas listas serão exibidas, **selecione as coleções correlata e principal**, o sistema irá verificar nas coleções se existem testemunhos onde o Nome do Coletor e Número da Coleta sejam iguais, se algum resultado for encontrado, uma lista com os dados da coleção correlata e principal será exibida, basta marcar os itens que deseja cadastrar como correlato e clicar no Botão **Salvar**.
+
+
+{{::possiveis_correlatas.jpg?800|}}
+
+**Obs.  As duas primeiras colunas a esquerda na imagem acima fazem referência a coleção correlata selecionada e as outras 2 fazem referência a coleção principal.**

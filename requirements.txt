@@ -1,0 +1,15 @@
+# Core
+python-dotenv>=1.0.0
+
+# Web (chat)
+flask>=3.0.0
+requests>=2.31.0
+
+# RAG: embeddings (Ollama) e documentos
+langchain>=0.2.0
+langchain-ollama>=0.1.0
+
+# Banco PostgreSQL + pgvector
+psycopg2-binary>=2.9.9
+pgvector>=0.2.5
+numpy>=1.24.0

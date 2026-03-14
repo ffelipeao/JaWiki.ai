@@ -1,0 +1,9 @@
+====== Visualização de imagem de testemunho ======
+
+O visualizador de imagem do Jabot permite:
+  - Ampliar e reduzir o tamanho da visualização da imagem: isso pode ser feito com os botões de + e - e, também com o CTRL e botão de rolagem do mouse para cima e para baixo, respectivamente;
+  - Botão para retornar a imagem para o tamanho inicial (3º botão da esquerda para a direita);
+  - Régua: a régua é acionada pelo botão mais a direita. Surge na parte superior da imagem em cor vermelha e o usuário pode ajustar na posição desejada para efetuar a medição;
+  - Visão macro da imagem: para uma rápida movimentação na imagem, pode-se usar o recurso apresentado no canto superior à direita.
+
+{{::visualizador_imagens.png}}

@@ -1,0 +1,16 @@
+====== Gerar Dados via Guia do Parceiro =====
+
+Esta funcionalidade foi criada com o objetivo de facilitar a permuta e doação de exemplares entre herbários parceiros do sistema Jabot, para que, ao receber uma guia de remessa/doação, seja possível baixar uma planilha padrão com todos os dados que foram cadastrados pela instituição de origem. Assim, evita-se que o herbário de destino precise preencher uma nova planilha de importação.
+
+Para baixar os dados da guia de remessa da instituição de origem e gerar essa planilha de importação, basta acessar o menu "**Curadoria/Guia Remessa**" e clicar o botão "**Gerar dados via Guia Parceiro**" (ver imagem 1), no formulário que será aberto, basta selecionar a instituição de origem da guia de remessa, o número da guia, o ano e clicar em "Baixar Planilha Padrão", como consta na Imagem 2. Assim, será gerada uma planilha completa com todos os registros cadastrados na guia selecionada.
+ 
+Obs. Caso queira enviar sua planilha ao destinatário, o mesmo procedimento pode ser feito, selecionando sua própria instituição, na lista de herbários parceiros.
+
+**Imagem 1 (Botão Gerar dados via Guia Parceiro)**
+
+{{::jabot_-_guia_remessa_-_google_chrome.jpg?nolink|}}
+
+
+**Imagem 2 (Baixar Planilha Padrão)**
+
+{{::jabot_-_guia_remessa_-_google_chrome_2.jpg?nolink|}}

@@ -1,0 +1,30 @@
+====== Esqueci minha senha ======
+Para recuperar sua senha, acesse o menu **Login**, clicar em **esqueci minha senha**, preencha com o seu e-mail cadastrado e clique no botão **Enviar**. O sistema enviará para o e-mail cadastrado um link para redefinição de senha, acesse seu e-mail (observe também em seu Spam), clique no link e uma nova página será aberta, basta preencher o formulário com a nova senha, confirma-la e clique em **Enviar**. 
+
+Obs. Sempre informe o mesmo e-mail que está cadastrado no sistema, pois o mesmo precisa dessa confirmação para fazer o enviar do link de redefinição de senha.
+\\
+\\ 
+  * **Passo 1**
+{{::esqueciminhasenha.png?|}}
+\\
+\\
+Mensagem de envio do e-mail de recuperação
+\\
+\\
+{{::esqueciminhasenha_2.png?|}}
+\\
+\\
+Mensagem no e-mail do recuperação
+\\
+\\
+{{::email_recuperacao.png?|}}
+\\
+\\
+  * **Passo 2**
+Agora basta cadastrar a nova senha
+\\
+\\
+{{::recuperarsenha.jpg?direct|}}
+
+
+

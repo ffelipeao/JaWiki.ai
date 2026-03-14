@@ -1,0 +1,56 @@
+====== Qualidade de Dados ======
+###
+Qualidade de dados é uma ferramenta muito importante dentro do sistema <b>JABOT</b>, nela você corrige todos os dados que foram digitados e estão com erros em alguma parte como: ano com três dígitos, sem ano de coleta, longitude e latitude iguais, etc.
+
+Para verificar esses dados vá em menu <b>Curadoria->Qualidade de Dados</b>, antes de tudo você tem que escolher a coleção botânica em que irá trabalhar para poder filtrar os dados corretamente, logo em seguida clique no link em que deseja começar a corrigir.
+###
+
+{{:quali_dados1.png?}}
+###
+<b>Figura 1 - Qualidade de Dados</b>
+###
+
+
+###
+Após filtrar a coleção desejada escolha em qual dado deseja trabalhar, nesse exemplo escolhemos a "lista ano de coleta com 3 dígitos", aparecerá uma lista e é só corrigir um de cada vez clicando no link do código testemunho.
+###
+
+{{:quali_dados2.png?}}
+###<b>Figura 2 - Lista Ano de Coletas com 3 Dígitos</b>###
+
+###
+Em seguida vai abrir uma tela com os dados digitados e a imagem da exsicata que foi extraída os dados. Amplie a imagem para poder conferir o ano da coleta, senão tiver data na exsicata, deixe como está, selecione o campo <b>verificado</b> e clique no botão "Salvar", agora se tiver uma data é só corrigir, selecione o campo <b>verificado</b> e clique no botão "Salvar".
+###
+
+{{:quali_dados3.png?}}
+###<b>Figura 3 - Lista Ano de Coletas com 3 Dígitos</b>###
+
+###
+Agora vamos à um outro exemplo, escolhi no quadro <b>Coordenadas Geográficas</b> o link <b>Longitude e Latitude Iguais</b> e vamos aos pontos principais.
+###
+
+{{:quali_dados4.png?}}
+###<b>Figura 4 - Qualidade de Dados</b>###
+
+###
+Após clicar no link abrirá uma tela com a lista das coordenadas iguais, escolha uma e mãos a obra.
+###
+
+{{:quali_dados5.png?}}
+###
+<b>Figura 5 - Longitude e Latitude Iguais</b>
+###
+
+###
+Repare o mapa na figura 6 que o ponto da coordenada está no mar, faça as correções no quadro ao lado do mapa <b>Correção de dados geográficos</b> digitando a latitude e a longitude corretas ou aproximadas de onde ocorreu a coleta, clique no botão "Verificar" para atualizar o mapa. Agora no mapa da figura 7 está atualizado, se tiver a certeza dessas coordenadas selecione o campo <b>Status verificado</b> preencha o campo <b>Observação</b> e o selecione também <b>Erros adicionais corrigidos</b> para completar a correção e clique no botão "Salvar".
+###
+
+{{:quali_dados6.png?}}
+###
+<b>Figura 6 - Longitude e Latitude Iguais/Correção dos Dados</b>
+###
+
+{{:quali_dados7.png?}}
+###
+<b>Figura 7 - Longitude e Latitude Iguais/Correção dos Dados</b>
+###

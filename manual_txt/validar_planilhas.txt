@@ -1,0 +1,9 @@
+==== Planilhas: ====
+
+  * Após o login, acesse o menu Espécime -> Validar Planilha .
+  * Baixe a planilha padrão aqui.
+  * Toda Planilha enviada tem que estar no formato .xls e todas as colunas devem ser iguais a planilha padrão.
+  * O padrão taxonômico é o da Lista do Brasil.
+  * Coordenadas devem ser preenchidas com ',' e não com '.' .
+  * Espaços no nome de um mesmo autor devem ser retirados.
+  * O Padrão do nome da base gerado pelo sistema é: Coletas + Seu Login + Data atual

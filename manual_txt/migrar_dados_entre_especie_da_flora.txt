@@ -1,0 +1,13 @@
+====== Migrar Dados Entre Espécies na Flora do RJ ======
+
+Esta funcionalidade tem como objetivo permitir migrar os dados relacionados a uma espécie (Ex. Distribuição Geográfica, Tipo de Vegetação, Unidade de Conservação, Status de Conservação e etc) a outra no Catálogo da Flora do RJ.
+
+Para migrar dados entre espécies e outra no catálogo da Flora do RJ, basta logar no sistema e acessar o menu "Flora/Rio de Janeiro/Migrar dados entre espécies". Uma nova tela será aberta exibindo 2 campos de seleção, basta selecionar a "Espécies de Origem" (que possui todos os dados que deseja migrar), a "Espécie Destino" (Que receberá os novos dados) e clicar no botão "Enviar".
+
+Ao final do processo, todos os dados que constavam associados a espécie de origem passarão a fazer parte da espécie de destino.
+
+Obs. Os dados que já estavam associados a espécie de destino permanecerão associados a ela.
+
+Veja a imagem a seguir com um exemplo de preenchimento.
+
+{{::migrar_dados_flora.jpg|}}

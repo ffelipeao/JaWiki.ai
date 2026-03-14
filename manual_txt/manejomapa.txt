@@ -1,0 +1,61 @@
+====== Consultar Mapa de Manejo do Arboreto ======
+=== O Mapa de Manejo no Arboreto foi desenvolvido com o objeto de permitir o gerenciamento e programação das atividades de manejo a serem realizadas no Arboreto. ===
+
+===Para acessar a tela de consulta com o Mapa de Manejo, basta efetuar login no sistema e clicar no menu "Arboreto - Curadoria - Manejo Arboreto - Mapa de Manejo" que uma nova tela será carrega. Nela será possível ver o mapa do Arboreto com todas as atividades e programações cadastradas. Na Figura 1 é possível observar a existência de duas atividades cadastradas, uma em vermelho e outra em amarelo. As cores são meramente para destacar a localidade que está programada para receber alguma atividade/manutenção e podem ser usadas pela Curadoria como critério de urgência.===
+ \\ 
+**Figura 1 - Mapa de Manejo.**
+{{ ::mapa_de_manejo.png |}}
+ \\ 
+===No lado direito do mapa estão disponíveis os filtros para selecionar uma programação ou atividade que foram criadas previamente. Basta clicar nas caixas de seleção para escolher uma programação e atividade, ao fazer isso, o sistema irá exibir no mapa apenas as áreas correspondentes, como consta na Figura 2. ===
+ \\ 
+**Figura 2 - Seleção de Programação e Atividade.**
+{{ ::selecao_programacao_atividade.png |}}
+ \\ 
+===Também é possível observar na Figura 2, que uma nova caixa de seleção foi exibida. Nela é possível escolher e cadastrar os colabores que farão parte da atividade em questão. Para isso, só é preciso clicar na caixa de seleção com os nomes dos colaboradores e em seguida clicar no botão vermelho, com um ícone de salvar. Assim, ao recarregar página o nome do colaborador estará associado a atividade (Figura 3). Se for preciso remover algum dos colaboradores da atividade, basta clicar no ícone de lixeira que fica ao lado dos nomes de cada colaborador.===
+ \\ 
+**Figura 3 - Cadastrar usuário na atividade.**
+{{ ::selecao_programacao_atividade_user.png |}}
+
+=== Sempre que for necessário Cadastrar, Alterar ou Excluir os dados de "Programação, Atividades e Colaboradores", basta clicar  no botão com ícone de lápis que fica ao lago das caixas de seleção. Ao clicar em uma dessas opções o sistema será direcionado para a tela de consulta correspondente. ===
+
+====== Cadastrar e Remover áreas do Mapa ======
+
+===Após escolher a Programação e a Atividade, é possível clicar no mapa para marcar as novas áreas que farão parte da programação de atividades, logo após, basta clicar no ícone de salvamento ao lado da Atividade. Caso queira remover alguma das áreas da atividade, basta clicar duas vezes sobre a área correspondente que a tela será recarregada já sem a área que foi removida. ===
+
+
+
+
+====== Programação de Manejo do Arboreto ======
+
+=== Para Consultar, Cadastrar, Alterar ou Excluir as programações existente, basta clicar no menu "Arboreto - Curadoria - Manejo Arboreto - Programação" que uma nova tela será carregada contendo uma lista de todas as programações cadastradas (Figura 4). Assim como em todos o sistema, basta clicar nas opções apresentadas para realizar as ações desejadas. ===
+
+**Figura 4 - Programações Cadastradas.**
+{{ ::programacao.png |}}
+
+====== Tipo de Atividade de Manejo do Arboreto ======
+
+=== Para Consultar, Cadastrar, Alterar ou Excluir os tipos de atividades de manejo existente, basta clicar no menu "Arboreto - Curadoria - Manejo Arboreto - Tipo de Atividade" que uma nova tela será carregada contendo uma lista de todos os tipos de atividades cadastrados (Figura 5), também é possível ver as corres associadas a cada um dos tipos de atividades. Assim como o item anterior, basta clicar nas opções apresentadas para realizar as ações desejadas. ===
+
+**Figura 5 - Tipo de Atividades Cadastrados.**
+{{ ::tipoatividade.png |}}
+
+**Cadastrar Novo Tipo de atividade**
+
+===Para cadastrar um novo tipo de atividade, basta clicar no botão "Novo", preencher o campo com o nome do tipo de atividade e selecionar uma cor da paleta de cores, clicando no quadrado ao lado, em seguida, basta clicar em "Salvar". ===
+
+**Figura 5.1 - Cadastro de Tipo de Atividades.**
+{{ ::cadtipoatividade.png |}}
+====== Atividade de Manejo do Arboreto ======
+
+=== Para Consultar, Cadastrar, Alterar ou Excluir as atividades de manejo existente, basta clicar no menu "Arboreto - Curadoria - Manejo Arboreto - Atividade" que uma nova tela será carregada contendo uma lista de todas as atividades cadastradas (Figura 6), também é possível ver as corres associadas a cada atividades. Assim como o item anterior, basta clicar nas opções apresentadas para realizar as ações desejadas. ===
+
+**Figura 6 - Atividades Cadastradas.**
+{{ ::atividade.png |}}
+
+
+====== Colaboradores do Manejo do Arboreto ======
+
+=== Para Consultar, Cadastrar, Alterar ou Excluir os colaboradores existente, basta clicar no menu "Arboreto - Curadoria - Manejo Arboreto - Colaborador" que uma nova tela será carregada contendo uma lista de todos os colaboradores cadastradas (Figura 7). Basta clicar nas opções apresentadas para realizar as ações desejadas. ===
+
+**Figura 7 - Colaboradores Cadastrados.**
+{{ ::colaboradores.png |}}

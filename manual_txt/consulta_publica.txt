@@ -1,0 +1,61 @@
+====== Conhecendo os campos da tela ======
+
+###
+Os campos marcados em azul <b>Grupo, Família, Gênero, Espécie, Localidade, Coletor, Núm. Coleta, Tombo, Código de Barra, Lista de Táxons ou Área do Mapa</b>. São campos de pesquisa onde você poderá escolher qualquer um deles para realizar sua pesquisa:
+###
+
+{{:consulta.png?|900|}}
+
+**Partes da página foram retiradas para focarmos apenas nos trechos da página específicos à consulta. Por esta razão estaremos disponibilizando logo abaixo o mapa da consulta.**
+
+**Grupo** – Campo que define a pesquisa por um grupo ou subgrupo específico. Vamos ver um exemplo de consulta utilizando o campo GRUPO.
+
+{{:resultado.png?|900|}}
+
+###
+<b>Família, Gênero ou Espécie</b> – Campos que definem a pesquisa por partes, ou um táxon completo, caso os três campos sejam preenchidos. Vamos ver um exemplo de consulta utilizando os três campos.
+###
+
+{{:familia_gen_esp.png?|200|}}
+
+###
+<b>Localidade</b> – Esse campo define em qual localidade deseja realizar a pesquisa, você poderá pesquisar por uma ou mais localidades separando-as por "vírgula", como no exemplo: Nova Iguaçu, Duque de Caxias.
+###
+
+{{:consulta_localidade.png?|200|}}
+
+###
+<b>Coletor, Núm. Coleta</b> – A pesquisa pode ser feita separada, resultando numa pesquisa mais abrangente ou conjunta para um melhor refinamento.
+###
+
+{{:consulta_coletor_numcoleta.png?|200|}}
+
+###
+<b>Tombo</b> – A pesquisa por número de tombo pode ser individual ou em lote de tombos, bastando separá-los por vírgula nesse caso, como no exemplo: 51831,51837,51843.
+###
+
+{{:consulta_tombo.png?|200|}}
+
+###
+<b>Código de Barras</b> – A pesquisa por código de barras pode ser individual ou em lote; separando-os por vírgula nesse caso, como no exemplo: 776850,434129.
+###
+
+{{:consulta_codbarras.png?|200|}}
+
+###
+<b>Lista de Taxons</b> – A pesquisa pode ser feita digitando o táxon completo ou não. Ela pode ainda ser individual ou em lote, separando os táxons por vírgula nesse caso, como no exemplo: LEGUMINOSAE Caesalpinia,STERCULIACEAE Waltheria indica L. Pode-se ainda filtrar a pesquisa para exibir as amostras apenas com imagem. Para tal é só marcar no checkbox <b>Apenas com imagem, Typus ou Localização geográfica</b>.
+###
+
+{{:consulta_listaxon.png?|200|}}
+
+###
+<b>Área do Mapa</b> – A pesquisa na área do mapa é bem simples, dê um zoom até a região desejada e vá clicando até marcar a área que deseja pesquisar, depois clique em consultar para obter o resultado, como no exemplo abaixo.
+###
+
+{{:consulta_areamapa.png?|200|}}
+
+###
+<b>Lembrete</b> – Qualquer consulta pode ser ordenada por <b>táxon, coletor, tombo, código de barras ou data da coleta</b>, para isso é só selecionar no select que fica logo acima do mapa, a ordenação pode ser modificada também quando tem o resultado, para mudar a ordem é só clicar nos títulos <b>núm. tombo, espécime(resumo) ou coleta.</b>
+###
+
+{{:ordenacao.png?|200|}}

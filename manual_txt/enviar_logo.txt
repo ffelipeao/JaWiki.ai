@@ -1,0 +1,13 @@
+====== Enviar Logo ======
+
+Para que sua logo marca apareça no sistema, você pode fazer o upload da imagem pela tela de configuração, acesse o menu **Admin/Configuração** e escolha qual logo deseja carregar(logo da instituição principal, logo para o menu, logo da etiqueta ou logo da instituição acima). Ao final do processo basta clicar no botão "Salvar" e para excluir as imagem basta clicar na lixeira.
+
+**Obs:**
+  * As imagens devem ter a extensão **JPG** ou **PNG**.
+  * A logo para etiqueta obrigatoriamente deve ter a extensão **JPG**.
+  * Tendo em vista as diferentes medidas da logo escolhida para etiqueta nas diferentes instituições, tornou-se necessário a configuração da largura e altura de cada logo. Sendo assim, com esse ajuste o sistema adotará essas medidas no momento da gerar as etiquetas.
+
+**Figura 1 - Escolher e enviar logo**
+
+{{::jabot_-_cadastro_de_configuracao_-_google_chrome.jpg|}}
+

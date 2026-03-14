@@ -1,0 +1,5 @@
+Os detalhes sobre o processo de captura de imagens, do formato do arquivo e de seu nome podem ser encontrados em: 
+"Publicação de imagens" trata sobre o envia das imagens via FTP.
+//
+//
+http://dspace.jbrj.gov.br/jspui/bitstream/doc/103/1/Manual_Digitalizacao_exsicatas_2018.pdf

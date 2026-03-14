@@ -1,0 +1,21 @@
+====== Editar Dados do Usuário ======
+###
+Para editar os dados do usuário, vá em menu <b>Admin->usuário</b>, pesquise o usuário desejado por "nome" ou "login" e clique em filtrar, clique no nome e em seguida no botão <b>Editar Usuário</b>.
+###
+{{:editar_usuario1.png?}}
+###
+<b>Figura 1 - Tela Pesquisa de Usuário</b>
+###
+
+###
+Tela de editar usuário aberta é só fazer as alterações necessárias e clicar no botão <b>Salvar</b>, o botão <b>Desativar</b> tira o acesso do usuário que não vai utilizar mais o sistema e o botão <b>Trocar Senha</b>, é uma opção que o adm do sistema usa para auxiliar o usuário.
+###
+{{:editar_usuario2.png?}}
+###
+<b>Figura 2 - Tela Editar Dados do Usuário</b>
+###
+
+{{:editar_usuario3.png?}}
+###
+<b>Figura 3 - Tela Recadastramento de Usuário</b>
+###

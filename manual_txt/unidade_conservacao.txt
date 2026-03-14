@@ -1,0 +1,28 @@
+====== Unidade de Conservação ======
+###
+Para cadastrar uma unidade de conservação vá em menu <b>Admin->Unidade Conservação</b>, se a unidade não for encontrada na pesquisa clique no botão "Novo" para poder cadastrar uma nova unidade de conservação. Preencha as informações e clique no botão "Salvar". Veja figuras 1 e 2.
+###
+
+{{:unidade_conservacao1.png?}}
+###
+<b>Figura 1 - Unidade de Conservação</b>
+###
+
+{{:unidade_conservacao2.png?}}
+###
+<b>Figura 2 - Cadastro Unidade de Conservação</b>
+###
+
+###
+Para editar a unidade de conservação, clique no link da unidade, na tela de edição atualize suas informações e cadastre uma unidade de Geopolítica, se achar necessário, lembrando-se sempre de clicar no botão "Salvar" para concluir suas modificações. Veja figuras 3 e 4.
+###
+
+{{:unidade_conservacao3.png?}}
+###
+<b>Figura 3 - Unidade de Conservação</b>
+###
+
+{{:unidade_conservacao4.png?}}
+###
+<b>Figura 4 - Editar Unidade de Conservação</b>
+###

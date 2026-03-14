@@ -1,0 +1,22 @@
+====== Excluir Coleção Botânica ======
+
+Para excluir uma coleção botânica, basta acessar o Menu "Espécime/Coleção Botânica", localizar a coleção que deseja excluir, marcar a caixa de seleção e clicar no botão "Excluir", como na imagem abaixo.
+Por medida de segurança, o Jabot não permite que Coleções Botânicas que contenham algum registro associado a ela seja excluída.
+Antes de excluir uma coleção, é preciso excluir seus registros ou migra-los para outra coleção. Consulte o manual para ver como [[excluir_testemunho|Excluir Testemunho]].
+
+{{::excluir_colbot.png|}}
+
+
+Após isso, um alerta de confirmação será exibido com a seguinte mensagem "Deseja excluir a(s) coleçõe(s) botânica(s) selecionada(s)?", caso queira confirmar, basta clicar no botão "Excluir", como na imagem abaixo.
+Obs. Esta ação NÃO poderá ser desfeita
+
+{{::confirmar_excluir_colbot.png|}}
+
+====== Atenção ======
+
+O botão de excluir só será visível para usuários com a permissão de "Excluir espécime", essa opção pode ser solicitada ao Curador/Administrador do Jabot em sua instituição.
+ 
+Para atribuir a permissão de "Excluir espécime" a algum usuário, basta acessar o menu "Admin/Usuário", clicar sobre o nome do usuário que deseja atribuir esta opção, clicar sobre o botão "Permissões" e marcar a opção "Assistente de curadoria – excluir espécime".
+Após isso, basta solicitar que o usuário faça um novo login no sistema que a funcionalidade estará disponível.
+
+**Cuidado!** Usuários com essa opção habilitada poderão excluir Coleções, Bases de dados e seus registros.

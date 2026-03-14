@@ -1,0 +1,7 @@
+====== Táxons Adicionados ======
+###Táxons adicionados é uma tela onde verifica-se quais táxons foram adicionados e quando foram, a princípio é exibido uma lista com todos os táxons, mas para poder filtrar melhor a busca preencha pelo menos um campo e clique no botão "enviar", você terá um melhor resultado. Veja figura abaixo.
+###
+{{:taxon_adicionado.png?|}}
+###
+<b>Figura 1 - Táxons Adicionados</b>
+###

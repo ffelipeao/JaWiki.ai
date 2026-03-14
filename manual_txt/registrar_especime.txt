@@ -1,0 +1,262 @@
+====== Registrar Espécime: ======
+
+Antes de cadastrar um novo registro é preciso selecionar uma base de dados que faça parte dessa coleção. Para isso, acesse o menu Espécime e clique no link trocar **Trocar Base de Dados** 
+
+**Trocar Base de Dados:**
+
+{{:trocar_base.jpg?nolink&|}}
+
+**Selecionar Base de dados:**
+
+{{:base_dados_2.jpg?nolink&|}}
+
+Para registrar espécime clique no menu **Espécime -> Registrar Espécime**, ao clicar em **Registrar Espécime** serão exibidas as Coleções Botânicas que você tem acesso, basta escolher a coleção desejada. Caso não sejam exibidas as coleções, entre em contato com o administrador do sistema pois você não tem permissão para fazer o registro. A escolha do tipo de coleção é importante pois o conjunto de campos a serem preenchidos varia por coleção.
+
+**Escolher coleção:**
+
+{{:colecao2_.jpg?nolink&|}}
+
+**Tela de Cadastro:**
+\\
+\\
+Devido ao tamanho da tela de Cadastro de Testemunhos, aqui no manual tal tela será apresentada em partes. A primeira parte contém os dados básicos de identificação da coleta e da determinação. Os campos apresentados são:
+\\
+\\
+//Coleção Botânica// - é o tipo de coleção para a qual o seu espécime será cadastrado. Essa escolha é feita na tela anterior, que lista os tipos existentes de coleções do seu herbário.
+\\
+\\
+//Número Tombo	// - para o cadastro de um espécime já tombado, basta digitar o valor. A caixa Tombado já vem marcada, pois considera-se que os dados do herbário são públicos, ou seja, tudo o que for tombado fica disponível para consulta pelo público geral. Caso não seja informado o sistema criará um novo seguindo a numeração do banco
+\\
+\\
+//Sufixo// - o sufixo é opcional e é usado para testemunhos que possuem um conjunto de exsicatas, mas com o mesmo número de tombo.
+\\
+\\
+\\
+**Na segunda parte da tela são apresentados os campos para registro dos dados taxonômicos:**
+\\
+\\
+//Cf. / aff. OU !//	- as caixas permitem selecionar qual o detalhe da identificação taxonômica.
+\\
+\\
+//Táxon// - digite o táxon que pretende usar na determinação de seu espécime. Você pode informar apenas a família e o gênero e o sistema vai apresentar os nomes das espécies existentes na lista apresentada na direita. Depois basta selecionar o táxon que deseja usar.
+\\
+\\
+//Determinado// - é o nome do determinador
+\\
+\\
+//Dia// - dia da determinação
+\\
+\\
+//Mês// - mês da determinação
+\\
+\\
+//Ano// - ano da determinação
+\\
+\\
+//Notas sobre a determinação// - campo destinado as observações da determinação, como por exemplo: Phytotaxa 382(2): 222 (2018)
+\\
+\\
+//Natureza de typus// - refere-se às exsicatas que são typus de alguma espécie. É um campo dicionarizado. Ex.: “clonótipo”, “holótipo”, etc.
+\\
+\\
+//Notas sobre a determinação// - campo destinado as observações da determinação, como por exemplo: Phytotaxa 382(2): 222 (2018)
+\\
+\\
+{{::registrar_especimes_1.png?}}
+\\
+\\
+**Na terceira parte da tela são solicitados os dados da coleta:**
+\\
+\\
+//Coletor principal// - nome do coletor principal
+\\
+\\
+//Número da coleta// - número da coleta do coletor principal
+\\
+\\
+//Outros coletores// - nome dos demais coletores
+\\
+\\
+//Projeto/Expedição// - nome do projeto ou da expedição em que a coleta foi realizada
+\\
+\\
+//Núm. coleta projeto/expedição// - número específico da coleta relacionado a expedição
+\\
+\\
+//Dia// - dia da coleta
+\\
+\\
+//Mês// - mês da coleta
+\\
+\\
+//Ano Coleta// - ano da coleta
+\\
+\\
+//Nomes vulgares// - Nome vulgar. Nome (ou nomes) pelo qual é conhecida a espécie em sua região
+\\
+\\
+{{ ::registrar_especimes_2.png?nolink |}}
+\\
+\\
+**Na quarta parte da tela são solicitados os dados da localização da coleta:**
+\\
+\\
+//Unidade geopolítica// - o usuário pode digitar o nome da localidade, por exemplo, do município e verificar na lista localizada a direita (Unidade Geopolítica) o nome completo da localidade. Pode também procurar diretamente na parte da direita na lista completa de localidades já presentes no banco de dados. Caso a unidade não tenha sido cadastrada ainda, deve-se entrar em contato com o Curador para solicitar o cadastro. Isso pode ser feito pelo Curador no menu Curadoria / Unidade Geopolítica
+\\
+\\
+//Descrição detalhada da localidade// - nesse campo pode-se cadastrar os detalhes da localidade
+\\
+\\
+//Latitude mínima e máxima// - pode-se registrar os valores das coordenadas em dois conjuntos: os valores mínimos e máximos. O banco usa o formato Grau-Minuto-Segundo. Caso você tenha capturado em seu GPS o valor em decimal, pode usar o campo Latitude (para converter) e os campos Grau, Min e Seg serão preenchidos automaticamente.
+\\
+\\
+{{::registrar_especimes_3.png?nolink |}}
+\\
+\\
+//Coordenadas inferidas// - usado para o trabalho de revisão das coordenadas
+\\
+\\
+//Latitude e longitude em G-M-S// - pode-se usar esses campos para o registro das coordenadas geográficas revisadas. São registradas em Grau-Minuto-Segundo. Caso você tenha capturado via GPS em decimal, pode-se converter com os botões na parte inferior desse trecho da tela. Esse recurso foi solicitado por um dos herbários para o cadastro/revisão das coordenadas de suas amostras, pois muitas estavam ausentes. 
+\\
+\\
+Para a consulta das amostras que necessitam de revisão, pode-se acessar o menu Curadoria / Qualidade de Dados / Coordenadas Geográficas. Escolher a coleção e ir em MUNICÍPIOS CUJAS COORDENADAS NÃO CONFEREM COM A LOCALIDADE INFORMADA. O sistema vai verificar as coordenadas e, caso não coincidam com a localidade via cruzamento com o shape do IBGE, poderá registrar as coordenadas inferidas. Assim, serão mantidas as duas coordenadas originais e as inferidas. As coordenadas inferidas são obtidas por revisão. Elas podem ser aplicadas para casos como: etiquetas com o registro errado das coordenadas, coordenadas não informadas mas possíveis de identificação através dos campos de localidade e/o observações, coordenadas incompletas, coordenadas invertidas ...
+\\
+\\
+O recurso vai permitir que pesquisadores que fazem este trabalho de revisão possam retornar para o banco de dados do acervo os dados que foram revisados. Seu uso é uma decisão da curadoria. Sugerimos manter os dados originais para manter a consistência entre os dados da etiqueta e os dados mantidos no banco de dados.
+\\
+\\
+{{:coordenadas_inferidas.png?nolink |}}
+\\
+\\
+**//Unidade de conservação e descrição do ambiente//**
+\\
+\\
+Essa parte da tela de registro de um espécime contém os seguintes campos:
+\\
+\\
+//Unidade de conservação// - nesse campo digitar o nome da unidade de conservação ou selecionar o nome a partir da Lista de Unidades de conservação apresentada logo abaixo. Existe ainda um botão à direita que permite abrir a tela para o cadastro de uma nova unidade de conservação ao banco de dados.
+\\
+\\
+//Elev./Prof. Mínima// - campo destinado ao valor da elevação ou da profundidade mínima onde a coleta foi realizada. Não registrar a unidade de medida nesse campo.
+\\
+\\
+//Elev./Prof. Máxima// - campo destinado ao valor da elevação ou da profundidade máxima onde a coleta foi realizada, caso necessário. Não registrar a unidade de medida nesse campo.
+\\
+\\
+//Unidade de Medida// - lista com as unidades de medidas usadas para a elevação ou profundidade.
+\\
+\\
+//Descrição do Ambiente// - é o campo destinado para a descrição somente do ambiente onde foi realizada a coleta. Não incluir aqui a descrição do indivíduo.
+\\
+\\
+//Ecossistema/Tipo vegetação// - campo destinado a descrição do ecossistema ou o tipo de vegetação
+\\
+\\
+{{::unidade_conservacao.png?nolink |}}
+\\
+\\
+**//Sobre o espécime//**
+\\
+\\
+//Desaparecido/Morto// - campo usado para o controle dos indivíduos na coleção viva (arboreto).
+\\
+\\
+//Altura// - campo para o registro da altura do indivíduo. Não registrar a unidade de medida nesse campo.
+\\
+\\
+//Unid. Medida// - lista com as unidades de medida usadas para o registro da altura do espécime.
+\\
+\\
+//DAP// - diâmetro à altura do peito.
+\\
+\\
+//Fuste// - valor da medida do fuste.
+\\
+\\
+//Descrição do indivíduo// - campo destinado a descrição do indivíduo coletado. Não usar para a descrição do local da coleta.
+\\
+\\
+//Habitat// - campo livre para o registro da descrição do local onde o espécime habita.
+\\
+\\
+//Habitat/Forma de vida// - campo livre para o registro do hábito da espécie.
+\\
+\\
+//Usos// - estado de caráter etnobotânico. Lista de usos a que se destina
+\\
+\\
+//Uso Específico// - campo etnobotânico para o uso específico da espécie
+\\
+\\
+//Frequência// - frequência de cada espécie amostrada
+\\
+\\
+//Luminosidade// - campo para o registro da luminosidade do local da coleta
+\\
+\\
+//Estéril, Fértil, Possui flor, Com fruto, Botão, Fls, passadas, Fr. imatura, Fr. maduro ou Fr. pass.// - caixas de seleção para a marcação das caraterísticas do espécime
+\\
+\\
+//Sigla Coleção de Origem// - campo para o registro da sigla do herbário de origem
+\\
+\\
+//Duplicatas// - campo para o registro da sigla dos herbários para onde foram enviadas duplicatas da amostra
+\\
+\\
+//Qtd. em Estoque// - indica a quantidade de amostras existentes no herbário
+\\
+\\
+//Citações na bibliografia// - indica as citações encontradas na literatura. Exemplo: Linnaea 12: 74 (1838) 
+\\
+\\
+{{::sobre_o_especime.png?nolink |}}
+\\
+\\
+//Comentários// - campo que permite o registro de comentários sobre a amostra
+{{::comentarios.png?nolink |}}
+
+**//Registro de indivíduo do arboreto//**
+\\
+\\
+Para o registro de um indivíduo, certifique-se primeiro de estar logado na base de dados desse tipo de coleção botânica. Caso não esteja, efetue a troca da base de dados atual [[trocar_base_atual|[[http://jabot.jbrj.gov.br/manual/doku.php?id=trocar_base_atual]]. Os campos específicos para o cadastro de um indivíduo são:
+\\
+\\
+//Seção// - campo texto para a indicação da seção do plantio no parque.
+\\
+\\
+//Canteiro// - campo texto para a indicação do canteiro do plantio no parque.
+\\
+\\
+//Plantado por// - campo texto para a indicação do responsável pelo plantio do indivíduo.
+\\
+\\
+//Dia / Mês / Ano plantio// - campos para o registro da data do plantio.
+\\
+\\
+//Latitude// - coordenada decimal da latitude do local do plantio.
+\\
+\\
+//Longitude// - coordenada decimal do longitude do local do plantio.
+\\
+\\
+//Plaqueado / Plaquear / Restaurar Placa// - campos de marcação indicando se o indivíduo tem placa de identificação ou se necessita da mesma e, se necessita de uma nova placa.
+\\
+\\
+//Nome vulgar placa do indivíduo// - campo texto para o registro do nome popular do indivíduo.
+\\
+\\
+//Distribuição geográfica da placa// - campo texto para a informação da distribuição geográfica da espécie.
+\\
+\\
+{{::registro_arboreto.png?nolink |}}
+
+----
+
+
+====== Buscar imagens sem dados capturados ======
+
+Caso a coleção possua imagens que ainda não tiveram os dados capturados, o sistema exibirá o botão "Selecionar Imagem" com o número de arquivos disponíveis para digitação. Basta clicar nesse botão que uma das imagens será carregada para digitação.
+Com isso, o usuário poderá dar zoom na etiqueta da foto e digitar os dados nos campos correspondentes do formulário, como na imagem a seguir.
+
+
+{{::selecionar_imagens.png|}}

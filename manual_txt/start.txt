@@ -1,0 +1,224 @@
+====== JABOT versão 4.0 ======
+
+===== Apresentação =====
+###
+O Jabot é um sistema on-line de gerenciamento de coleções científicas depositadas em herbários, redes laboratoriais de instituições de pesquisas botânicas e coleções vivas de jardins botânicos. Em termos gerenciais, disponibiliza para o curadoria, subcuradorias e equipe  dos herbários, diversas funções de gerenciamento, acompanhamento de produtividade e relatórios. Possibilita aos usuários do sistema, a entrada e disponibilização de dados e imagens dos testemunhos, com funcionalidades para a análise e melhora da qualidade dos dados.
+###
+
+Neste manual você poderá tirar suas dúvidas quanto ao uso do sistema para diversos fins.
+Não sabe por onde começar?
+**[[primeiros_passos|Primeiros passos]]
+**
+----
+===== Histórico=====
+###
+<b>Versão 1.0:</b> A primeira versão do sistema Jabot (acrônimo de Jardim Botânico) teve seu desenvolvimento iniciado em 2002 e entrou em funcionamento em 2005. O desenvolvimento do sistema foi precedido de um criterioso processo de levantamento de requisitos, realizado por meio de entrevistas e reuniões com um grupo composto de aproximadamente 50 pesquisadores do Instituto de Pesquisas Jardim Botânico do Rio de Janeiro (IPJBRJ) e, um especial envolvimento da curadoria do maior herbário do Brasil e da coleção viva (arboreto). 
+
+Como consequência desse processo, foi especificado um sistema adequado aos diversos tipos de atividades realizadas nos laboratórios de uma instituição de pesquisas botânica, tais como: biologia molecular, botânica estrutural, sementes, algas e fungos, entre outras. Nessa primeira versão, o sistema permitiu pesquisas nas coleções científicas de exsicatas (herbário), arboreto (vivas), carpoteca (frutos), xiloteca (madeira e laminário) e fototeca.
+
+Porém, sugestões de novas funcionalidades, em razão de avanços computacionais e da incorporação de novas coleções botânicas, motivaram a criação de uma versão atualizada do sistema.
+###
+
+###
+<b>Versão 2.0:</b> Sugestões de novas funcionalidades, em razão de avanços computacionais e da incorporação de novas coleções botânicas, provocaram a criação de uma versão atualizada do sistema. Além dos novos módulos, houve uma atualização da interface para a forma responsiva (adaptável ao tamanho da tela do equipamento), permitindo também seu uso em smartphones. Todo o desenvolvimento do sistema foi realizado no próprio IPJBRJ utilizando software livre, mais especificamente na linguagem de programação PHP e com o banco de dados PostgreSQL.
+###
+
+###
+<b>Versão 3.0:</b> A versão 3 do sistema foi iniciada em 2016 quando herbários parceiros passaram a utilizar o Jabot no gerenciamento de suas coleções científicas. Atualmente estão sendo desenvolvidas novas funcionalidades, muitas baseadas em sugestões dos curadores. Tais recursos possibilitam a integração entre os diversos herbários, permitindo o uso colaborativo de dados, facilitando o trabalho dos usuários e curadores. 
+A lista com todos os herbários participantes pode ser vista em: 
+###
+[[http://jabot.jbrj.gov.br/v3/herbarios.php|Jabot geral]]
+
+###
+<b>Versão 4.0:</b> A versão 4 do sistema foi lançada em 2024 quando o todo o sistema foi migrado para o ambiente de nuvem computacional da Amazon, possibilitando com isso melhor desempenho e disponibilidade. Além da mudança de plataforma, o sistema tem o software Jabot Image e o Transfer para facilitar a transferência de imagens para o Jabot / Reflora.
+###
+----
+===== Recomendações de uso =====
+
+Para que seja possível obter uma melhor experiência com o uso do Jabot, recomendamos fortemente o uso do navegador "Google Chrome". Utilizar navegadores diferentes pode significar um comportamento anormal de algumas funcionalidades, porém, na medida do possível, sempre realizamos testes para que outros browsers também possam ser utilizados. Sendo assim, opções como "Firefox", "Opera" e "Microsoft Edge" são testados e costumam funcionar normalmente porém, como os navegadores estão em constante atualização e são desenvolvidos com tecnologias distintas e/ou diferentes sistemas operacionais, fica inviável adaptar o sistema para atender a todas as opções existentes.
+
+----
+===== Perguntas Frequentes (FAQ) =====
+
+[[base_de_dados|Como realizar uma consulta por base de dados e gerar etiquetas?]]
+
+[[Exportar Dados]]
+  * [[exportar_dados#formato_csv_darwincore|Como abrir um arquivo .CSV no Excel ou LibreOffice?]]
+
+[[Registrar Espécime|Como registrar um novo espécime?]]
+
+[[validar_planilha|Como validar uma nova planilha?]]
+
+[[sobre_o_herbario|Como cadastrar as informações sobre o herbário?]]
+
+----
+===== Consultas =====
+
+[[Consulta Pública]]
+
+[[consultainterna|Consulta Interna]]
+
+  * [[Adicionar nova determinação]]
+  * [[Alterar dados]]
+  * [[Escolhendo uma base de dados]]
+  * [[Excluir Testemunho]]
+  * [[consulta_interna_gerar_etiquetas|Gerar etiquetas]]
+  * [[Cadastrar Coleção correlata|Coleção Correlata]]
+  * [[Migrar para Outra Base de Dados|Migrar para Outra Base de Dados]]
+
+
+[[arboreto|Arboreto]]
+  * [[arboreto#mapa_do_arboreto_interno|Mapa do Arboreto Interno]]
+  * [[Fenologia|Curadoria - Consultar Fenologia]]
+  * [[controlefoto|Curadoria - Controle de Foto]]
+  * [[manejomapa|Manejo Arboreto - Mapa de Manejo]]
+     * [[manejomapa#programacao_de_manejo_do_arboreto|Manejo Arboreto - Programação]]
+     * [[manejomapa#tipo_de_atividade_de_manejo_do_arboreto|Manejo Arboreto - Tipo de Atividade]]
+     * [[manejomapa#atividade_de_manejo_do_arboreto|Manejo Arboreto - Atividade]]
+     * [[manejomapa#colaboradores_do_manejo_do_arboreto|Manejo Arboreto - Colaborador]]
+
+[[Visualização de imagem]]
+
+===== Espécime =====
+[[Registrar Espécime]]
+   *[[registrar_especime#buscar_imagens_sem_dados_capturados| Buscar imagens sem dados capturados]]
+   *[[incluir_especie_via_correlata|Registrar Espécime Via Coleção Correlata]]
+
+[[excluir_determinacao|Excluir histórico de determinação]]
+
+[[colecaobotanica|Coleção Botânica]]
+  * [[excluir_colecaobotanica|Excluir Coleção Botânica]]
+
+[[criar_base|Base de Dados]]
+  *[[Excluir Base de Dados| Excluir Base de dados]]
+
+[[Trocar Base atual]]
+
+[[Gerenciar Usuário da Base de Dados]]
+
+===== Planilha =====
+
+[[Validar Planilha]]
+
+[[Lista de Campos Básicos]]
+
+[[Lista de Validações]]
+
+[[configuracao#validacao_de_planilha | Configuração Planilha]]
+
+----
+===== Taxonomia=====
+
+[[Gerenciar Táxons]]
+
+[[Táxons Adicionados]]
+
+[[Cadastrar Grupo Taxonômico]]
+
+[[Cadastrar Táxon|Cadastrar Táxons]]
+----
+===== Flora =====
+
+[[associar_taxon|Associar / Desassociar Taxon a Base de Dados]]
+
+[[migrar dados entre especie da flora|Migrar Dados entre espécies]]
+
+----
+===== Curadoria =====
+
+Coleção Correlata
+  * [[Coleção correlata com diferença na determinação]]
+  * [[Possíveis coleções correlatas]]
+
+[[Controle de Lâminas]]
+
+[[Exsicata Download|Exsicata Download]]
+
+[[Guia de Remessa|Guia de Remessa]]
+  * [[Planilha Guia Parceiro|Gerar dados via Guia do Parceiro]]
+
+Reflora
+     * [[Produção Digitadores]]
+     * [[ https://zenodo.org/records/12626759|Jabot Image]]
+
+
+[[Qualidade de Dados]]
+  * [[Padronizar nome de coletores]]
+
+[[unidade_geo_politica| Unidade Geopolítica]]
+  * [[Substituir Unidade Geopolítica]]
+
+[[Unidade de Conservação]]
+
+[[Atualizar consulta pública/imagens|Atualizar consulta pública/imagens]]
+
+[[igualar_codigo_de_barras|Igualar Código de Barras ao Número Tombo]]
+
+[[igualar_codigo_de_barras#ajustar_numero_de_sequencia_para_numtombo_e_codbarras|Ajustar Número de sequência para NumTombo e CodBarras ]]
+
+[[Documentos]]
+----
+
+
+===== Admin =====
+[[Função]]
+
+[[Log de Tentativa de Acesso]]
+
+[[Perfil]]
+
+[[Configuração]]
+   * [[configuracao#validacao_de_planilha | Configuração Planilha]] 
+   * [[configuracao#importador_de_planilha | Importador de Planilha]] 
+   * [[configuracao#coordenadas_obrigatorias | Coordenadas Obrigatórias]] 
+   * [[configuracao#validar_localidade_informada_com_a_localidade_referentes_as_coordenadas | Validar localidade informada com a localidade referentes as coordenadas]] 
+   * [[configuracao#enviar_logo | Enviar Logo]] 
+
+Usuário
+  * [[cadastrarusuario|Cadastrar Novo Usuário]]
+  * [[Editar Usuário]]
+  * [[Alterar Permissões de acesso|Alterar Permissões de acesso]]
+
+[[Unidade Conservação]]
+
+[[Log Testemunho]]
+----
+===== Login =====
+
+[[login|Login]]
+
+[[Esqueci minha senha]]
+
+[[trocarsenha|Alterar senha]]
+
+----
+
+===== Sobre =====
+
+[[informacoesdoherbario|Informações do Herbário]]
+
+
+[[alterarinformacoesdoherbario|Adicionar Informações do Herbário]]
+
+
+[[alterarcuradorinformacoesdoherbario|Adicionar Curador nas Informações do Herbário]]
+
+
+[[alterarcolaboradoresinformacoesdoherbario|Adicionar Colaboradores nas Informações do Herbário]]
+
+----
+
+==== Autores ====
+
+Luís Alexandre Estevão da Silva
+
+Felipe Alves de Oliveira
+
+Tayná da Fonseca Ribeiro
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+====== Processo de validação de planilha ======
+
+
+Para validar sua planilha basta seguir os seguintes passos:
+  - Selecione a coleção botânica.
+  - Informe o nome da base de dados que deseja criar ou marque a opção para ser gerado o nome automaticamente.
+  - Selecione a planilha que será enviada navegando pelas pastas de seu computador.
+ Para finalizar o processo basta clicar o botão **enviar** e será iniciado o processo de validação de sua planilha.
+
+**Obs.** Se for importar mais de um planilha no mesmo dia, você deverá informar o nome da base sugerida, pois como o nome da base deve ser único, se escolher gerar o nome da base automaticamente retornará uma mensagem, pois o padrão de criação de nomes automáticos que está definido é **"Coletas+seu login+data atual"**, então se escolher criar mais de uma base no mesmo dia usando essa opção retornará a seguinte mensagem  **"O Nome da Base informado já existe, favor informar um nome diferente e tentar novamente!"**, caso isso ocorra, não tem problema, basta iniciar o processo novamente e digitar o nome da base diferente ao já criado.
+
+{{::validar_planilha.png|}}
+\\
+\\
+Um exemplo de preenchimento da planilha é apresentado para os campos principais:
+\\
+\\
+{{::exemplo_planilha.png?|}}
+----
+\\
+\\
+**Funcionamento:**
+\\
+\\
+Caso seja verificado algum tipo de erro ou alerta em sua planilha será exibido uma tela apontando os tipos de erros, basta fazer as correções direto em sua planilha (local) e iniciar o processo de validação novamente. A seguir são apresentados exemplos de mensagens de erro:
+
+{{::validar_planilha_2.png|}}
+\\
+\\
+**Legenda:**
+
+{{:screenhunter_04_sep._09_16.38.jpg?direct|}}
+
+  * O **"X"** representa um erro que precisa ser corrigido.
+  * A **"!"** representa apenas um alerta de diferenças quanto a lista do Brasil, caso apareça não será um impeditivo para submeter a planilha.
+\\
+\\
+**A lista completa de validações é apresentada em:** [[http://jabot.jbrj.gov.br/manual/doku.php?id=lista_de_validacoes|Lista de validações]]
+\\
+\\
+**Finalizar processo:**
+
+  * Quando nenhum erro for verificado pelo sistema, será exibido o botão 'Importar' para submeter os dados validados ao processo de importação.
+
+{{::coletas.jpg?|}}
+
+
+**Configurações importantes:**
+
+
+Para que o sistema funcione corretamente, verifique se as configurações estão de acordo com o formato que sua instituição deseja trabalhar. Consulta o manual em [[configuracao_planilha|Configuração para importação de planilha]]
+
+
+====== Validação de planilha para coleção viva (Arboreto) ======
+
+Foi incluído no sistema uma planilha padrão no formato com novos campos para atender a coleção do Arboreto.
+Para fazer uso desse recurso, basta acessar a tela de validação de planilha, baixar a nova planilha padrão da coleção viva, selecionar uma coleção do tipo Arboreto (ex. RBv), clicar em "escolher arquivo", buscar um arquivo preenchido com o novo formato e clicar em "Enviar".
+
+{{::validar_planilha_arboreto.jpg|}}
+ 
+
+====== Importação simultânea de planilha para dados em coleções correlatas  ======
+
+Esta funcionalidade foi criada com o objetivo de evitar o retrabalhar dos pesquisadores que, quando necessário, precisavam validar e importar uma planilha para cada coleção e, depois, ainda tinham que acessar o sistema para informar cada testemunho correlato individualmente. 
+
+Agora, a função de dupla importação de planilha em coleções correlatas permite que os dados de uma planilha sejam importados para as duas coleções selecionadas de forma simultânea, já fazendo a associação dos espécimes correlatos em ambas as coleções.
+
+===== Configuração da Função =====
+
+Para fazer uso dessa função, em primeiro lugar, é preciso que ela seja ativada na tela de configuração do herbário. Para isso, basta acessar o menu "**Admin/Configuração**", ir até as opções de "**Configurações para importação de planilha**", clicar no item "**Ativar dupla importação de dados com associação de correlatas**" (**Figura 1**) e salvar a nova configuração clicando no botão "**Salvar**" ao final da página. //Obs: A tela de configuração fica ativa apenas para os curadores/administradores do sistema na instituição.//
+
+
+**Figura 1 - Ativando função de dupla importação de dados com associação de correlatas.**
+
+{{::conf_duplaimportacao.jpg?|}}
+
+
+Também é preciso que a permissão "**Importador planilhas para coleções simultâneas**" esteja ativa para cada usuário que precisar fazer uso dessa funcionalidade. Para cadastrar essa permissão, basta acessar o menu **Admin/Usuário**, aplicar o filtro para identificar o usuário em questão, clicar sobre o nome do usuário e ir em "**Permissões**". Uma nova tela será aberta, basta clicar para ativar o perfil de "**Importador planilhas para coleções simultâneas**", como na **Figura 2**. Somente com essas permissões que o usuário poderá fazer uso desse recurso.
+
+**Figura 2 - Ativando permissão de "Importador planilhas para coleções simultâneas".**
+
+{{::permissao_usuario_dupla_importacao.png?|}}
+
+===== Uso da Função =====
+
+
+Após ativar esta funcionalidade na tela de configuração e dar a permissão de acesso ao usuário, basta acessar a página de validação de planilha, no menu "**Espécime/Validar Planilha**", que será possível visualizar uma nova caixa de seleção para escolha das coleções principal e correlata (**Figura 3**). Lembrando que as coleções só são exibidas de acordo com a permissão de cada usuário.
+
+**Figura 3 - Seleção de coleção principal e correlata para dupla importação de planilha.**
+
+{{::planilha_correlata.jpg|}}
+
+__**É importante destacar que**, caso uma das coleções a serem selecionadas possuam uma planilha específica, com mais campos que a outra, ela deverá ser selecionada como coleção principal, para que os dados desses campos sejam validados e importados no sistema. Caso isso não ocorra, esses dados específicos da coleção não serão importados.__ 
+//**Ex. Para importar os dados da coleção RBv e carregar as correlatas para a coleção RB, a coleção principal selecionada deve ser "RBv" e a correlata "RB", já que planilha padrão da coleção viva possui mais campos que a coleção RB.**//
+
+Assim, como no procedimento padrão para importação de planilha, a planilha será validada até que nenhum erro de importação seja verificado, dessa forma, ao final do processo um botão para finalizar a importação será exibido, basta clicar em "Importar" que a planilha será importada em ambas as coleções principal e correlata.
+
+No final do processo, uma nova base de dados será gerada contendo os dados importados para ambas as coleções, já com a associação dos espécimes correlatos (**Figura 4**).
+
+**Figura 4 - Consulta de dados importados com a associação de coleções correlatas.**
+
+{{::correlatas_importados.jpg|}}

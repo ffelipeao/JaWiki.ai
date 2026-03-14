@@ -1,0 +1,10 @@
+====== Primeiros Passos ======
+
+Seja bem vindo ao JABOT.
+
+===== O que você deseja fazer? =====
+
+[[consulta|Procurar espécimes na Consulta Pública]]
+
+[[arboreto|Pesquisar no arboreto]]
+

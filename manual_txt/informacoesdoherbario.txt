@@ -1,0 +1,8 @@
+====== Informações do Herbário ======
+
+Acessando o menu **Sobre → Informações do Herbário**, você terá acesso a uma tela com **Informações sobre a Instituição**, incluindo alguns dados da própria Instituição, além dos nomes dos Colaboradores e Curador.
+
+
+{{:informacoessobreinstituicao.png?nolink&1300 |}}
+
+

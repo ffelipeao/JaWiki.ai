@@ -1,0 +1,51 @@
+**Perfil**
+\\
+\\
+O sistema possui 17 perfis de usuários e uma breve descrição é apresentada abaixo:
+\\
+\\
+1.	Administrador Sistema Jabot – é o superusuário com todas as permissões do sistema
+\\
+2.	Assistente de curadoria – perfil que possui as funções básicas de um técnico de herbário
+\\
+3.	Assistente de curadoria CV – assistente da coleção viva
+\\
+4.	Assistente de curadoria – excluir espécime
+\\
+5.	Assistente de curadoria – gerar duplicatas
+\\
+6.	Assistente de curadoria – registrar base
+\\
+7.	Assistente de curadoria – registrar espécime
+\\
+8.	Assistente de curadoria xiloteca
+\\
+9.	Assistente de lâminas da xiloteca
+\\
+10.	Curador imagem – perfil indicado para usuários responsáveis pela administração das imagens das amostras, permitindo apenas o envio das imagens para o servidor de imagens
+\\
+11.	Curador Jabot
+\\
+12.	Especialista – detalhar táxon (Flora RJ) – taxonomista que atua no Catálogo da Flora
+\\
+13.	Especialista (Flora RJ)
+\\
+14.	Especialista – gerenciar táxon
+\\
+15.	Importador planilha – perfil básico com a função de importar os dados para o sistema
+\\
+16.	Importador planilha para coleções simultâneas – perfil para o pesquisador que tem amostras em coleções diferentes
+\\
+17.	Supervisor Reflora
+\\
+\\
+Para acessar a página deve-se clicar no menu Admin / Papel (termo que é sinônimo de Perfil em outros sistemas). Nessa tela o curador pode verificar quais os perfis que cada usuário tem no sistema. Para isso, selecione o perfil e clique em Filtrar, podendo depois selecionar o nome do usuário. É possível fazer a consulta pelo nome do usuário e depois verificar os perfis ou papéis que o usuário tem cadastrado.
+\\
+\\
+{{::perfil.png?|}}
+\\
+\\
+A tabela abaixo apresenta os perfis e as funções associadas a cada um deles de acordo com a numeração apresentada para os perfis no início da página:
+\\
+\\
+{{:funcoes_perfis.jpg?|500}}

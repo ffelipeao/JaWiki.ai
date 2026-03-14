@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JaWiki – Chat RAG</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --border: #2d3a4d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79b8ff;
+      --user-msg: #238636;
+      --bot-msg: var(--surface);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .msg {
+      max-width: 85%;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .msg.user {
+      align-self: flex-end;
+      background: var(--user-msg);
+      color: #fff;
+    }
+    .msg.bot {
+      align-self: flex-start;
+      background: var(--bot-msg);
+      border: 1px solid var(--border);
+    }
+    .msg .sources {
+      margin-top: 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .msg .sources summary { cursor: pointer; }
+    .msg .sources ul { margin: 0.25rem 0 0 1rem; padding: 0; }
+    .typing::after {
+      content: "...";
+      animation: dots 1s steps(4, end) infinite;
+    }
+    @keyframes dots {
+      0%, 20% { content: "."; }
+      40% { content: ".."; }
+      60%, 100% { content: "..."; }
+    }
+    #form {
+      padding: 1rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+    }
+    #form form {
+      display: flex;
+      gap: 0.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #input {
+      flex: 1;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 1rem;
+      resize: none;
+      min-height: 44px;
+      max-height: 120px;
+    }
+    #input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    #input::placeholder { color: var(--text-muted); }
+    button[type="submit"] {
+      padding: 0.6rem 1.2rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover { background: var(--accent-hover); }
+    button[type="submit"]:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .error { color: #f85149; }
+  </style>
+</head>
+<body>
+  <header>JaWiki – Base de conhecimento</header>
+  <main id="chat"></main>
+  <section id="form">
+    <form id="chat-form">
+      <textarea id="input" name="message" placeholder="Digite sua pergunta..." rows="1"></textarea>
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </section>
+  <script>
+    const chat = document.getElementById("chat");
+    const form = document.getElementById("chat-form");
+    const input = document.getElementById("input");
+    const submit = document.getElementById("submit");
+
+    function addMsg(content, isUser, sources = null) {
+      const div = document.createElement("div");
+      div.className = "msg " + (isUser ? "user" : "bot");
+      let html = escapeHtml(content);
+      if (sources && sources.length) {
+        html += '<div class="sources"><details><summary>Fontes (' + sources.length + ')</summary><ul>';
+        sources.forEach((s, i) => {
+          html += '<li>#' + (i + 1) + ' (id ' + s.id + '): ' + escapeHtml((s.conteudo || "").slice(0, 120)) + '…</li>';
+        });
+        html += '</ul></details></div>';
+      }
+      div.innerHTML = html;
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function escapeHtml(s) {
+      const el = document.createElement("div");
+      el.textContent = s;
+      return el.innerHTML;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const message = (input.value || "").trim();
+      if (!message) return;
+
+      addMsg(message, true);
+      input.value = "";
+      submit.disabled = true;
+
+      const typing = document.createElement("div");
+      typing.className = "msg bot typing";
+      typing.textContent = "Buscando";
+      chat.appendChild(typing);
+      chat.scrollTop = chat.scrollHeight;
+
+      try {
+        const res = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message }),
+        });
+        const data = await res.json();
+        typing.remove();
+        if (data.ok) {
+          addMsg(data.answer, false, data.sources || []);
+        } else {
+          addMsg("Erro: " + (data.error || res.status), false);
+        }
+      } catch (err) {
+        typing.remove();
+        addMsg("Erro de rede: " + err.message, false);
+      }
+      submit.disabled = false;
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        form.requestSubmit();
+      }
+    });
+  </script>
+</body>
+</html>

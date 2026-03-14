@@ -1,0 +1,7 @@
+====== Coleção correlata com diferença na determinação ======
+
+Para atualizar as coleções correlatas com diferença nas determinações, acesse o menu **Curadoria - Coleções Correlatas - com diferença na determinação**, selecione a "Coleção Botânica (Correlata)", que será atualizada, e a "Coleção Botânica (principal)", melhor classificada, se algum resultado for encontrado uma lista com os dados da coleção correlata e principal será exibida. Basta marcar os itens que deseja aceitar a determinação da coleção principal e clicar no botão **Salvar**, uma nova determinação será cadastrada para cada item da coleção correlata selecionada exatamente como consta na coleção principal.
+
+{{::diferenca_determinacao.jpg?|}}
+
+**Obs.  As duas primeiras colunas a esquerda na imagem acima fazem referência a coleção correlata selecionada e as outras 2 fazem referência a coleção principal.**

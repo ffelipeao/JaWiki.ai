@@ -1,0 +1,12 @@
+====== Login ======
+
+{{::login.png?200|}}
+
+Para o uso do sistema, deve-se ter uma conta criada pelo curador do herbário.
+
+**Outras opções:**
+
+[[trocarsenha| Alterar senha]]
+
+[[esqueci_minha_senha|Esqueci minha senha]]
+

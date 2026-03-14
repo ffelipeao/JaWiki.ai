@@ -1,0 +1,14 @@
+====== Consultar por Base Dados ======
+
+Para consultar os dados filtrando pela base de dados, é necessário seguir os seguintes passos:
+
+
+  - Efetuar login no sistema;
+  - Acessar a página de consulta interna do sistema pelo menu "Consulta - Consulta";
+  - Selecionar uma das bases de dados na opção "Selecione a base de dados";
+  - Clicar no botão "Consultar".
+
+Obs. Se necessário, é possível somar o filtro por base dados a outros filtros como Família, Gênero e/ou Espécie.
+
+Veja uma demonstração na Imagem:
+{{:selector_base.png?|600|}}

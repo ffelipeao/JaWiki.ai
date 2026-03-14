@@ -1,0 +1,16 @@
+====== Unidade de Conservação ======
+
+Para acessar as Unidades de Conservação (UC) cadastradas em sua base, acesso o menu **Curadoria/Unidade de Conservação** e uma lista com todas as UCs será exibida.
+
+{{::uc.jpg?600|}}
+
+Caso queira cadastrar uma nova unidade de conservação clique no botão **Novo**, uma tela de cadastro será exibida, digite o nome da unidade de conservação, selecione o seu tipo de unidade e clique em **Salvar**.
+
+{{::cad_uc.jpg?600|}}
+
+Caso queria associar os municípios em que uma unidade de conservação pode estar inserida, após o cadastro, acesse o menu **Curadoria/Unidade de Conservação**, utilize o filtro para localizar a UC desejada e clique sobre ela, nessa tela, você pode alterar o cadastro e associar quantas municípios forem necessários. 
+Na parte inferior da tela selecione a Unidade Geopolítica e Envie uma a uma.
+
+{{::uc_ugp.jpg?600|}}
+
+

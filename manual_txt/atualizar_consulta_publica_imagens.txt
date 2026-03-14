@@ -1,0 +1,9 @@
+====== Atualizar consulta pública e número de imagens ======
+
+Toda noite o sistema executa uma rotina para atualizar os dados que aparecem na página de consulta pública e atualiza o número de imagens que estão disponíveis no servidor de imagens (FSI).
+Caso algum erro de incompatibilidade nos dados ocorra, pode acarretar na não atualização dos dados disponíveis na tela de consulta e o número de imagens. Por se tratar de um erro de difícil identificação, pois pode variar de acordo os dados inseridos no banco de dados, ainda não está disponível uma ferramenta de correção automática. Sendo assim, foi disponibilidade uma tela do sistema exibindo a data da última atualização, com a opção de executar a função manualmente, caso seja necessário.
+Para executar a função manualmente baste acessar o menu **Curadoria/Atualizar consulta pública/imagens**, ao carregar a nova página algumas informações são exibidas, dentre elas, está o número de imagens que ainda não foram atualizadas e a data da última atualização. Assim, para atualizar manualmente basta clicar no botão "**Atualizar**".
+
+**Veja a imagem demonstrativa.**
+
+{{::jabot_-_atualizar_consulta_publica_e_numero_de_imagens_-_google_chrome.jpg|}} 

@@ -1,0 +1,11 @@
+====== Alterar Permissões de Acesso ======
+
+Para alterar as permissões de acesso de um usuário, basta acessar o menu "Admin/Usuário" e filtrar pelo nome do usuário ou e-mail. Após isso, uma lista com todos os usuário cadastrados que correspondam parcialmente aos dados informados será exibida. Clique no usuário desejado para abrir mais opções, em seguida, clique no botão "Permissões" (Ver imagem). Uma nova tela será carregada listando todos as permissões de acesso que o usuário tem acesso, assim como, a lista completa de todas as coleções que ele tem acesso (ver imagem). Marque as permissões que deseja atribuir ou remover e clique em "Salvar".
+
+
+**Filtro por usuário**
+
+{{::filtro_usuario.jpg|}}
+ 
+**Lista de permissões**
+{{::permissoes.jpg|}}

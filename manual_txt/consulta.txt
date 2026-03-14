@@ -1,0 +1,29 @@
+====== Procurar espécimes na Consulta Pública ======
+
+\\ 
+=== A consulta pública ou externa permite a busca pelos espécimes de diversas formas. A tela de consulta é apresentada como a tela principal ou de acesso ao sistema. Nela você pode preencher um ou mais campos para realizar uma consulta.  ===
+ \\ 
+
+{{ :consulta_publica.png?nolink |}}
+
+----
+\\ 
+=== Em telas com baixa resolução ou em dispositivos móveis alguns campos estarão ocultos, exibindo apenas a tela abaixo. ===
+ \\ 
+ 
+{{ :consulta_publica_resumida.png?nolink |}}
+----
+
+===== O resultado de um pesquisa =====
+
+=== Como primeiro exemplo de uma consulta é apresentado o resultado de uma busca para a espécie Bromeliaceae Aechmea alba coletada por Forzza. ===
+
+// 
+// 
+
+{{ :resultado_consulta_publica_resumida.png?nolink |}}
+
+// 
+// 
+
+Maiores detalhes sobre as formas de pesquisa existentes são apresentados na tela inicial do manual em Consultas
