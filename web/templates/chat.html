@@ -188,7 +188,10 @@
         const data = await res.json();
         typing.remove();
         if (data.ok) {
-          addMsg(data.answer, false, data.sources || []);
+          const answerText = data.from_cache
+            ? "(Resposta reutilizada de pergunta similar)\n\n" + data.answer
+            : data.answer;
+          addMsg(answerText, false, data.sources || []);
           conversationHistory.push({ role: "user", content: message });
           conversationHistory.push({ role: "bot", content: data.answer });
           if (conversationHistory.length > 10) conversationHistory.splice(0, conversationHistory.length - 10);

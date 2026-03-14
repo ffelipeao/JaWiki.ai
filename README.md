@@ -75,6 +75,9 @@ JaWiki.ai/
    | `OLLAMA_BASE_URL` | URL do Ollama (ex.: `http://localhost:11434`) |
    | `OLLAMA_CHAT_MODEL` | (Opcional) Modelo para gerar respostas (ex.: `llama3`). Vazio = só mostra trechos. |
    | `CHAT_TOP_K` | Quantidade de trechos buscados por pergunta (ex.: `5`) |
+   | `CACHE_PERGUNTAS` | `1` = ativa cache de perguntas (respostas similares reutilizadas); `0` = desligado |
+   | `CACHE_THRESHOLD` | Distância máxima para considerar “mesma” pergunta (ex.: `0.35`). Quanto menor, mais exigente. |
+   | `CACHE_EMBEDDING_DIM` | Dimensão do embedding (ex.: `1024` para mxbai-embed-large). Deve bater com o modelo. |
    | `FLASK_HOST`, `FLASK_PORT` | Host e porta do servidor do chat |
 
 3. **Banco de dados**  
@@ -84,6 +87,8 @@ JaWiki.ai/
    CREATE EXTENSION IF NOT EXISTS vector;
    -- Tabela jawiki.jabot_rag com colunas id, conteudo, embedding
    ```
+
+   Se `CACHE_PERGUNTAS=1`, a tabela de cache (`jawiki.jabot_rag_perguntas` por padrão) é criada automaticamente na primeira requisição do chat.
 
 4. **Ollama**  
    Instale e suba o Ollama, e baixe o modelo de embedding:
@@ -122,6 +127,10 @@ Acesse no navegador: **http://127.0.0.1:5000** (ou o host/porta definidos em `FL
 python query_example.py
 # Digite a pergunta quando solicitado; retorna os trechos mais similares.
 ```
+
+### Cache de perguntas (respostas similares)
+
+Com `CACHE_PERGUNTAS=1` (padrão), cada pergunta respondida é salva no banco (tabela `jabot_rag_perguntas`). Quando uma pergunta **muito parecida** é feita de novo, a resposta anterior é reutilizada (sem nova busca RAG nem chamada ao Ollama), o que acelera e mantém consistência. No chat, respostas vindas do cache aparecem com o texto “(Resposta reutilizada de pergunta similar)”. A “similaridade” é definida por `CACHE_THRESHOLD` (distância do embedding; ex.: `0.35`).
 
 ## Fluxo resumido
 

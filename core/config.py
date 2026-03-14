@@ -40,6 +40,15 @@ OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 CHUNK_SIZE: int = int(os.getenv("CHUNK_SIZE", "1000"))
 CHUNK_OVERLAP: int = int(os.getenv("CHUNK_OVERLAP", "200"))
 
+# Cache de perguntas já respondidas (reutiliza respostas para perguntas muito parecidas)
+CACHE_ENABLED: bool = os.getenv("CACHE_PERGUNTAS", "1").lower() in ("1", "true", "yes")
+CACHE_SCHEMA: str = os.getenv("CACHE_SCHEMA", RAG_SCHEMA)
+CACHE_TABLE: str = os.getenv("CACHE_TABLE", "jabot_rag_perguntas")
+# Distância máxima (pgvector <->) para considerar "mesma" pergunta. Quanto menor, mais exigente (ex.: 0.2 a 0.4).
+CACHE_THRESHOLD: float = float(os.getenv("CACHE_THRESHOLD", "0.35"))
+# Dimensão do embedding (mxbai-embed-large = 1024). Deve bater com o modelo.
+CACHE_EMBEDDING_DIM: int = int(os.getenv("CACHE_EMBEDDING_DIM", "1024"))
+
 
 def validate_paths() -> None:
     """

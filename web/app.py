@@ -9,7 +9,7 @@ from typing import Any
 
 from flask import Flask, jsonify, render_template, request
 
-from core.config import OLLAMA_BASE_URL
+from core.config import CACHE_ENABLED, OLLAMA_BASE_URL
 from core.db import Database, RagRow
 from core.text_cleaning import clean_for_display
 from core.vectorstore import get_embeddings
@@ -145,7 +145,7 @@ REGRAS: Use apenas informações do conteúdo acima. Responda em passo a passo q
 
 @app.route("/api/chat", methods=["POST"])
 def api_chat():
-    """Recebe uma pergunta (e opcionalmente histórico). Body: { "message": "...", "history": [{ "role": "user"|"bot", "content": "..." }] }"""
+    """Recebe uma pergunta (e opcionalmente histórico). Se CACHE_PERGUNTAS=1, reutiliza respostas de perguntas muito parecidas."""
     data: dict[str, Any] = request.get_json() or {}
     message = (data.get("message") or "").strip()
     if not message:
@@ -154,16 +154,35 @@ def api_chat():
     if not isinstance(history, list):
         history = []
     try:
-        sources = _query_rag(message, k=CHAT_TOP_K)
-        if history:
-            answer = _build_answer_from_context_with_history(message, sources, history)
-        else:
-            answer = _build_answer_from_context(message, sources)
-        sources_cleaned = []
-        for s in sources:
-            c = clean_for_display(s.conteudo)
-            sources_cleaned.append({"id": s.id, "conteudo": c[:500] + ("..." if len(c) > 500 else "")})
-        return jsonify({"ok": True, "answer": answer, "sources": sources_cleaned})
+        embeddings = get_embeddings()
+        query_embedding = embeddings.embed_query(message)
+        db = Database()
+        try:
+            if CACHE_ENABLED:
+                db.ensure_cache_table()
+                cached = db.get_cached_answer(query_embedding)
+                if cached:
+                    resposta, fontes_list = cached
+                    return jsonify({
+                        "ok": True,
+                        "answer": resposta,
+                        "sources": fontes_list,
+                        "from_cache": True,
+                    })
+            sources = db.query_similar(query_embedding, k=CHAT_TOP_K)
+            if history:
+                answer = _build_answer_from_context_with_history(message, sources, history)
+            else:
+                answer = _build_answer_from_context(message, sources)
+            sources_cleaned = []
+            for s in sources:
+                c = clean_for_display(s.conteudo)
+                sources_cleaned.append({"id": s.id, "conteudo": c[:500] + ("..." if len(c) > 500 else "")})
+            if CACHE_ENABLED:
+                db.add_cached(message, query_embedding, answer, sources_cleaned)
+            return jsonify({"ok": True, "answer": answer, "sources": sources_cleaned})
+        finally:
+            db.close()
     except Exception as e:
         return jsonify({"ok": False, "error": str(e)}), 500
 
