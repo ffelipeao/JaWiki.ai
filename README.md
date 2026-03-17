@@ -8,7 +8,7 @@ Sistema de **RAG (Retrieval-Augmented Generation)** local que usa o manual do si
    Lê os `.txt` do manual (com suporte a subpastas), limpa marcações DokuWiki, divide em chunks, gera embeddings com Ollama e grava na tabela PostgreSQL com pgvector.
 
 2. **Chat web**  
-   Interface local onde o usuário faz perguntas; o sistema busca os trechos mais relevantes no banco e o Ollama (opcional) formula a resposta em passo a passo. Quando o modelo de chat está ativo, as respostas podem ser exibidas em **streaming** (tempo real via SSE). O chat mantém **histórico da conversa** (últimas mensagens) enviado ao modelo para respostas com mais contexto.
+   Interface local onde o usuário faz perguntas; o sistema busca os trechos mais relevantes no banco e o Ollama (opcional) formula a resposta em passo a passo. Quando o modelo de chat está ativo, as respostas podem ser exibidas em **streaming** (tempo real via SSE) e o chat mantém um pequeno **histórico da conversa** (últimas mensagens) enviado ao modelo para respostas com mais contexto.
 
 3. **Organização por tema**  
    O tema/assunto é derivado do caminho do arquivo (e do título da página quando existir), para a busca priorizar conteúdo do mesmo assunto.
@@ -120,7 +120,7 @@ A pasta de dados (`DATA_DIR`) é percorrida recursivamente; cada `.txt` é limpo
 python run_web.py
 ```
 
-Acesse no navegador: **http://127.0.0.1:5000** (ou o host/porta definidos em `FLASK_HOST`/`FLASK_PORT`). Na interface você pode iniciar uma **nova conversa** (botão no topo) para limpar o histórico e recomeçar; as respostas do Ollama são exibidas em **streaming** (texto aparecendo em tempo real) quando o modelo de chat está configurado.
+Acesse no navegador: **http://127.0.0.1:5000** (ou o host/porta definidos em `FLASK_HOST`/`FLASK_PORT`). Na interface você pode iniciar uma **nova conversa** para limpar o histórico e recomeçar; quando o modelo de chat está configurado, as respostas do Ollama são exibidas em **streaming** (texto aparecendo em tempo real).
 
 ### Busca por linha de comando (exemplo)
 
