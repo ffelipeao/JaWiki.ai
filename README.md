@@ -1,4 +1,4 @@
-# JaWiki.ai
+# JaWiki.ai (Projeto migrado para o GitServer Institucional)
 
 Sistema de **RAG (Retrieval-Augmented Generation)** local que usa o manual do sistema (arquivos `.txt` exportados do DokuWiki) para responder dúvidas dos usuários em formato de chat. As respostas são baseadas na base de conhecimento e, quando configurado, o Ollama gera respostas em passo a passo.
 
